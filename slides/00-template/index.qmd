@@ -11,9 +11,5 @@ format:
     execute:
       echo: true
       code-overflow: wrap
-    title-slide-attributes: 
-      data-background-image: ../../images/warwick-logo-white.png
-      data-background-size: 15%
-      data-background-position: 100% 0%
 ---
 
