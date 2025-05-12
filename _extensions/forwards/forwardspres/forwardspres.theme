@@ -15,7 +15,7 @@
             "underline": false
         },
         "Attribute": {
-            "text-color": "#5931A5",
+            "text-color": "#A5317D",
             "background-color": null,
             "bold": false,
             "italic": false,
@@ -64,21 +64,21 @@
             "underline": false
         },
         "Error": {
-            "text-color": "#A5317D",
+            "text-color": "#5931A5",
             "background-color": null,
             "bold": false,
             "italic": false,
             "underline": false
         },
         "BaseN": {
-            "text-color": "#A5317D",
+            "text-color": "#5931A5",
             "background-color": null,
             "bold": false,
             "italic": false,
             "underline": false
         },
         "Alert": {
-            "text-color": "#A5317D",
+            "text-color": "#5931A5",
             "background-color": null,
             "bold": false,
             "italic": false,
@@ -106,7 +106,7 @@
             "underline": false
         },
         "Preprocessor": {
-            "text-color": "#A5317D",
+            "text-color": "#5931A5",
             "background-color": null,
             "bold": false,
             "italic": false,
@@ -141,7 +141,7 @@
             "underline": false
         },
         "Import": {
-            "text-color": "#5931A5",
+            "text-color": "#A5317D",
             "background-color": null,
             "bold": false,
             "italic": false,
@@ -155,14 +155,14 @@
             "underline": false
         },
         "DataType": {
-            "text-color": "#A5317D",
+            "text-color": "#5931A5",
             "background-color": null,
             "bold": false,
             "italic": false,
             "underline": false
         },
         "Float": {
-            "text-color": "#A5317D",
+            "text-color": "#5931A5",
             "background-color": null,
             "bold": false,
             "italic": false,
@@ -197,7 +197,7 @@
             "underline": false
         },
         "DecVal": {
-            "text-color": "#A5317D",
+            "text-color": "#5931A5",
             "background-color": null,
             "bold": false,
             "italic": false,
