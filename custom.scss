@@ -1,0 +1,127 @@
+/*-- scss:defaults --*/
+
+@import url("https://fonts.googleapis.com/css?family=Atkinson Hyperlegible");
+@import url("https://fonts.googleapis.com/css?family=Atkinson Hyperlegible Mono");
+
+
+// fonts
+$font-family-sans-serif: "Atkinson Hyperlegible", Helvetica, sans-serif !default;
+$font-family-monospace: "Atkinson Hyperlegible Mono", monospace;
+$headings-font-family: "Atkinson Hyperlegible", Helvetica, sans-serif !default;
+
+//  Forwards colours 
+$darkpurple: #200F48;
+$darkpurple30: #bcb7c8;
+
+$plum: #A5317D;
+$pink: #D2436F;
+$red: #E95A61;
+$orange: #FD9567;
+$peach: #FDC88D;
+$yellow: #FEE4A7;
+
+$blue: #3143A5;
+$green: #31A559;
+$purple: #5931A5;
+
+$blue_dark: #222f73;
+$green_dark: #22733e;
+$red_dark: #a33f44;
+$orange_dark: #b16848;
+$peach_dark: #b18c63;
+$darkpurple_light: $darkpurple30;
+
+$gray: #58595B;
+$gray_dark: #383838; // this is text colour used on main Warwick site
+$black: #000000;
+$gray20: #cccccc; // % of black
+$gray10: #e6e6e6; // % of black
+$gray05: #f2f2f2; // % of black
+$white: #ffffff;
+
+$primary: $darkpurple !default;
+
+$primary:       $darkpurple !default;
+$body-color: $gray_dark;
+//$link-color: $aubergine70;
+$link-color: $pink;
+$code-color: $plum;
+$navbar-bg: $primary;
+$navbar-fg: $yellow;
+
+/*-- scss:rules --*/
+
+// color classes
+.primary {
+  color: $primary;
+}
+
+#quarto-header > nav > div > div.navbar-brand-container.mx-auto > a:hover {
+  color: $orange;
+}
+
+#navbarCollapse > ul > li > a:hover {
+  color: $orange;
+}
+
+#navbarCollapse > ul > li > a.active {
+  color: $orange;
+}
+
+// code
+pre.sourceCode {
+  border-radius: 0;
+  border-left-color: $gray;
+}
+
+h1, h2 {
+  //text-transform: uppercase;
+  font-weight: 700;
+}
+
+#quarto-header {
+  //text-transform: uppercase;
+  font-family: $headings-font-family;
+  font-weight: 700;
+}
+
+// iframes for slides embedded in talks pages
+iframe.slide-deck {
+  border: 3px solid $gray;
+  width: 100%;
+}
+
+.ar4x3 {
+  aspect-ratio: 4 / 3;  
+}
+
+.ar3x2 {
+  aspect-ratio: 3 / 2;  
+}
+
+.ar16x9 {
+  aspect-ratio: 16 / 9;  
+}
+
+// icon-links
+.icon-link {
+    background-color: transparent;
+    color: $primary;
+    border: 2px solid !important;
+    border-color: $primary;
+    padding: 5px .4rem 5px .4rem !important;
+    margin-top: 4px;
+    margin-right: 8px;
+    margin-bottom: 4px;
+    border-radius: 5px; 
+    display: inline-block;
+    text-decoration: none;
+}
+
+.icon-link:hover{
+    background-color: $primary;
+    border-color: $primary;
+    color: $body-bg;
+    text-decoration: none;
+}
+

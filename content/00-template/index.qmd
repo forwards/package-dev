@@ -1,0 +1,50 @@
+---
+title: TITLE
+author: 
+  - name: Ella Kaye
+  - name: Heather Turner
+date: 2024-06-26T10:30:00
+date-format: long
+draft: true
+---
+
+***This page and the slides for this session are still under development***
+
+## TODO
+
+- Link to this page in schedule
+- Update TITLE
+- Update date
+- Fill in resources
+- change `draft` to `false`
+
+## Slides
+
+Here's a link to the [slides](/slides/UPDATE-DIR-NAME/index.qmd){target="_blank"} in a new window. 
+
+Here are the slides embedded:
+
+<iframe class="slide-deck ar16x9" src="/slides/UPDATE-DIR-NAME/index.html" title="UPDATE-DIR-NAME slides">
+</iframe>
+
+## Resources
+
+### Reading
+
+- Wickham, H and Bryan, J, _R Packages_ (2nd edition)
+
+  <https://r-pkgs.org>
+
+- R Core Team, _Writing R Extensions_
+
+  <https://cran.r-project.org/doc/manuals/r-release/R-exts.html>
+
+### Packages
+
+- **devtools**
+
+  <https://devtools.r-lib.org>
+  
+- **usethis**
+
+  <https://usethis.r-lib.org>

@@ -1,0 +1,102 @@
+---
+title: Prerequisites
+---
+
+## Prior knowledge
+
+This is an intermediate/advanced R course, so basic knowledge of R is expected. 
+In particular, participants should be confident writing functions. 
+The final session of the workshop is on incorporating Rcpp functions in an R package, so some knowledge of C++/Rcpp is beneficial.
+
+The first three sessions of Warwick-Stats-Resources R Foundations course covers the required material basic material:
+
+- [Introduction to R and RStudio](https://warwick-stats-resources.github.io/r-foundations/content/01-intro/)
+- [Data Wrangling](https://warwick-stats-resources.github.io/r-foundations/content/02-data-wrangling/)
+- [Programming in R](https://warwick-stats-resources.github.io/r-foundations/content/03-programming/)
+
+The Rcpp session of the Warwick-Stats-Resources R Programming course covers C++/Rcpp:
+
+- [C++ and Rcpp](https://warwick-stats-resources.github.io/r-programming-2024/content/07-r-with-cpp/index.html)
+
+
+## git and GitHub
+
+Although there will be some time dedicated to this in the workshop, it would be advantageous if you already have:
+
+- `git` installed on your computer. See <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>
+- a [GitHub](https://github.com) account
+- a GitHub PAT configured to work with RStudio -- the vignette from the usethis package on [Managing Git(Hub) Credentials](https://usethis.r-lib.org/articles/git-credentials.html) goes through this.
+
+## R and RStudio
+
+Please ensure that you have the latest versions of R and RStudio installed prior to the first session. Currently, that's R-4.4.0 and RStudio-2024.04.1. 
+
+We also **strongly** recommend all participants to install the development tools to avoid potential issues installing packages.
+
+### Installing R
+
+Download the pre-compiled binary for your OS from https://cloud.r-project.org/ and install. More specifically:
+
+**For Windows**
+
+Click "Download R for Windows", then "base", then "Download R-4.4.0 for Windows". This will download an `.exe` file; once downloaded, open to start the installation. 
+
+**For Mac**
+
+Click "Download R for macOS", then "R-4.4.0-arm64.pkg" (the first option) to download the installer for Macs with **Apple Silicon** chips or "R-4.4.0-x86_64.pkg" (the second option) to download the installer for Macs with **Intel** chips. Run the installer to complete installation.
+
+**For Linux**
+
+Click "Download R for Linux". Instructions on installing are given for Debian, Fedora, Redhat, Suse and Ubuntu distributions. Where there is a choice, install both `r-base` and `r-base-dev`.
+
+### Installing R Studio Desktop (Open Source Edition)
+
+Downloads are available from <https://posit.co/download/rstudio-desktop/>
+
+Download the relevant installer either under the "Install RStudio" header or, scrolling down the page, from the 'All installers and Tarballs' section. Run the installer to complete installation.
+
+**For Windows with no admin rights**
+
+Download the `.zip` source archive under "Zip/Tarballs". Extract the files to a folder where you have write access, e.g. `C:\Users\username\RStudio`. In this folder, open the `bin` directory and find the RStudio program: it is named `rstudio.exe`, but the file extension will typically be hidden, so look for `rstudio`. Right-click this executable to create a desktop shortcut. Double-click the executable or use the shortcut to open.
+
+**For all other operating systems**
+
+Download the relevant installer for your OS listed under "Installers for Supported Platforms". Run the installer to complete installation.
+ 
+### Development Tools
+
+Some additional tools may be required to compile R packages from source.
+
+**For Windows with no admin rights**
+
+Download the latest (recommended) Rtools installer, `Rtools.exe`, from 
+<https://cran.r-project.org/bin/windows/Rtools/>. Run the installer keeping the 
+default settings.
+
+**For Windows with admin rights**
+
+Download the latest Rtools installer, `Rtools.exe`, from 
+<https://cran.r-project.org/bin/windows/Rtools/>. Run the installer making the 
+following selections: keep the default settings for the installation location 
+and components to install; check the box to add rtools to the system PATH.
+
+**For Mac**
+
+Install XCode. Either:
+
+1.  Download and install XCode from the Mac AppStore: <http://itunes.apple.com/us/app/xcode/id497799835?mt=12>
+2.  Within XCode go to Preferences : Downloads and install the Command Line 
+Tools
+
+Or for a smaller download size:
+
+1. Register as an Apple Developer (free) here: <https://developer.apple.com/programs/register/>
+2. Download the Command Line Tools for XCode appropriate for the version of 
+OS X you are running from here: <https://developer.apple.com/downloads/>
+
+**For Linux**
+
+If you installed `r-base-dev`, when installing R, you should have all you need 
+to build packages from source. Otherwise return to the instructions for 
+installing R for your distribution and follow the instructions there to install 
+the additional tools.

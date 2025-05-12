@@ -1,0 +1,13 @@
+---
+title: "Apply for the workshop"
+---
+
+Please click below to register your interest in participating in the workshop. Note that the course runs for two days and participation for the entire workshop is expected.
+
+[Apply](https://warwick.ac.uk/ellakaye/r-packages-2024){.btn .btn-primary target="_blank"}
+
+Please note that filling in this form does not guarantee a place. Priority will be given to those in the Department of Statistics (as the department is funding the course) though graduate students and staff from all departments are welcome. 
+
+The form closes on **Tuesday, June 18th, 2024** and you will be notified if you have a place on **June 19th** at the latest. 
+
+SkillsForge credit will also be available for those eligible. Details of how to register for those will be given to enrolled participants.

@@ -1,0 +1,665 @@
+---
+title: Package foundations
+subtitle: R package development workshop
+author: 
+  - name: Heather Turner and Ella Kaye
+  - name: Department of Statistics
+date: 2024-06-26
+date-format: long
+format: 
+  forwardspres-revealjs:
+    execute:
+      echo: true
+      code-overflow: wrap
+    title-slide-attributes: 
+      data-background-image: ../../images/warwick-logo-white.png
+      data-background-size: 15%
+      data-background-position: 100% 0%
+---
+
+## Overview
+
+- Why write a package?
+- Package structure and state
+- Package development setup
+- Creating a package with a working function
+
+# Why write a package? {.inverse}
+
+## Why write a package?
+
+-  You want to **generalise** code
+-  You want to **document** code
+-  You want to **test** code
+-  You want to **share** code
+-  You want to create **impact** from your work
+
+## Script vs package
+
+| R script                       | Package                             |
+|--------------------------------|-------------------------------------|
+| One-off data analysis          | Provides reusable components        |
+| Defined by `.R` extension      | Defined by presence of `DESCRIPTION` file |
+| `library()` calls              | Imports defined in `NAMESPACE` file |
+| Documentation in `#` comments  | Documentation in files and `Roxygen` comments |
+| Run lines or source file       | Install and restart                 |
+
+::: {.notes}
+reusable components: typically functions, but could also be R markdown template, Shiny app, data
+:::
+
+# Package structure and state {.inverse}
+
+## Package structure
+
+An R package is developed as a directory of source code files.
+
+The names of files and directories must follow the specification laid out in 
+the [Writing R Extensions](https://cran.r-project.org/doc/manuals/r-release/R-exts.html) manual - we'll cover the main components in this workshop.
+
+Directory tree for an example RStudio package project:
+
+```{r, structure, echo = FALSE}
+# Run once, interactively, to be able to call dir_tree
+#usethis::create_package("mypackage", open = FALSE)
+fs::dir_tree("mypackage")
+```
+
+## Package states
+
+:::::: {.columns}
+
+::::: {.column width="25%"}
+- ::::{.larger125}
+  :::{.callout-note}
+  ## source
+  :::
+  ::::
+- bundled
+- binary
+- installed
+- in-memory
+:::::
+
+::::: {.column width="70%"}
+:::{.callout-note}
+## source
+What you create and work on.
+
+Specific directory structure with some particular components e.g., `DESCRIPTION`, an `/R` directory.
+:::
+:::::
+::::::
+
+## Package states
+
+:::::: {.columns}
+
+::::: {.column width="25%"}
+- source
+- ::::{.larger125}
+  :::{.callout-note}
+  ## bundled
+  :::
+  ::::
+- binary
+- installed
+- in-memory
+:::::
+
+::::: {.column width="70%"}
+:::{.callout-note}
+## bundled
+Package files compressed to single `.tar.gz` file.
+
+Also known as "source tarballs".
+
+Created by command line tool `R CMD build`
+
+Unpacked it looks very like the source package.
+:::
+:::::
+::::::
+
+::: {.notes}
+In the rare case that you need to make a bundle from a package you’re developing locally, use devtools::build(). Under the hood, this calls pkgbuild::build() and, ultimately, R CMD build, which is described further in the Building package tarballs section of Writing R Extensions.
+:::
+
+## Package states
+
+:::::: {.columns}
+
+::::: {.column width="25%"}
+- source
+- bundled
+- ::::{.larger125}
+  :::{.callout-note}
+  ## binary
+  :::
+  ::::
+- installed
+- in-memory
+:::::
+
+::::: {.column width="70%"}
+:::{.callout-note}
+## binary
+Compressed copy of the package in installed form.
+
+Also a single file.
+
+Platform specific: `.tgz` (Mac) `.zip` (Windows).
+
+Package developers submit a bundle to CRAN; CRAN makes and distributes binaries.
+:::
+:::::
+::::::
+
+::: {.notes}
+
+A package in binary form is Platform specific.
+If you write a package for distribution on CRAN, you submit a bundle to CRAN then CRAN makes and distributes binaries
+
+
+`install.packages()` is usually downloading the binary
+
+To understand the difference between package bundle and a package binary see <https://r-pkgs.org/package-structure-state.html> 
+:::
+
+## Package states
+
+:::::: {.columns}
+
+::::: {.column width="25%"}
+- source
+- bundled
+- binary
+- ::::{.larger125}
+  :::{.callout-note}
+  ## installed
+  :::
+  ::::
+- in-memory
+:::::
+
+::::: {.column width="70%"}
+:::{.callout-note}
+## installed
+A directory of files in a library directory.
+
+Any C/C++/Fortran code is in compiled form.
+
+Help files, code and optionally data are in database form.
+
+`install.packages()` can install from source or from a binary
+:::
+:::::
+::::::
+
+## Package states
+
+:::::: {.columns}
+
+::::: {.column width="25%"}
+- source
+- bundled
+- binary
+- installed 
+- ::::{.larger125}
+  :::{.callout-note}
+  ## in-memory
+  :::
+  ::::
+:::::
+
+::::: {.column width="70%"}
+:::{.callout-note}
+## in-memory
+If a package is installed, `library()` makes its function available by loading the package into memory and attaching it to the search path.
+:::
+:::::
+::::::
+
+## Building/Installing Packages from Source
+
+There are various reasons we may wish to build or install from source:
+
+- Installing a CRAN package where a binary has not yet been built for the latest version.
+- Installing a package from GitHub/other version-controlled source code repository, e.g.
+```{r install_github, eval = FALSE}
+remotes::install_github("r-lib/revdepcheck")
+```
+- Installing our own package from the source code or building it to submit to CRAN.
+
+If the package includes C/C++/Fortran code, we will need a suitable compiler.
+
+# Build tools {.inverse}
+
+::: {.notes}
+Covered in the course prerequisites and in Session 6 on R with C++, but put here for completeness  
+:::
+
+## Linux
+
+Debian/Ubuntu:
+
+```{.sh}
+apt-get update
+apt-get install r-base-dev
+```
+
+Fedora/RedHat: should be set up already.
+
+## MacOS
+
+Option 1
+
+- [Register as an Apple developer (for free)](https://developer.apple.com/programs/register/)
+  - Then, in the terminal:
+  
+     ```{.sh}
+     xcode-select --install
+     ```
+
+Option 2 
+
+- Install the current release of full [Xcode from the Mac App Store](https://itunes.apple.com/ca/app/xcode/id497799835?mt=12)
+ - Within XCode go to Preferences -> Downloads and install the Command Line Tools
+- More convenient but installs a lot you don't need
+
+## Windows
+
+- Download the Rtools installer that matches your version of R from <https://cran.r-project.org/bin/windows/Rtools/>
+- Run the installer, `Rtools.exe`, keeping the default settings.
+
+# Package development setup {.inverse}
+
+## The setup we'll be using
+
+We'll be using the following tools for package development:
+
+- RStudio: to manage and edit the package source code
+- git + GitHub: to version control the package source code
+- **devtools** and **usethis** R packages: 
+    - **devtools** for functions supporting the development workflow
+    - **usethis** for setup tasks
+    - **devtools** depends on **usethis** package
+    - Integrated with RStudio: projects, menu items/shortcuts
+    - Uses system utilities internally: `R CMD` utilities bundled with R
+    
+## Follow along
+
+For the rest of this session, follow along on your own computer to make sure you're set up for package development and to create our example package.
+    
+## **devtools** and **usethis**
+
+We can use **devtools** right away to check our system is setup for package development.
+
+```{r eval = FALSE}
+install.packages("devtools")
+```
+
+```{r}
+library(devtools)
+```
+
+```{r message = TRUE}
+has_devel()
+```
+
+Installing **devtools** will also install **usethis**.    
+
+Check you have the latest version of **usethis** -- v2.2.3 -- and update if not:
+
+```{r}
+packageVersion("usethis")
+```
+
+## git sitrep and vaccinate
+
+Ask for a **sit**uation **rep**ort:
+
+```{r eval = FALSE}
+usethis::git_sitrep()
+```
+
+- Check that your user name and email are defined, else follow the [configuration instructions](https://hturner.github.io/advanced-r/01_open_code_and_software.html#17) from a previous Advanced R workshop.
+
+- Check whether you have a PAT
+
+  ```
+  Personal access token for 'https://github.com': '<discovered>'
+  ```
+
+. . .
+
+It's also a good idea to vaccinate. This implements best practice by adding files to your global `.gitignore`:
+
+```{r}
+#| eval: false
+usethis::git_vaccinate() 
+```
+
+## Create a GitHub PAT
+
+The **usethis** package uses personal access tokens (PAT) to communicate with GitHub.
+
+First, make sure you're signed into GitHub. Then run
+
+```{r}
+#| eval: false
+usethis::create_github_token()
+```
+
+:::{.smaller90}
+- Add Note describing the computer or use-case (e.g. personal-macbook-pro-2021, project-xyz)
+- Select expiration (recommend default 30 days)
+- Check scope (default selection is fine)
+- Click 'Generate Token'
+- **Important!** Copy token to clipboard, do not close window until stored (see next slide)!
+- You may want to store token in a secure vault, like 1Password or BitWarden
+:::
+
+## Store your PAT
+
+Put your PAT into the Git credential store by running the following command and entering your copied PAT at the prompt (assume the PAT is on your clipboard).
+
+```{r}
+#| eval: false
+gitcreds::gitcreds_set()
+```
+
+- If you don't have a PAT stored, will prompt you to enter: paste!
+- If you do, you will be given a choice to keep/replace/see the password
+  - choose as appropriate
+  - if replacing, paste!
+- run `git_sitrep()` again to check the PAT has been discovered   
+
+## More on usethis and GitHub creds
+
+It is well worth reading (and following all the instructions) in the following two **usethis** vignettes:
+
+- [usethis setup](https://usethis.r-lib.org/articles/usethis-setup.html)
+- [Managing Git(Hub) Credentials](https://usethis.r-lib.org/articles/git-credentials.html)
+  - See in particular the section on [ongoing PAT maintenance](https://usethis.r-lib.org/articles/git-credentials.html#ongoing-pat-maintenance)
+
+# Create a package! {.inverse}
+
+## Package name
+
+Can only contain the characters [A-Z, a-z, 0-9, .]. Some tips:
+
+-   Unique name you can easily Google
+-   Avoid mixing upper and lower case
+-   Use abbreviations
+-   Add an r to make unique, e.g **stringr**
+-   Use wordplay, e.g. **lubridate**
+-   Avoid trademarked names
+-   Use the [**available**](https://r-lib.github.io/available/) package to check name not taken
+
+For now, we will use **animalsounds**
+
+## Create a package!
+
+```{r eval = FALSE}
+usethis::create_package("~/Desktop/animalsounds")
+```
+
+- Be deliberate about where you create your package.
+
+- Do not nest inside another RStudio project, R package or git repo.
+
+- You may want to use a different path!
+
+## `create_package()`
+
+What happens when we run `create_package()`?
+
+-   R will create a folder called `animalsounds` which is a package and an RStudio project
+-   restart R in the new project
+-   create the some infrastructure for your package with the minimal components for a working package
+-   start the RStudio Build pane
+
+## R Studio Build pane/menu
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](images/rstudio_build_pane.png)
+:::
+
+::: {.column width="50%"}
+![](images/rstudio_build_menu.png)
+:::
+
+::::
+
+## Minimal components
+
+**usethis** will create the minimal components of a package that we have already seen:
+
+-   `DESCRIPTION` provides metadata about your package. 
+-   `NAMESPACE` declares the functions your package exports for external use and the external functions your package imports from other packages.
+-   The `/R` directory is where we will put `.R` files with function definitions.
+
+## Auxiliary files
+
+**usethis** also adds some auxiliary files:
+
+-   `animalsounds.Rproj` is the file that makes this directory an RStudio Project.
+-   `.Rbuildignore` lists files that we need but that should not be included when building the R package from source.
+-   `.gitignore` anticipates Git usage and ignores some standard, behind-the-scenes files created by R and RStudio.
+
+# git and GitHub {.inverse}
+
+::: {.notes}
+Now will make our package a version controlled project on our local machine and then put it on GitHub.
+
+ - version control, best-practice open-source development 
+
+usethis has functions to help with this.  
+:::
+
+## Use git
+
+To make our project a git repository, or 'repo', on our local machine we use `usethis::use_git()`
+
+Make your package a git repo:
+
+```{r eval = FALSE}
+usethis::use_git()
+```
+
+## `use_git()` output (part 1)
+
+```{r eval = FALSE}
+ ✔ Initialising Git repo
+ ✔ Adding '.Rhistory', '.Rdata', '.httr-oauth', '.DS_Store' to  '.gitignore' 
+ There are 5 uncommitted files:
+ * '.gitignore'
+ * '.Rbuildignore'
+ * 'DESCRIPTION'
+ * 'animalsounds.Rproj'
+ * 'NAMESPACE'
+ Is it ok to commit them?
+
+ 1: I agree
+ 2: Absolutely not
+ 3: No way
+```
+
+Choose the affirmative option! (The exact options may vary.)
+
+## `use_git()` output (part 2)
+
+```{r eval = FALSE}
+√ Adding files
+√ Commit with message 'Initial commit'
+• A restart of RStudio is required to activate the Git pane
+Restart now?
+
+1: Nope
+2: Definitely
+3: No
+```
+
+Choose the affirmative option! (The exact options may vary.)
+
+::: {.notes}
+You should find the git pane has opened.
+:::
+
+## Use GitHub
+
+To create a copy on GitHub we use `usethis::use_github()`.
+
+```{r}
+#| eval: false
+usethis::use_github() # creates a public repo
+usethis::use_github(private = TRUE) # private repo (licensing, no Pages)
+```
+
+This takes a local project, creates an associated repo on GitHub, adds it to your local repo as the "origin remote", and makes an initial "push" to synchronize.
+
+. . .
+
+::::{.smaller80}
+:::{.callout-note}
+## Warwick GitHub
+University of Warwick members can use the University's private GitHub instance, e.g.
+
+```{r, eval = FALSE}
+usethis::use_github("https://github.warwick.ac.uk")
+```
+However, Warwick GitHub does not support GitHub Actions or GitHub Pages, so for packages using your personal account is better -- we'll be using both Actions and Pages later.
+:::
+::::
+
+::: {.notes}
+Promote private repo for novel package development - link to licensing issue, covered in package documentation session  
+:::
+
+## `use_github()` output
+
+```{r eval = FALSE}
+usethis::use_github()
+```
+
+```{r eval = FALSE}
+ ✔ Creating GitHub repository 'Warwick-Stats-Resources/animalsounds'
+ ✔ Setting remote 'origin' to 'https://github.com/Warwick-Stats-Resources/animalsounds.git'
+ ✔ Setting URL field in DESCRIPTION to  'https://github.com/Warwick-Stats-Resources/animalsounds'
+ ✔ Setting BugReports field in DESCRIPTION to  'https://github.com/Warwick-Stats-Resources/animalsounds/issues'
+ There is 1 uncommitted file:
+ * 'DESCRIPTION'
+ Is it ok to commit it?
+
+ 1: Nope
+ 2: For sure
+ 3: No way
+```
+
+Choose the affirmative option! (The exact options may vary.)
+
+::: {.notes}
+Take a look at the repo on GitHub. There is no `/R` folder as that folder is empty at the moment!
+
+During the demo, will need to run `use_github("Warwick-Stats-Resources")` as by default use_github goes to my personal repo
+:::
+
+## Adding functions
+
+Functions go in an `.R` file in the `/R` directory.
+
+There's a `usethis` helper for adding `.R` files!
+
+```{r eval = FALSE}
+usethis::use_r("file_name") 
+```
+
+`usethis::use_r()` adds the file extension (you don't need to).
+
+. . .
+
+Use a separate `.R` file for each function or closely related set of functions, e.g.
+
+- a top-level function and the internal functions it calls
+- a family of related functions 
+- a summary method and its print method
+
+## `usethis::use_r()`
+
+Create a new R file in your package called `animal_sounds.R`
+
+```{r eval = FALSE}
+usethis::use_r("animal_sounds")
+```
+
+The output includes:
+
+```{r eval = FALSE}
+• Modify 'R/animal_sounds.R'  
+• Call `use_test()` to create a matching test file 
+```
+
+Ignore the instruction to call `use_test()` for now -- we'll cover testing later.
+
+## Add a function
+
+Put the following toy function into your script:
+
+```{r eval = FALSE}
+animal_sounds <- function(animal, sound) {
+    stopifnot(is.character(animal) & length(animal) == 1)
+    stopifnot(is.character(sound) & length(sound) == 1)
+    paste0("The ", animal, " goes ", sound, "!")
+}
+```
+
+Don't try to use the function yet!
+
+## Development workflow
+
+In a normal script, you might use:
+
+```{r eval = FALSE}
+source("R/animal_sounds.R")
+``` 
+
+However, for building packages, we need to use the `devtools` approach.
+
+This will ensure our function has the correct namespace and can find internal functions, functions imported by our package from other packages, etc.
+
+## Development workflow
+
+![](images/dev_cycle_before_testing.png){fig-align="center"}
+
+:::{.center-h}
+You don't even need to save your code!
+:::
+
+::: {.notes}
+devtools::load_all() simulates package installation so that you can test your function.
+:::
+
+## Your turn
+
+1. Load all with `devtools::load_all()` and try calling the `animal_sounds()` function with appropriate values for `animal` and `sound`.
+2. Change some tiny thing about your function -- maybe the animal “says” instead 
+of “goes”.
+3. Load all with `devtools::load_all()` and try calling the updated function to see the changed behaviour.
+4. Add `animal_sounds.R` so that it is tracked by git. Make a commit with the message `Add animal_sounds()`.
+5. Push all your commits from this session.
+
+# End matter {.inverse}
+
+## References
+
+Wickham, H and Bryan, J, _R Packages_ (2nd edn, in progress), <https://r-pkgs.org>.
+
+R Core Team, _Writing R Extensions_, <https://cran.r-project.org/doc/manuals/r-release/R-exts.html>
+
+## License
+
+Licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License ([CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/){target="_blank"}).
+

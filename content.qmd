@@ -1,0 +1,15 @@
+---
+title: "Content"
+listing:
+  contents: content
+  sort: "date asc"
+  type: table
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [date, title]
+page-layout: full
+title-block-banner: false
+---
+
+

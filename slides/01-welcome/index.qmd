@@ -1,0 +1,126 @@
+---
+title: Welcome and introduction
+subtitle: R package development workshop
+author: 
+  - name: Heather Turner and Ella Kaye
+  - name: Department of Statistics
+date: 2024-06-26
+date-format: long
+format: 
+  forwardspres-revealjs:
+    execute:
+      echo: true
+      code-overflow: wrap
+    title-slide-attributes: 
+      data-background-image: ../../images/warwick-logo-white.png
+      data-background-size: 15%
+      data-background-position: 100% 0%
+---
+
+# Hello! {.inverse .center-h}
+
+## Instructors
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Ella Kaye
+
+![](images/ellakaye.jpeg){width=50%}
+
+:::{.smaller80}
+Research Software Engineer 
+
+Department of Statistics
+
+University of Warwick
+
+<https://warwick.ac.uk/ellakaye>
+:::
+:::
+
+::: {.column width="50%"}
+### Heather Turner
+
+![](images/heatherturner.jpeg){width=50%}
+
+:::{.smaller80}
+RSE Fellow
+
+Department of Statistics
+
+University of Warwick
+
+<https://warwick.ac.uk/heatherturner>
+:::
+
+:::
+
+::::
+
+
+## Course material
+
+- Website and slides 
+  
+  <https://Warwick-Stats-Resources.github.io/r-packages-2024>
+  
+- Website and slides repo
+
+  <https://github.com/Warwick-Stats-Resources/r-packages-2024>
+  
+- Course text: R Packages (2nd edition), Hadley Wickham and Jenny Bryan
+
+  <https://r-pkgs.org>
+  
+## Schedule: Wednesday June 26th
+
+:::{.smaller75}
+| Time         | Session                           | Presenter |
+|--------------|-----------------------------------|-----------|
+| 10:30--10:40 | [Welcome and introduction](../../content/01-welcome/index.qmd) | Ella Kaye, Heather Turner |
+| 10:40--12:00 | [Package foundations](../../content/02-package-foundations/index.qmd)   | Ella Kaye |
+| **12:00--12:45** | Lunch                             | |
+| **12:45--14:15** | [Function documentation and dependencies](../../content/03-documentation/index.qmd)         | Ella Kaye |
+| **14:15--15:00** | Coffee break                      | |
+| 15:00--16:30 | [Testing](../../content/04-testing/index.qmd)               | Heather Turner |
+:::
+
+:::{.callout-note}
+Propose a slight shift in times in the middle of the day.
+
+Is this OK? (Will go back to original times if this causes issues for anyone.)
+:::
+
+## Schedule: Thursday June 27th 
+
+:::{.smaller75}
+| Time         | Session                           | Presenter |
+|--------------|-----------------------------------|-----------|
+| 10:30--12:00 | [Package check and documentation](../../content/05-check-package-documentation/index.qmd)   | Ella Kaye |
+| 12:00--13:00 | Lunch                             | |
+| 13:00--14:30 | [Packaging data; Publication and maintenance](../../content/06-data-publication-maintenance/index.qmd)         | Ella Kaye |
+| 14:30--15:00 | Coffee break                      | |
+| 15:00--16:30 | [Rcpp in packages](../../content/07-Rcpp-packages/index.qmd)     | Heather Turner |
+:::
+
+## SkillsForge
+
+Sign-up on [SkillsForge](https://skillsforge.warwick.ac.uk/warwick/#he/dev/eventDetails,;em,providerCode=ST,providerOrgAlias=warwick,number=5,;) for credit there (assuming you attend the whole workshop).
+
+Or, go to <https://skillsforge.warwick.ac.uk> and search for "ST5".
+
+## Warwick Award
+
+Register at <https://warwick.ac.uk/warwickaward>.
+
+You'll then receive an email to write a reflection.
+
+Search 'R Package Development Workshop' on the Warwick Award platform.
+
+## Register
+
+Need to take a register now, and again at end of penultimate session, so we know who gets credit.
+
+# Let's begin... {.inverse .center-h}
+

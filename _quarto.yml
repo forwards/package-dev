@@ -1,0 +1,29 @@
+project:
+  type: website
+  
+execute:
+  freeze: auto
+
+website:
+  title: "Forwards R Package Workshop"
+  #favicon: images/warwick-monogram-favicon.png
+  navbar:
+    right:
+      - text: "Join"
+        file: join.qmd
+      - text: "Prerequisites"
+        file: prerequisites.qmd
+      - text: "Content"
+        file: content.qmd
+ 
+      - icon: github
+        href: https://github.com/forwards/package-dev
+  page-footer: "All material is shared under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/){target='_blank'} license."
+  
+format:
+  html:
+    theme: custom.scss
+    toc: true
+    link-external-newwindow: true
+    
+

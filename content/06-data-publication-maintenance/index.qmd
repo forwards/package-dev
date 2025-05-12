@@ -1,0 +1,40 @@
+---
+title: Packaging data; Publication and maintenance
+author: 
+  - name: Ella Kaye
+  - name: Heather Turner
+date: 2024-06-27T13:00:00
+date-format: long
+draft: false
+---
+
+## Slides
+
+Here's a link to the [slides](/slides/06-data-publication-maintenance/index.qmd){target="_blank"} in a new window. 
+
+Here are the slides embedded:
+
+<iframe class="slide-deck ar16x9" src="/slides/06-data-publication-maintenance/index.html" title="06-data-publication-maintenance slides">
+</iframe>
+
+## Resources
+
+### Reading
+
+- Wickham, H and Bryan, J, _R Packages_ (2nd edition)
+
+  <https://r-pkgs.org>
+
+- R Core Team, _Writing R Extensions_
+
+  <https://cran.r-project.org/doc/manuals/r-release/R-exts.html>
+
+### Packages
+
+- **devtools**
+
+  <https://devtools.r-lib.org>
+  
+- **usethis**
+
+  <https://usethis.r-lib.org>
