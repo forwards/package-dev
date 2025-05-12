@@ -1,13 +1,12 @@
 /*-- scss:defaults --*/
 
-@import url("https://fonts.googleapis.com/css?family=Atkinson Hyperlegible");
-@import url("https://fonts.googleapis.com/css?family=Atkinson Hyperlegible Mono");
-
+@import url("https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible+Next:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible+Mono");
 
 // fonts
-$font-family-sans-serif: "Atkinson Hyperlegible", Helvetica, sans-serif !default;
+$font-family-sans-serif: "Atkinson Hyperlegible Next", Helvetica, sans-serif !default;
 $font-family-monospace: "Atkinson Hyperlegible Mono", monospace;
-$headings-font-family: "Atkinson Hyperlegible", Helvetica, sans-serif !default;
+$headings-font-family: "Atkinson Hyperlegible Next", Helvetica, sans-serif !default;
 
 //  Forwards colours 
 $darkpurple: #200F48;
