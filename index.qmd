@@ -16,11 +16,11 @@ This is a hands-on workshop consisting of five sessions, covering the entire pro
 The material is based on the book *R Packages (2nd edition)* by Hadley Wickham and Jennifer Bryan. 
 It is [freely availble online](https://r-pkgs.org).
 
-All slides and further resources can be accessed from the [content](content.qmd) page.
+All slides and further resources can be accessed from the [content](modules.qmd) page.
 
 ## Workshops
 
-The [content](content.qmd) is not tied to a specific offering of the workshop. 
+The [content](modules.qmd) is not tied to a specific offering of the workshop. 
 For individual taught offerings of the material, see the [workshops](workshops.qmd) page. 
 From there, the page for each workshop contains its schedule as well as details on the instructors, how to join, and an introductory slide-deck.
 

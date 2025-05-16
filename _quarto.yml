@@ -12,8 +12,8 @@ website:
         file: workshops.qmd
       - text: "Prerequisites"
         file: prerequisites.qmd
-      - text: "Content"
-        file: content.qmd
+      - text: "Modules"
+        file: modules.qmd
       - icon: github
         href: https://github.com/forwards/package-dev
   page-footer: "All material is shared under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/){target='_blank'} license."
