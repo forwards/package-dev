@@ -17,6 +17,7 @@ contributes:
         data-background-image: forwards_hex_solid_border.svg
         data-background-size: 7%
         data-background-position: 97% 5%
+      slide-number: true
       link-external-newwindow: true
       width: 1280
       height: 720
