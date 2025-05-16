@@ -1,0 +1,37 @@
+---
+title: Summer 2025, cohort 1
+---
+
+## Join
+
+[Register on Zoom](https://us02web.zoom.us/meeting/register/qBJ_VAEfQHCU-DZKogPuGg#/registration){.btn .btn-primary target="_blank"}
+
+## Instructors
+
+{{< fa user >}}   [Ella Kaye](https://ellakaye.co.uk) and [Pao Corrales](https://paocorrales.github.io/)
+
+{{< fa envelope >}}   [ella.m.kaye\@warwick.ac.uk](mailto:ella.m.kaye@warwick.ac.uk)
+
+## Schedule
+
+{{< fa calendar >}} &nbsp; Every other **Monday**, starting June 2nd
+
+{{< fa clock >}} &nbsp; 09:00--10:30 UTC. [See in your time zone](https://dateful.com/convert/utc?t=09).
+
+| Session | Date | Lead | Facilitator |
+|----|----|----|----|
+| [Package foundations](../content/01-package-foundations/index.qmd) | June 2nd | Pao | Ella |
+| [Function documentation and dependencies](../content/02-documentation/index.qmd) | June 16th | Ella | Pao |
+| [Testing](../content/03-testing/index.qmd) | June 30th | Pao | Ella |
+| [Package check and documentation](../content/04-check-package-documentation/index.qmd) | July 14th | Ella | Pao |
+| [Packaging data; Publication and maintenance](../content/05-data-publication-maintenance/index.qmd) | July 28th | Pao | Ella |
+
+## Welcome and introduction
+
+Here's a link to the [slides](summer-2025-cohort-1-intro.qmd){target="_blank"} in a new window. 
+
+Here are the slides embedded:
+
+<iframe class="slide-deck ar16x9" src="summer-2025-cohort-1-intro.html" title="01-welcome slides">
+</iframe>
+

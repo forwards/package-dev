@@ -2,38 +2,29 @@
 title: "R package development workshop"
 ---
 
-Welcome to the R package development workshop!
+Welcome to the Forwards R package development workshop!
 
-This is a two-day workshop, taking place at The University of Warwick, June 26th-27th, 2024.
+The sessions use the materials developed by Forwards, 
+the taskforce for underrepresented groups in the R community. 
 
-It is aimed primarily at graduate students in the Department of Statistics, but open to all interested members of the university, space permitting. 
-
-Please see the [join](join.qmd) page for details on how to sign-up for the course.
+<https://forwards.github.io/>
 
 ## Syllabus overview
 
-This is a hands-on workshop covering the entire process of creating an R package: including functions and data, checking and testing, all levels of documentation, publication and maintenance. The final session covers the advanced topic of using Rcpp code in a package.
+This is a hands-on workshop consisting of five sessions, covering the entire process of creating an R package: functions and data, checking and testing, all levels of documentation, publication and maintenance. 
 
-All slides and further resources can be accessed from the [content](content.qmd) page and also via the [schedule](schedule.qmd). 
+The material is based on the book *R Packages (2nd edition)* by Hadley Wickham and Jennifer Bryan. 
+It is [freely availble online](https://r-pkgs.org).
 
-## Session details
+All slides and further resources can be accessed from the [content](content.qmd) page.
 
-{{< fa calendar >}} &nbsp; June 26th-27th, 2024
+## Workshops
 
-{{< fa clock >}} &nbsp; 10:30--16:30
-
-{{< fa location-dot >}} &nbsp; Room A1.01, Zeeman Building, University of Warwick
-
-{{< fa utensils >}} &nbsp; Lunch provided each day
-
-{{< fa calendar-alt >}} &nbsp; See the full [schedule](schedule.qmd).
-
-## Instructor details
-
-{{< fa user >}} &nbsp; [Ella Kaye](https://warwick.ac.uk/ellakaye) and [Heather Turner](https://warwick.ac.uk/heatherturner)
-
-{{< fa envelope >}} &nbsp; [ella.m.kaye@warwick.ac.uk](mailto:ella.m.kaye@warwick.ac.uk) and [h.turner.1@warwick.ac.uk](mailto:h.turner.1@warwick.ac.uk)
+The [content](content.qmd) is not tied to a specific offering of the workshop. 
+For individual taught offerings of the material, see the [workshops](workshops.qmd) page. 
+From there, the page for each workshop contains its schedule as well as details on the instructors, how to join, and an introductory slide-deck.
 
 ## Prerequistes
 
 Please see the [prerequisites](prerequisites.qmd) page for details on getting set up in advance of the first session.
+

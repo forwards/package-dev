@@ -9,11 +9,7 @@ website:
   navbar:
     right:
       - text: "Workshops"
-        menu:
-        - text: Summer 2025, cohort 1
-          file: workshops/summer-2025-cohort-1.qmd
-        - text: Summer 2025, cohort 2
-          file: workshops/summer-2025-cohort-2.qmd
+        file: workshops.qmd
       - text: "Prerequisites"
         file: prerequisites.qmd
       - text: "Content"

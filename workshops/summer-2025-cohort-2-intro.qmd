@@ -1,0 +1,83 @@
+---
+title: Welcome and introduction
+subtitle: R package development workshop
+author: Emma Rand, Joyce Robbins, and Heather Turner
+format: forwardspres-revealjs
+---
+
+# Hello! {.inverse .center-h}
+
+## Instructors
+
+:::: {.columns}
+
+::: {.column width="33%"}
+### Emma Rand
+
+![](../images/instructors/emmarand.jpg){width=60%}
+
+:::{.smaller80}
+Professor of Biology
+
+University of York
+:::
+:::
+
+::: {.column width="33%"}
+### Joyce Robbins
+
+![](../images/instructors/joycerobbins.jpg){width=60%}
+
+:::{.smaller80}
+Lecturer in Statistics
+
+Columbia University
+:::
+:::
+
+::: {.column width="33%"}
+### Heather Turner
+
+![](../images/instructors/heatherturner.jpeg){width=60%}
+
+:::{.smaller80}
+RSE Fellow
+
+University of Warwick
+:::
+
+:::
+
+::::
+
+
+## Course material
+
+- Website and slides 
+  
+  <https://forwards.github.io/package-dev>
+  
+- Website and slides repo
+
+  <https://github.com/forwards/package-dev>
+  
+- Course text: R Packages (2nd edition), Hadley Wickham and Jennifer Bryan
+
+  <https://r-pkgs.org>
+  
+## Schedule
+
+Tuesdays, 14:30-16:00 UTC
+
+:::{.smaller90}
+| Session | Date | Lead | Facilitator(s) |
+|----|----|----|----|
+| [Package foundations](../content/01-package-foundations/index.qmd) | June 3rd | Emma | Joyce and Heather |
+| [Function documentation and dependencies](../content/02-documentation/index.qmd) | June 17th | Joyce | Emma and Heather |
+| [Testing](../content/03-testing/index.qmd) | July 1st | Heather | Joyce |
+| [Package check and documentation](../content/04-check-package-documentation/index.qmd) | July 15th | Joyce | Heather |
+| [Packaging data; Publication and maintenance](../content/05-data-publication-maintenance/index.qmd) | July 29th | Heather | Joyce |
+:::
+
+# Let's begin... {.inverse .center-h}
+

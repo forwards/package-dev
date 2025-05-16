@@ -1,0 +1,37 @@
+---
+title: Summer 2025, cohort 2
+---
+
+## Join
+
+[Register on Zoom](https://us02web.zoom.us/meeting/register/Zvt-EuQfReyCgmxbFhutcQ#/registration){.btn .btn-primary target="_blank"}
+
+## Instructors
+
+{{< fa user >}}   [Joyce Robbins](https://datascience.columbia.edu/people/joyce-robbins/), [Emma Rand](https://www.york.ac.uk/biology/people/emma-rand/) and [Heather Turner](https://warwick.ac.uk/heatherturner)
+
+{{< fa envelope >}}   [h.turner.1\@warwick.ac.uk](mailto:h.turner.1@warwick.ac.uk)
+
+## Schedule
+
+{{< fa calendar >}} &nbsp; Every other **Tuesday**, starting June 3rd
+
+{{< fa clock >}} &nbsp; 14:30--16:00 UTC. [See in your time zone](https://dateful.com/convert/utc?t=1430).
+
+| Session | Date | Lead | Facilitator(s) |
+|----|----|----|----|
+| [Package foundations](../content/01-package-foundations/index.qmd) | June 3rd | Emma | Joyce and Heather |
+| [Function documentation and dependencies](../content/02-documentation/index.qmd) | June 17th | Joyce | Emma and Heather |
+| [Testing](../content/03-testing/index.qmd) | July 1st | Heather | Joyce |
+| [Package check and documentation](../content/04-check-package-documentation/index.qmd) | July 15th | Joyce | Heather |
+| [Packaging data; Publication and maintenance](../content/05-data-publication-maintenance/index.qmd) | July 29th | Heather | Joyce |
+
+## Welcome and introduction
+
+Here's a link to the [slides](summer-2025-cohort-2-intro.qmd){target="_blank"} in a new window. 
+
+Here are the slides embedded:
+
+<iframe class="slide-deck ar16x9" src="summer-2025-cohort-2-intro.html" title="01-welcome slides">
+</iframe>
+
