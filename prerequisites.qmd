@@ -8,7 +8,7 @@ This is an intermediate/advanced R course, so basic knowledge of R is expected.
 In particular, participants should be confident writing functions. 
 The final session of the workshop is on incorporating Rcpp functions in an R package, so some knowledge of C++/Rcpp is beneficial.
 
-The first three sessions of Warwick-Stats-Resources R Foundations course covers the required material basic material:
+The first three modules of Warwick-Stats-Resources R Foundations course covers the required material basic material:
 
 - [Introduction to R and RStudio](https://warwick-stats-resources.github.io/r-foundations/content/01-intro/)
 - [Data Wrangling](https://warwick-stats-resources.github.io/r-foundations/content/02-data-wrangling/)

@@ -1,6 +1,6 @@
 ---
 title: Testing
-description: Session 3
+description: Module 3
 author: Forwards teaching team
 draft: false
 ---

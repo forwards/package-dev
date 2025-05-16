@@ -1,6 +1,6 @@
 ---
 title: Packaging data; Publication and maintenance
-description: Session 5
+description: Module 5
 author: Forwards teaching team
 draft: false
 ---

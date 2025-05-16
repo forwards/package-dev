@@ -18,7 +18,7 @@ title: Summer 2025, cohort 1
 
 {{< fa clock >}} &nbsp; 09:00--10:30 UTC. [See in your time zone](https://dateful.com/convert/utc?t=09).
 
-| Session | Date | Lead | Facilitator |
+| Module | Date | Lead | Facilitator |
 |----|----|----|----|
 | [Package foundations](../content/01-package-foundations/index.qmd) | June 2nd | Pao | Ella |
 | [Function documentation and dependencies](../content/02-documentation/index.qmd) | June 16th | Ella | Pao |

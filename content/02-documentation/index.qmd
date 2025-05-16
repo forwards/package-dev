@@ -1,6 +1,6 @@
 ---
 title: Function documentation and dependencies
-description: Session 2
+description: Module 2
 author: Forwards teaching team
 draft: false
 ---

@@ -1,6 +1,6 @@
 ---
 title: Package foundations
-description: Session 1
+description: Module 1
 author: Forwards teaching team
 draft: false
 ---

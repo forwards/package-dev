@@ -61,7 +61,7 @@ Scientist, Educator and RSE
 
 Mondays, 09:00-10:30 UTC
 
-| Session | Date | Lead | Facilitator |
+| Module | Date | Lead | Facilitator |
 |----|----|----|----|
 | [Package foundations](../content/01-package-foundations/index.qmd) | June 2nd | Pao | Ella |
 | [Function documentation and dependencies](../content/02-documentation/index.qmd) | June 16th | Ella | Pao |

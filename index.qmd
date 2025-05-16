@@ -4,27 +4,27 @@ title: "R package development workshop"
 
 Welcome to the Forwards R package development workshop!
 
-The sessions use the materials developed by Forwards, 
+The modules use materials developed by Forwards, 
 the taskforce for underrepresented groups in the R community. 
 
 <https://forwards.github.io/>
 
 ## Syllabus overview
 
-This is a hands-on workshop consisting of five sessions, covering the entire process of creating an R package: functions and data, checking and testing, all levels of documentation, publication and maintenance. 
+This is a hands-on workshop consisting of five modules, covering the entire process of creating an R package: functions and data, checking and testing, all levels of documentation, publication and maintenance. 
 
 The material is based on the book *R Packages (2nd edition)* by Hadley Wickham and Jennifer Bryan. 
 It is [freely availble online](https://r-pkgs.org).
 
-All slides and further resources can be accessed from the [content](modules.qmd) page.
+All slides and further resources can be accessed from the [modules](modules.qmd) page.
 
 ## Workshops
 
-The [content](modules.qmd) is not tied to a specific offering of the workshop. 
+The content of the modules is not tied to a specific offering of the workshop. 
 For individual taught offerings of the material, see the [workshops](workshops.qmd) page. 
 From there, the page for each workshop contains its schedule as well as details on the instructors, how to join, and an introductory slide-deck.
 
 ## Prerequistes
 
-Please see the [prerequisites](prerequisites.qmd) page for details on getting set up in advance of the first session.
+Please see the [prerequisites](prerequisites.qmd) page for details on getting set up in advance of the first module.
 

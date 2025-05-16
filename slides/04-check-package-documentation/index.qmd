@@ -1,6 +1,6 @@
 ---
 title: Package check and documentation
-subtitle: R package development workshop<br>Session 4
+subtitle: R package development workshop<br>Module 4
 author: Forwards teaching team
 format: forwardspres-revealjs
 ---

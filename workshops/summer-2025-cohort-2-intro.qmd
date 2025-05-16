@@ -70,7 +70,7 @@ University of Warwick
 Tuesdays, 14:30-16:00 UTC
 
 :::{.smaller90}
-| Session | Date | Lead | Facilitator(s) |
+| Module | Date | Lead | Facilitator(s) |
 |----|----|----|----|
 | [Package foundations](../content/01-package-foundations/index.qmd) | June 3rd | Emma | Joyce and Heather |
 | [Function documentation and dependencies](../content/02-documentation/index.qmd) | June 17th | Joyce | Emma and Heather |

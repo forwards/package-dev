@@ -1,6 +1,6 @@
 ---
 title: Package foundations
-subtitle: R package development workshop<br>Session 1
+subtitle: R package development workshop<br>Module 1
 author: Forwards teaching team
 format: forwardspres-revealjs
 ---
@@ -224,7 +224,7 @@ If the package includes C/C++/Fortran code, we will need a suitable compiler.
 # Build tools {.inverse}
 
 ::: {.notes}
-Covered in the course prerequisites and in Session 6 on R with C++, but put here for completeness  
+Covered in the course prerequisites and in Module 6 on R with C++, but put here for completeness  
 :::
 
 ## Linux
