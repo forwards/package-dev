@@ -1,7 +1,7 @@
 ---
 title: Package foundations
 description: Session 1
-author: R Forwards teaching team
+author: Forwards teaching team
 draft: false
 ---
 

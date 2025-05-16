@@ -1,7 +1,7 @@
 ---
 title: Packaging data; Publication and maintenance
 description: Session 5
-author: R Forwards teaching team
+author: Forwards teaching team
 draft: false
 ---
 
