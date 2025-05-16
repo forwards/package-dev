@@ -5,7 +5,7 @@ execute:
   freeze: auto
 
 website:
-  title: "Forwards R Package Workshop"
+  title: "Forwards R Package Development Workshop"
   navbar:
     right:
       - text: "Workshops"
