@@ -6,16 +6,18 @@ execute:
 
 website:
   title: "Forwards R Package Workshop"
-  #favicon: images/warwick-monogram-favicon.png
   navbar:
     right:
-      - text: "Join"
-        file: join.qmd
+      - text: "Workshops"
+        menu:
+        - text: Summer 2025, cohort 1
+          file: workshops/summer-2025-cohort-1.qmd
+        - text: Summer 2025, cohort 2
+          file: workshops/summer-2025-cohort-2.qmd
       - text: "Prerequisites"
         file: prerequisites.qmd
       - text: "Content"
         file: content.qmd
- 
       - icon: github
         href: https://github.com/forwards/package-dev
   page-footer: "All material is shared under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/){target='_blank'} license."
