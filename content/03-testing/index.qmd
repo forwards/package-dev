@@ -1,0 +1,41 @@
+---
+title: Testing
+description: Session 3
+author: R Forwards teaching team
+draft: false
+---
+
+## Slides
+
+Here's a link to the [slides](/slides/03-testing/index.qmd){target="_blank"} in a new window. 
+
+Here are the slides embedded:
+
+<iframe class="slide-deck ar16x9" src="/slides/03-testing/index.html" title="03-testing slides">
+</iframe>
+
+## Resources
+
+### Reading
+
+- Wickham, H and Bryan, J, _R Packages_ (2nd edition)
+
+  <https://r-pkgs.org>
+
+- R Core Team, _Writing R Extensions_
+
+  <https://cran.r-project.org/doc/manuals/r-release/R-exts.html>
+
+### Packages
+
+- **devtools**
+
+  <https://devtools.r-lib.org>
+  
+- **usethis**
+
+  <https://usethis.r-lib.org>
+
+- **testthat**
+
+  <https://testthat.r-lib.org>

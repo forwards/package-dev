@@ -2,12 +2,12 @@
 title: "Content"
 listing:
   contents: content
-  sort: "date asc"
+  sort: "description"
   type: table
   categories: false
   sort-ui: false
   filter-ui: false
-  fields: [date, title]
+  fields: [title, description]
 page-layout: full
 title-block-banner: false
 ---

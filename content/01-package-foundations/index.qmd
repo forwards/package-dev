@@ -1,0 +1,37 @@
+---
+title: Package foundations
+description: Session 1
+author: R Forwards teaching team
+draft: false
+---
+
+## Slides
+
+Here's a link to the [slides](/slides/01-package-foundations/index.qmd){target="_blank"} in a new window. 
+
+Here are the slides embedded:
+
+<iframe class="slide-deck ar16x9" src="/slides/01-package-foundations/index.html" title="01-package-foundations slides">
+</iframe>
+
+## Resources
+
+### Reading
+
+- Wickham, H and Bryan, J, _R Packages_ (2nd edition)
+
+  <https://r-pkgs.org>
+
+- R Core Team, _Writing R Extensions_
+
+  <https://cran.r-project.org/doc/manuals/r-release/R-exts.html>
+
+### Packages
+
+- **devtools**
+
+  <https://devtools.r-lib.org>
+  
+- **usethis**
+
+  <https://usethis.r-lib.org>

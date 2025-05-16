@@ -10,6 +10,9 @@ contributes:
           fig.align: "center"
           fig.show: "hold"
     revealjs:
+      execute:
+        echo: true
+        code-overflow: wrap
       theme: [default, forwardspres.scss] 
       highlight-style: forwardspres.theme
       title-slide-attributes:
