@@ -20,11 +20,11 @@ title: Summer 2025, cohort 2
 
 | Module | Date | Lead | Facilitator(s) |
 |----|----|----|----|
-| [Package foundations](../content/01-package-foundations/index.qmd) | June 3rd | Emma | Joyce and Heather |
-| [Function documentation and dependencies](../content/02-documentation/index.qmd) | June 17th | Joyce | Emma and Heather |
-| [Testing](../content/03-testing/index.qmd) | July 1st | Heather | Joyce |
-| [Package check and documentation](../content/04-check-package-documentation/index.qmd) | July 15th | Joyce | Heather |
-| [Packaging data; Publication and maintenance](../content/05-data-publication-maintenance/index.qmd) | July 29th | Heather | Joyce |
+| [Package foundations](../modules/01-package-foundations/index.qmd) | June 3rd | Emma | Joyce and Heather |
+| [Function documentation and dependencies](../modules/02-documentation/index.qmd) | June 17th | Joyce | Emma and Heather |
+| [Testing](../modules/03-testing/index.qmd) | July 1st | Heather | Joyce |
+| [Package check and documentation](../modules/04-check-package-documentation/index.qmd) | July 15th | Joyce | Heather |
+| [Packaging data; Publication and maintenance](../modules/05-data-publication-maintenance/index.qmd) | July 29th | Heather | Joyce |
 
 ## Welcome and introduction
 

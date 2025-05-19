@@ -20,11 +20,11 @@ title: Summer 2025, cohort 1
 
 | Module | Date | Lead | Facilitator |
 |----|----|----|----|
-| [Package foundations](../content/01-package-foundations/index.qmd) | June 2nd | Pao | Ella |
-| [Function documentation and dependencies](../content/02-documentation/index.qmd) | June 16th | Ella | Pao |
-| [Testing](../content/03-testing/index.qmd) | June 30th | Pao | Ella |
-| [Package check and documentation](../content/04-check-package-documentation/index.qmd) | July 14th | Ella | Pao |
-| [Packaging data; Publication and maintenance](../content/05-data-publication-maintenance/index.qmd) | July 28th | Pao | Ella |
+| [Package foundations](../modules/01-package-foundations/index.qmd) | June 2nd | Pao | Ella |
+| [Function documentation and dependencies](../modules/02-documentation/index.qmd) | June 16th | Ella | Pao |
+| [Testing](../modules/03-testing/index.qmd) | June 30th | Pao | Ella |
+| [Package check and documentation](../modules/04-check-package-documentation/index.qmd) | July 14th | Ella | Pao |
+| [Packaging data; Publication and maintenance](../modules/05-data-publication-maintenance/index.qmd) | July 28th | Pao | Ella |
 
 ## Welcome and introduction
 
