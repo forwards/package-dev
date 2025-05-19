@@ -1,4 +1,6 @@
 title: R Forwards Presentation
+author: Ella Kaye
+version: 1.0.0
 quarto-required: ">=1.6.0"
 contributes:
   formats:
@@ -9,10 +11,10 @@ contributes:
           message: false
           fig.align: "center"
           fig.show: "hold"
-    revealjs:
       execute:
         echo: true
         code-overflow: wrap
+    revealjs:
       theme: [default, forwardspres.scss] 
       highlight-style: forwardspres.theme
       title-slide-attributes:
