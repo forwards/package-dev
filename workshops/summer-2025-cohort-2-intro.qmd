@@ -29,7 +29,7 @@ University of York
 ![](../images/instructors/joycerobbins.jpg){width=60%}
 
 :::{.smaller80}
-Lecturer in Statistics
+Senior Lecturer in Statistics
 
 Columbia University
 :::
