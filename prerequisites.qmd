@@ -2,7 +2,7 @@
 title: Prerequisites
 ---
 
-*last updated: May 16th, 2025**
+**last updated: May 16th, 2025**
 
 ## Prior knowledge
 
