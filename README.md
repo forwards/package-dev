@@ -14,4 +14,5 @@ If running a workshop, you will need to do the following:
 - In your new page with the workshop details, update the link to the intro slides for both opening in a new window, and the embedded version
 - Add the page with workshop details to `workshops.qmd` as an upcoming workshop
 - Review `prerequisites.qmd`. You may need to update to give the latest version numbers of R and RStudio. Update the 'last updated' date at the top of the file.
-- Push all changes to GitHub. This will trigger an update to the published website
+- Commit and push all changes to GitHub. This will trigger an update to the published website
+  - **Note: if you have made changes to any of the slides, or any pages that contains a code chunk, then you *MUST* re-render those page and commit/push the updated pages in the `_freeze` folder, otherwise the rebuilding of the website will fail.**
