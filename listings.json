@@ -2,11 +2,11 @@
   {
     "listing": "/modules.html",
     "items": [
-      "/content/01-package-foundations/index.html",
-      "/content/02-documentation/index.html",
-      "/content/03-testing/index.html",
-      "/content/04-check-package-documentation/index.html",
-      "/content/05-data-publication-maintenance/index.html"
+      "/modules/01-package-foundations/index.html",
+      "/modules/02-documentation/index.html",
+      "/modules/03-testing/index.html",
+      "/modules/04-check-package-documentation/index.html",
+      "/modules/05-data-publication-maintenance/index.html"
     ]
   }
 ]

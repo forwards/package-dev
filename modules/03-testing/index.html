@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Forwards teaching team">
+<meta name="description" content="Module 3">
 
-<title>Summer 2025, cohort 1 – Forwards R Package Development Workshop</title>
+<title>Testing – Forwards R Package Development Workshop</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +25,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2ead0e7e9cd06f83d6a617fe7465ed59.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-89da55ca00ccc25e60f8e4abc18ce54d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2ead0e7e9cd06f83d6a617fe7465ed59.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-89da55ca00ccc25e60f8e4abc18ce54d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Forwards R Package Development Workshop</span>
     </a>
   </div>
@@ -91,15 +91,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../workshops.html"> 
+    <a class="nav-link" href="../../workshops.html"> 
 <span class="menu-text">Workshops</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../prerequisites.html"> 
+    <a class="nav-link" href="../../prerequisites.html"> 
 <span class="menu-text">Prerequisites</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../modules.html"> 
+    <a class="nav-link" href="../../modules.html"> 
 <span class="menu-text">Modules</span></a>
   </li>  
   <li class="nav-item compact">
@@ -123,10 +123,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#join" id="toc-join" class="nav-link active" data-scroll-target="#join">Join</a></li>
-  <li><a href="#instructors" id="toc-instructors" class="nav-link" data-scroll-target="#instructors">Instructors</a></li>
-  <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule">Schedule</a></li>
-  <li><a href="#welcome-and-introduction" id="toc-welcome-and-introduction" class="nav-link" data-scroll-target="#welcome-and-introduction">Welcome and introduction</a></li>
+  <li><a href="#slides" id="toc-slides" class="nav-link active" data-scroll-target="#slides">Slides</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a>
+  <ul class="collapse">
+  <li><a href="#reading" id="toc-reading" class="nav-link" data-scroll-target="#reading">Reading</a></li>
+  <li><a href="#packages" id="toc-packages" class="nav-link" data-scroll-target="#packages">Packages</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -135,13 +137,24 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Summer 2025, cohort 1</h1>
+<h1 class="title">Testing</h1>
 </div>
 
+<div>
+  <div class="description">
+    Module 3
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Forwards teaching team </p>
+          </div>
+  </div>
     
   
     
@@ -152,70 +165,37 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="join" class="level2">
-<h2 class="anchored" data-anchor-id="join">Join</h2>
-<p><a href="https://us02web.zoom.us/meeting/register/qBJ_VAEfQHCU-DZKogPuGg#/registration" class="btn btn-primary" target="_blank">Register on Zoom</a></p>
-</section>
-<section id="instructors" class="level2">
-<h2 class="anchored" data-anchor-id="instructors">Instructors</h2>
-<p><i class="fa-solid fa-user" aria-label="user"></i> &nbsp; <a href="https://ellakaye.co.uk">Ella Kaye</a> and <a href="https://paocorrales.github.io/">Pao Corrales</a></p>
-<p><i class="fa-solid fa-envelope" aria-label="envelope"></i> &nbsp; <a href="mailto:ella.m.kaye@warwick.ac.uk">ella.m.kaye@warwick.ac.uk</a></p>
-</section>
-<section id="schedule" class="level2">
-<h2 class="anchored" data-anchor-id="schedule">Schedule</h2>
-<p><i class="fa-solid fa-calendar" aria-label="calendar"></i> &nbsp; Every other <strong>Monday</strong>, starting June 2nd</p>
-<p><i class="fa-solid fa-clock" aria-label="clock"></i> &nbsp; 09:00–10:30 UTC. <a href="https://dateful.com/convert/utc?t=09">See in your time zone</a>.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Module</th>
-<th>Date</th>
-<th>Lead</th>
-<th>Facilitator</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="../content/01-package-foundations/index.qmd">Package foundations</a></td>
-<td>June 2nd</td>
-<td>Pao</td>
-<td>Ella</td>
-</tr>
-<tr class="even">
-<td><a href="../content/02-documentation/index.qmd">Function documentation and dependencies</a></td>
-<td>June 16th</td>
-<td>Ella</td>
-<td>Pao</td>
-</tr>
-<tr class="odd">
-<td><a href="../content/03-testing/index.qmd">Testing</a></td>
-<td>June 30th</td>
-<td>Pao</td>
-<td>Ella</td>
-</tr>
-<tr class="even">
-<td><a href="../content/04-check-package-documentation/index.qmd">Package check and documentation</a></td>
-<td>July 14th</td>
-<td>Ella</td>
-<td>Pao</td>
-</tr>
-<tr class="odd">
-<td><a href="../content/05-data-publication-maintenance/index.qmd">Packaging data; Publication and maintenance</a></td>
-<td>July 28th</td>
-<td>Pao</td>
-<td>Ella</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="welcome-and-introduction" class="level2">
-<h2 class="anchored" data-anchor-id="welcome-and-introduction">Welcome and introduction</h2>
-<p>Here’s a link to the <a href="../workshops/summer-2025-cohort-1-intro.html" target="_blank">slides</a> in a new window.</p>
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p>Here’s a link to the <a href="../../slides/03-testing/index.html" target="_blank">slides</a> in a new window.</p>
 <p>Here are the slides embedded:</p>
-<iframe class="slide-deck ar16x9" src="summer-2025-cohort-1-intro.html" title="01-welcome slides">
+<iframe class="slide-deck ar16x9" src="../../slides/03-testing/index.html" title="03-testing slides">
 </iframe>
+</section>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<section id="reading" class="level3">
+<h3 class="anchored" data-anchor-id="reading">Reading</h3>
+<ul>
+<li><p>Wickham, H and Bryan, J, <em>R Packages</em> (2nd edition)</p>
+<p><a href="https://r-pkgs.org" class="uri">https://r-pkgs.org</a></p></li>
+<li><p>R Core Team, <em>Writing R Extensions</em></p>
+<p><a href="https://cran.r-project.org/doc/manuals/r-release/R-exts.html" class="uri">https://cran.r-project.org/doc/manuals/r-release/R-exts.html</a></p></li>
+</ul>
+</section>
+<section id="packages" class="level3">
+<h3 class="anchored" data-anchor-id="packages">Packages</h3>
+<ul>
+<li><p><strong>devtools</strong></p>
+<p><a href="https://devtools.r-lib.org" class="uri">https://devtools.r-lib.org</a></p></li>
+<li><p><strong>usethis</strong></p>
+<p><a href="https://usethis.r-lib.org" class="uri">https://usethis.r-lib.org</a></p></li>
+<li><p><strong>testthat</strong></p>
+<p><a href="https://testthat.r-lib.org" class="uri">https://testthat.r-lib.org</a></p></li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

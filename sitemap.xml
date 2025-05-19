@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://forwards.github.io/package-dev/modules.html</loc>
-    <lastmod>2025-05-16T10:27:37.319Z</lastmod>
+    <lastmod>2025-05-19T08:44:59.218Z</lastmod>
   </url>
   <url>
-    <loc>https://forwards.github.io/package-dev/slides/05-data-publication-maintenance/index.html</loc>
-    <lastmod>2025-05-16T13:39:03.374Z</lastmod>
-  </url>
-  <url>
-    <loc>https://forwards.github.io/package-dev/slides/01-package-foundations/index.html</loc>
-    <lastmod>2025-05-16T13:47:33.984Z</lastmod>
-  </url>
-  <url>
-    <loc>https://forwards.github.io/package-dev/index.html</loc>
-    <lastmod>2025-05-16T13:45:42.584Z</lastmod>
-  </url>
-  <url>
-    <loc>https://forwards.github.io/package-dev/content/05-data-publication-maintenance/index.html</loc>
+    <loc>https://forwards.github.io/package-dev/modules/05-data-publication-maintenance/index.html</loc>
     <lastmod>2025-05-16T13:39:03.364Z</lastmod>
   </url>
   <url>
-    <loc>https://forwards.github.io/package-dev/content/01-package-foundations/index.html</loc>
+    <loc>https://forwards.github.io/package-dev/modules/01-package-foundations/index.html</loc>
     <lastmod>2025-05-16T13:39:03.434Z</lastmod>
+  </url>
+  <url>
+    <loc>https://forwards.github.io/package-dev/slides/03-testing/index.html</loc>
+    <lastmod>2025-05-16T13:39:03.364Z</lastmod>
+  </url>
+  <url>
+    <loc>https://forwards.github.io/package-dev/slides/02-documentation/index.html</loc>
+    <lastmod>2025-05-16T13:39:03.364Z</lastmod>
+  </url>
+  <url>
+    <loc>https://forwards.github.io/package-dev/slides/04-check-package-documentation/index.html</loc>
+    <lastmod>2025-05-16T13:39:03.364Z</lastmod>
   </url>
   <url>
     <loc>https://forwards.github.io/package-dev/prerequisites.html</loc>
@@ -53,27 +53,27 @@
     <lastmod>2025-05-13T15:08:25.867Z</lastmod>
   </url>
   <url>
-    <loc>https://forwards.github.io/package-dev/content/04-check-package-documentation/index.html</loc>
+    <loc>https://forwards.github.io/package-dev/index.html</loc>
+    <lastmod>2025-05-16T13:45:42.584Z</lastmod>
+  </url>
+  <url>
+    <loc>https://forwards.github.io/package-dev/slides/01-package-foundations/index.html</loc>
+    <lastmod>2025-05-16T13:47:33.984Z</lastmod>
+  </url>
+  <url>
+    <loc>https://forwards.github.io/package-dev/slides/05-data-publication-maintenance/index.html</loc>
+    <lastmod>2025-05-16T13:39:03.374Z</lastmod>
+  </url>
+  <url>
+    <loc>https://forwards.github.io/package-dev/modules/04-check-package-documentation/index.html</loc>
     <lastmod>2025-05-16T13:39:03.429Z</lastmod>
   </url>
   <url>
-    <loc>https://forwards.github.io/package-dev/content/02-documentation/index.html</loc>
+    <loc>https://forwards.github.io/package-dev/modules/02-documentation/index.html</loc>
     <lastmod>2025-05-16T13:39:03.364Z</lastmod>
   </url>
   <url>
-    <loc>https://forwards.github.io/package-dev/content/03-testing/index.html</loc>
-    <lastmod>2025-05-16T13:39:03.364Z</lastmod>
-  </url>
-  <url>
-    <loc>https://forwards.github.io/package-dev/slides/04-check-package-documentation/index.html</loc>
-    <lastmod>2025-05-16T13:39:03.364Z</lastmod>
-  </url>
-  <url>
-    <loc>https://forwards.github.io/package-dev/slides/02-documentation/index.html</loc>
-    <lastmod>2025-05-16T13:39:03.364Z</lastmod>
-  </url>
-  <url>
-    <loc>https://forwards.github.io/package-dev/slides/03-testing/index.html</loc>
+    <loc>https://forwards.github.io/package-dev/modules/03-testing/index.html</loc>
     <lastmod>2025-05-16T13:39:03.364Z</lastmod>
   </url>
 </urlset>
