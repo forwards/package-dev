@@ -1,0 +1,79 @@
+/*-- scss:defaults --*/
+//  Forwards colours 
+$darkpurple: #200F48;
+$darkpurple30: #bcb7c8;
+$verydarkpurple: #0C0721;
+
+$plum: #A5317D;
+$pink: #D2436F;
+$red: #E95A61;
+$orange: #FD9567;
+$peach: #FDC88D;
+$yellow: #FEE4A7;
+
+$blue: #3143A5;
+$green: #31A559;
+$purple: #5931A5;
+
+$blue_dark: #222f73;
+$green_dark: #22733e;
+$red_dark: #a33f44;
+$orange_dark: #b16848;
+$peach_dark: #b18c63;
+$darkpurple_light: $darkpurple30;
+
+$gray: #58595B;
+$gray_dark: #383838; // this is text colour used on main Warwick site
+$black: #000000;
+$gray20: #cccccc; // % of black
+$gray10: #e6e6e6; // % of black
+$gray05: #f2f2f2; // % of black
+$white: #ffffff;
+
+$primary: $pink !default;
+
+$body-color: $white;
+$body-bg: $verydarkpurple;
+$link-color: $pink;
+$code-color: $orange;
+$navbar-bg: $darkpurple;
+$navbar-fg: $yellow;
+
+// Code blocks
+$code-block-bg: $white;
+
+// Callouts
+$callout-color-note: $blue;
+$callout-color-caution: $peach;
+$callout-color-tip: $green;
+$callout-color-warning: $orange;
+$callout-color-important: $red;
+
+div.callout.callout-style-default.callout-note.callout-titled > div.callout-header {
+  background-color: $blue_dark !important;
+}
+
+div.callout.callout-style-default.callout-warning.callout-titled > div.callout-header {
+  background-color: $orange_dark !important;
+}
+
+div.callout.callout-style-default.callout-important.callout-titled > div.callout-header {
+  background-color: $red_dark !important;
+}
+
+div.callout.callout-style-default.callout-tip.callout-titled > div.callout-header {
+  background-color: $green_dark !important;
+}
+
+div.callout.callout-style-default.callout-caution.callout-titled > div.callout-header {
+  background-color: $peach_dark !important;
+}
+
+// white icons in inverse mode
+.callout-icon::before {
+  filter: brightness(0) invert(1);
+}
+
+.callout-title p { 
+  color: $white !important; 
+}

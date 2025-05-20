@@ -40,13 +40,17 @@ $white: #ffffff;
 
 $primary: $darkpurple !default;
 
-$primary:       $darkpurple !default;
 $body-color: $gray_dark;
-//$link-color: $aubergine70;
 $link-color: $pink;
 $code-color: $plum;
 $navbar-bg: $primary;
 $navbar-fg: $yellow;
+
+$callout-color-note: $blue;
+$callout-color-caution: $peach;
+$callout-color-tip: $green;
+$callout-color-warning: $orange;
+$callout-color-important: $red;
 
 /*-- scss:rules --*/
 

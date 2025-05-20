@@ -20,7 +20,10 @@ website:
   
 format:
   html:
-    theme: custom.scss
+    theme: 
+      light: forwards-light.scss
+      dark: forwards-dark.scss
+    highlight-style: forwards.theme
     toc: true
     link-external-newwindow: true
     
