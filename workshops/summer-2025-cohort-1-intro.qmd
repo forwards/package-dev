@@ -31,7 +31,7 @@ University of Warwick
 ![](../images/instructors/paocorrales.png){width=50%}
 
 :::{.smaller80}
-Scientist, Educator and RSE
+Research Software Engineer
 
 21st Century Weather Centre
 
@@ -68,6 +68,14 @@ Mondays, 09:00-10:30 UTC
 | [Testing](../modules/03-testing/index.qmd) | June 30th | Pao | Ella |
 | [Package check and documentation](../modules/04-check-package-documentation/index.qmd) | July 14th | Ella | Pao |
 | [Packaging data; Publication and maintenance](../modules/05-data-publication-maintenance/index.qmd) | July 28th | Pao | Ella |
+
+## Pieces of a puzzle
+
+* In each module we will cover different elements of an R package
+  * Think of this elements as pieces of a puzzle, you don't want to miss one! 
+  
+If you can't attend to a session, please follow the material and do the exersises to catch up before the next one. 
+
 
 
 # Let's begin... {.inverse .center-h}
