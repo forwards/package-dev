@@ -297,7 +297,7 @@ has_devel()
 
 Installing **devtools** will also install **usethis**.    
 
-Check you have the latest version of **usethis** -- v2.2.3 -- and update if not:
+Check you have the latest version of **usethis** and update if not:
 
 ```{r}
 packageVersion("usethis")
@@ -508,20 +508,6 @@ usethis::use_github(private = TRUE) # private repo (licensing, no Pages)
 ```
 
 This takes a local project, creates an associated repo on GitHub, adds it to your local repo as the "origin remote", and makes an initial "push" to synchronize.
-
-. . .
-
-::::{.smaller80}
-:::{.callout-note}
-## Warwick GitHub
-University of Warwick members can use the University's private GitHub instance, e.g.
-
-```{r, eval = FALSE}
-usethis::use_github("https://github.warwick.ac.uk")
-```
-However, Warwick GitHub does not support GitHub Actions or GitHub Pages, so for packages using your personal account is better -- we'll be using both Actions and Pages later.
-:::
-::::
 
 ::: {.notes}
 Promote private repo for novel package development - link to licensing issue, covered in package documentation session  
