@@ -303,23 +303,32 @@ Check you have the latest version of **usethis** and update if not:
 packageVersion("usethis")
 ```
 
-## git sitrep and vaccinate
+## git sitrep
 
-Ask for a **sit**uation **rep**ort:
+- Ask for a **sit**uation **rep**ort:
 
-```{r eval = FALSE}
+```{r}
+#| eval: false
 usethis::git_sitrep()
 ```
 
-- Check that your user name and email are defined, else follow the [configuration instructions](https://hturner.github.io/advanced-r/01_open_code_and_software.html#17) from a previous Advanced R workshop.
+- Check that your user name and email are defined. If not, run
 
-- Check whether you have a PAT
+```{r}
+#| eval: false
+usethis::use_git_config(
+  user.name = "YOUR NAME",     # your full name
+  user.email = "name@example.com"  # email associated with GitHub account
+)
+```
+
+- Check whether you have a PAT (will set up in a couple of slides if not)
 
   ```
   Personal access token for 'https://github.com': '<discovered>'
   ```
 
-. . .
+## git vaccinate
 
 It's also a good idea to vaccinate. This implements best practice by adding files to your global `.gitignore`:
 
