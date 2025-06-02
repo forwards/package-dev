@@ -1089,7 +1089,7 @@
     "href": "slides/01-package-foundations/index.html#package-structure",
     "title": "Package foundations",
     "section": "Package structure",
-    "text": "Package structure\nAn R package is developed as a directory of source code files.\nThe names of files and directories must follow the specification laid out in the Writing R Extensions manual - we’ll cover the main components in this workshop.\nDirectory tree for an example RStudio package project:\n\n\nmypackage\n├── DESCRIPTION\n├── NAMESPACE\n└── mypackage.Rproj"
+    "text": "Package structure\nAn R package is developed as a directory of source code files.\nThe names of files and directories must follow the specification laid out in the Writing R Extensions manual - we’ll cover the main components in this workshop.\nDirectory tree for an example RStudio package project:\n\n\nmypackage\n├── DESCRIPTION\n├── NAMESPACE\n├── R\n└── mypackage.Rproj"
   },
   {
     "objectID": "slides/01-package-foundations/index.html#package-states",
@@ -1176,11 +1176,18 @@
     "text": "devtools and usethis\nWe can use devtools right away to check our system is setup for package development.\n\ninstall.packages(\"devtools\")\n\n\nlibrary(devtools)\n\n\nhas_devel()\n\nYour system is ready to build packages!\n\n\nInstalling devtools will also install usethis.\nCheck you have the latest version of usethis and update if not:\n\npackageVersion(\"usethis\")\n\n[1] '3.1.0'"
   },
   {
-    "objectID": "slides/01-package-foundations/index.html#git-sitrep-and-vaccinate",
-    "href": "slides/01-package-foundations/index.html#git-sitrep-and-vaccinate",
+    "objectID": "slides/01-package-foundations/index.html#git-sitrep",
+    "href": "slides/01-package-foundations/index.html#git-sitrep",
     "title": "Package foundations",
-    "section": "git sitrep and vaccinate",
-    "text": "git sitrep and vaccinate\nAsk for a situation report:\n\nusethis::git_sitrep()\n\n\nCheck that your user name and email are defined, else follow the configuration instructions from a previous Advanced R workshop.\nCheck whether you have a PAT\nPersonal access token for 'https://github.com': '&lt;discovered&gt;'\n\n\nIt’s also a good idea to vaccinate. This implements best practice by adding files to your global .gitignore:\n\nusethis::git_vaccinate()"
+    "section": "git sitrep",
+    "text": "git sitrep\n\nAsk for a situation report:\n\n\nusethis::git_sitrep()\n\n\nCheck that your user name and email are defined. If not, run\n\n\nusethis::use_git_config(\n  user.name = \"YOUR NAME\",     # your full name\n  user.email = \"name@example.com\"  # email associated with GitHub account\n)\n\n\nCheck whether you have a PAT (will set up in a couple of slides if not)\nPersonal access token for 'https://github.com': '&lt;discovered&gt;'"
+  },
+  {
+    "objectID": "slides/01-package-foundations/index.html#git-vaccinate",
+    "href": "slides/01-package-foundations/index.html#git-vaccinate",
+    "title": "Package foundations",
+    "section": "git vaccinate",
+    "text": "git vaccinate\nIt’s also a good idea to vaccinate. This implements best practice by adding files to your global .gitignore:\n\nusethis::git_vaccinate()"
   },
   {
     "objectID": "slides/01-package-foundations/index.html#create-a-github-pat",

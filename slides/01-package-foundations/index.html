@@ -1154,6 +1154,7 @@ display:block!important;
 <pre><code>mypackage
 ├── DESCRIPTION
 ├── NAMESPACE
+├── R
 └── mypackage.Rproj</code></pre>
 </div>
 </div>
@@ -1513,22 +1514,33 @@ display:block!important;
 </div>
 </div>
 </section>
-<section id="git-sitrep-and-vaccinate" class="slide level2">
-<h2>git sitrep and vaccinate</h2>
-<p>Ask for a <strong>sit</strong>uation <strong>rep</strong>ort:</p>
+<section id="git-sitrep" class="slide level2">
+<h2>git sitrep</h2>
+<ul>
+<li>Ask for a <strong>sit</strong>uation <strong>rep</strong>ort:</li>
+</ul>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>usethis<span class="sc">::</span><span class="fu">git_sitrep</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
-<li><p>Check that your user name and email are defined, else follow the <a href="https://hturner.github.io/advanced-r/01_open_code_and_software.html#17">configuration instructions</a> from a previous Advanced R workshop.</p></li>
-<li><p>Check whether you have a PAT</p>
+<li>Check that your user name and email are defined. If not, run</li>
+</ul>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_git_config</span>(</span>
+<span id="cb12-2"><a></a>  <span class="at">user.name =</span> <span class="st">&quot;YOUR NAME&quot;</span>,     <span class="co"># your full name</span></span>
+<span id="cb12-3"><a></a>  <span class="at">user.email =</span> <span class="st">&quot;name@example.com&quot;</span>  <span class="co"># email associated with GitHub account</span></span>
+<span id="cb12-4"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><p>Check whether you have a PAT (will set up in a couple of slides if not)</p>
 <pre><code>Personal access token for &#39;https://github.com&#39;: &#39;&lt;discovered&gt;&#39;</code></pre></li>
 </ul>
-<div class="fragment">
+</section>
+<section id="git-vaccinate" class="slide level2">
+<h2>git vaccinate</h2>
 <p>It’s also a good idea to vaccinate. This implements best practice by adding files to your global <code>.gitignore</code>:</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>usethis<span class="sc">::</span><span class="fu">git_vaccinate</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>usethis<span class="sc">::</span><span class="fu">git_vaccinate</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="create-a-github-pat" class="slide level2">
@@ -1536,7 +1548,7 @@ display:block!important;
 <p>The <strong>usethis</strong> package uses personal access tokens (PAT) to communicate with GitHub.</p>
 <p>First, make sure you’re signed into GitHub. Then run</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>usethis<span class="sc">::</span><span class="fu">create_github_token</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>usethis<span class="sc">::</span><span class="fu">create_github_token</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="smaller90">
 <ul>
@@ -1553,7 +1565,7 @@ display:block!important;
 <h2>Store your PAT</h2>
 <p>Put your PAT into the Git credential store by running the following command and entering your copied PAT at the prompt (assume the PAT is on your clipboard).</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>gitcreds<span class="sc">::</span><span class="fu">gitcreds_set</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a>gitcreds<span class="sc">::</span><span class="fu">gitcreds_set</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>If you don’t have a PAT stored, will prompt you to enter: paste!</li>
@@ -1598,7 +1610,7 @@ display:block!important;
 <section id="create-a-package-1" class="slide level2">
 <h2>Create a package!</h2>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a>usethis<span class="sc">::</span><span class="fu">create_package</span>(<span class="st">&quot;~/Desktop/animalsounds&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a>usethis<span class="sc">::</span><span class="fu">create_package</span>(<span class="st">&quot;~/Desktop/animalsounds&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li><p>Be deliberate about where you create your package.</p></li>
@@ -1669,39 +1681,39 @@ display:block!important;
 <p>To make our project a git repository, or ‘repo’, on our local machine we use <code>usethis::use_git()</code></p>
 <p>Make your package a git repo:</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_git</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_git</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="use_git-output-part-1" class="slide level2">
 <h2><code>use_git()</code> output (part 1)</h2>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a> ✔ Initialising Git repo</span>
-<span id="cb18-2"><a></a> ✔ Adding <span class="st">&#39;.Rhistory&#39;</span>, <span class="st">&#39;.Rdata&#39;</span>, <span class="st">&#39;.httr-oauth&#39;</span>, <span class="st">&#39;.DS_Store&#39;</span> to  <span class="st">&#39;.gitignore&#39;</span> </span>
-<span id="cb18-3"><a></a> There are <span class="dv">5</span> uncommitted files<span class="sc">:</span></span>
-<span id="cb18-4"><a></a> <span class="er">*</span> <span class="st">&#39;.gitignore&#39;</span></span>
-<span id="cb18-5"><a></a> <span class="sc">*</span> <span class="st">&#39;.Rbuildignore&#39;</span></span>
-<span id="cb18-6"><a></a> <span class="sc">*</span> <span class="st">&#39;DESCRIPTION&#39;</span></span>
-<span id="cb18-7"><a></a> <span class="sc">*</span> <span class="st">&#39;animalsounds.Rproj&#39;</span></span>
-<span id="cb18-8"><a></a> <span class="sc">*</span> <span class="st">&#39;NAMESPACE&#39;</span></span>
-<span id="cb18-9"><a></a> Is it ok to commit them?</span>
-<span id="cb18-10"><a></a></span>
-<span id="cb18-11"><a></a> <span class="dv">1</span><span class="sc">:</span> I agree</span>
-<span id="cb18-12"><a></a> <span class="dv">2</span><span class="sc">:</span> Absolutely not</span>
-<span id="cb18-13"><a></a> <span class="dv">3</span><span class="sc">:</span> No way</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a> ✔ Initialising Git repo</span>
+<span id="cb19-2"><a></a> ✔ Adding <span class="st">&#39;.Rhistory&#39;</span>, <span class="st">&#39;.Rdata&#39;</span>, <span class="st">&#39;.httr-oauth&#39;</span>, <span class="st">&#39;.DS_Store&#39;</span> to  <span class="st">&#39;.gitignore&#39;</span> </span>
+<span id="cb19-3"><a></a> There are <span class="dv">5</span> uncommitted files<span class="sc">:</span></span>
+<span id="cb19-4"><a></a> <span class="er">*</span> <span class="st">&#39;.gitignore&#39;</span></span>
+<span id="cb19-5"><a></a> <span class="sc">*</span> <span class="st">&#39;.Rbuildignore&#39;</span></span>
+<span id="cb19-6"><a></a> <span class="sc">*</span> <span class="st">&#39;DESCRIPTION&#39;</span></span>
+<span id="cb19-7"><a></a> <span class="sc">*</span> <span class="st">&#39;animalsounds.Rproj&#39;</span></span>
+<span id="cb19-8"><a></a> <span class="sc">*</span> <span class="st">&#39;NAMESPACE&#39;</span></span>
+<span id="cb19-9"><a></a> Is it ok to commit them?</span>
+<span id="cb19-10"><a></a></span>
+<span id="cb19-11"><a></a> <span class="dv">1</span><span class="sc">:</span> I agree</span>
+<span id="cb19-12"><a></a> <span class="dv">2</span><span class="sc">:</span> Absolutely not</span>
+<span id="cb19-13"><a></a> <span class="dv">3</span><span class="sc">:</span> No way</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Choose the affirmative option! (The exact options may vary.)</p>
 </section>
 <section id="use_git-output-part-2" class="slide level2">
 <h2><code>use_git()</code> output (part 2)</h2>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a>√ Adding files</span>
-<span id="cb19-2"><a></a>√ Commit with message <span class="st">&#39;Initial commit&#39;</span></span>
-<span id="cb19-3"><a></a>• A restart of RStudio is required to activate the Git pane</span>
-<span id="cb19-4"><a></a>Restart now?</span>
-<span id="cb19-5"><a></a></span>
-<span id="cb19-6"><a></a><span class="dv">1</span><span class="sc">:</span> Nope</span>
-<span id="cb19-7"><a></a><span class="dv">2</span><span class="sc">:</span> Definitely</span>
-<span id="cb19-8"><a></a><span class="dv">3</span><span class="sc">:</span> No</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a>√ Adding files</span>
+<span id="cb20-2"><a></a>√ Commit with message <span class="st">&#39;Initial commit&#39;</span></span>
+<span id="cb20-3"><a></a>• A restart of RStudio is required to activate the Git pane</span>
+<span id="cb20-4"><a></a>Restart now?</span>
+<span id="cb20-5"><a></a></span>
+<span id="cb20-6"><a></a><span class="dv">1</span><span class="sc">:</span> Nope</span>
+<span id="cb20-7"><a></a><span class="dv">2</span><span class="sc">:</span> Definitely</span>
+<span id="cb20-8"><a></a><span class="dv">3</span><span class="sc">:</span> No</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Choose the affirmative option! (The exact options may vary.)</p>
 <aside class="notes">
@@ -1722,8 +1734,8 @@ display:block!important;
 <h2>Use GitHub</h2>
 <p>To create a copy on GitHub we use <code>usethis::use_github()</code>.</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_github</span>() <span class="co"># creates a public repo</span></span>
-<span id="cb20-2"><a></a>usethis<span class="sc">::</span><span class="fu">use_github</span>(<span class="at">private =</span> <span class="cn">TRUE</span>) <span class="co"># private repo (licensing, no Pages)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_github</span>() <span class="co"># creates a public repo</span></span>
+<span id="cb21-2"><a></a>usethis<span class="sc">::</span><span class="fu">use_github</span>(<span class="at">private =</span> <span class="cn">TRUE</span>) <span class="co"># private repo (licensing, no Pages)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>This takes a local project, creates an associated repo on GitHub, adds it to your local repo as the “origin remote”, and makes an initial “push” to synchronize.</p>
 <aside class="notes">
@@ -1743,20 +1755,20 @@ display:block!important;
 <section id="use_github-output" class="slide level2">
 <h2><code>use_github()</code> output</h2>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_github</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_github</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a> ✔ Creating GitHub repository <span class="st">&#39;Warwick-Stats-Resources/animalsounds&#39;</span></span>
-<span id="cb22-2"><a></a> ✔ Setting remote <span class="st">&#39;origin&#39;</span> to <span class="st">&#39;https://github.com/Warwick-Stats-Resources/animalsounds.git&#39;</span></span>
-<span id="cb22-3"><a></a> ✔ Setting URL field <span class="cf">in</span> DESCRIPTION to  <span class="st">&#39;https://github.com/Warwick-Stats-Resources/animalsounds&#39;</span></span>
-<span id="cb22-4"><a></a> ✔ Setting BugReports field <span class="cf">in</span> DESCRIPTION to  <span class="st">&#39;https://github.com/Warwick-Stats-Resources/animalsounds/issues&#39;</span></span>
-<span id="cb22-5"><a></a> There is <span class="dv">1</span> uncommitted file<span class="sc">:</span></span>
-<span id="cb22-6"><a></a> <span class="er">*</span> <span class="st">&#39;DESCRIPTION&#39;</span></span>
-<span id="cb22-7"><a></a> Is it ok to commit it?</span>
-<span id="cb22-8"><a></a></span>
-<span id="cb22-9"><a></a> <span class="dv">1</span><span class="sc">:</span> Nope</span>
-<span id="cb22-10"><a></a> <span class="dv">2</span><span class="sc">:</span> For sure</span>
-<span id="cb22-11"><a></a> <span class="dv">3</span><span class="sc">:</span> No way</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a> ✔ Creating GitHub repository <span class="st">&#39;Warwick-Stats-Resources/animalsounds&#39;</span></span>
+<span id="cb23-2"><a></a> ✔ Setting remote <span class="st">&#39;origin&#39;</span> to <span class="st">&#39;https://github.com/Warwick-Stats-Resources/animalsounds.git&#39;</span></span>
+<span id="cb23-3"><a></a> ✔ Setting URL field <span class="cf">in</span> DESCRIPTION to  <span class="st">&#39;https://github.com/Warwick-Stats-Resources/animalsounds&#39;</span></span>
+<span id="cb23-4"><a></a> ✔ Setting BugReports field <span class="cf">in</span> DESCRIPTION to  <span class="st">&#39;https://github.com/Warwick-Stats-Resources/animalsounds/issues&#39;</span></span>
+<span id="cb23-5"><a></a> There is <span class="dv">1</span> uncommitted file<span class="sc">:</span></span>
+<span id="cb23-6"><a></a> <span class="er">*</span> <span class="st">&#39;DESCRIPTION&#39;</span></span>
+<span id="cb23-7"><a></a> Is it ok to commit it?</span>
+<span id="cb23-8"><a></a></span>
+<span id="cb23-9"><a></a> <span class="dv">1</span><span class="sc">:</span> Nope</span>
+<span id="cb23-10"><a></a> <span class="dv">2</span><span class="sc">:</span> For sure</span>
+<span id="cb23-11"><a></a> <span class="dv">3</span><span class="sc">:</span> No way</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Choose the affirmative option! (The exact options may vary.)</p>
 <aside class="notes">
@@ -1779,7 +1791,7 @@ display:block!important;
 <p>Functions go in an <code>.R</code> file in the <code>/R</code> directory.</p>
 <p>There’s a <code>usethis</code> helper for adding <code>.R</code> files!</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_r</span>(<span class="st">&quot;file_name&quot;</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_r</span>(<span class="st">&quot;file_name&quot;</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><code>usethis::use_r()</code> adds the file extension (you don’t need to).</p>
 <div class="fragment">
@@ -1795,12 +1807,12 @@ display:block!important;
 <h2><code>usethis::use_r()</code></h2>
 <p>Create a new R file in your package called <code>animal_sounds.R</code></p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_r</span>(<span class="st">&quot;animal_sounds&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_r</span>(<span class="st">&quot;animal_sounds&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The output includes:</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a>• Modify <span class="st">&#39;R/animal_sounds.R&#39;</span>  </span>
-<span id="cb25-2"><a></a>• Call <span class="st">`</span><span class="at">use_test()</span><span class="st">`</span> to create a matching test file </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a>• Modify <span class="st">&#39;R/animal_sounds.R&#39;</span>  </span>
+<span id="cb26-2"><a></a>• Call <span class="st">`</span><span class="at">use_test()</span><span class="st">`</span> to create a matching test file </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Ignore the instruction to call <code>use_test()</code> for now – we’ll cover testing later.</p>
 </section>
@@ -1808,11 +1820,11 @@ display:block!important;
 <h2>Add a function</h2>
 <p>Put the following toy function into your script:</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a>animal_sounds <span class="ot">&lt;-</span> <span class="cf">function</span>(animal, sound) {</span>
-<span id="cb26-2"><a></a>    <span class="fu">stopifnot</span>(<span class="fu">is.character</span>(animal) <span class="sc">&amp;</span> <span class="fu">length</span>(animal) <span class="sc">==</span> <span class="dv">1</span>)</span>
-<span id="cb26-3"><a></a>    <span class="fu">stopifnot</span>(<span class="fu">is.character</span>(sound) <span class="sc">&amp;</span> <span class="fu">length</span>(sound) <span class="sc">==</span> <span class="dv">1</span>)</span>
-<span id="cb26-4"><a></a>    <span class="fu">paste0</span>(<span class="st">&quot;The &quot;</span>, animal, <span class="st">&quot; goes &quot;</span>, sound, <span class="st">&quot;!&quot;</span>)</span>
-<span id="cb26-5"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a>animal_sounds <span class="ot">&lt;-</span> <span class="cf">function</span>(animal, sound) {</span>
+<span id="cb27-2"><a></a>    <span class="fu">stopifnot</span>(<span class="fu">is.character</span>(animal) <span class="sc">&amp;</span> <span class="fu">length</span>(animal) <span class="sc">==</span> <span class="dv">1</span>)</span>
+<span id="cb27-3"><a></a>    <span class="fu">stopifnot</span>(<span class="fu">is.character</span>(sound) <span class="sc">&amp;</span> <span class="fu">length</span>(sound) <span class="sc">==</span> <span class="dv">1</span>)</span>
+<span id="cb27-4"><a></a>    <span class="fu">paste0</span>(<span class="st">&quot;The &quot;</span>, animal, <span class="st">&quot; goes &quot;</span>, sound, <span class="st">&quot;!&quot;</span>)</span>
+<span id="cb27-5"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Don’t try to use the function yet!</p>
 </section>
@@ -1820,7 +1832,7 @@ display:block!important;
 <h2>Development workflow</h2>
 <p>In a normal script, you might use:</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a><span class="fu">source</span>(<span class="st">&quot;R/animal_sounds.R&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a><span class="fu">source</span>(<span class="st">&quot;R/animal_sounds.R&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>However, for building packages, we need to use the <code>devtools</code> approach.</p>
 <p>This will ensure our function has the correct namespace and can find internal functions, functions imported by our package from other packages, etc.</p>
