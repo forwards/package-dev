@@ -819,6 +819,13 @@
     "text": "…but it is dangerous\n#' @import pkg1\n#' @import pkg2\nfun &lt;- function(x) {\n  fun1(x) + fun2(x)\n}\nWorks today…\n… but next year, what if pkg2 adds a fun1 function?"
   },
   {
+    "objectID": "slides/02-documentation/index.html#metapackages",
+    "href": "slides/02-documentation/index.html#metapackages",
+    "title": "Function documentation and dependencies",
+    "section": "Metapackages",
+    "text": "Metapackages\nIt is bad practice to import “metapackages” (i.e. packages that are collections of packages), such as tidyverse.\nSee the blog post https://www.tidyverse.org/blog/2018/06/tidyverse-not-for-packages/ for more details."
+  },
+  {
     "objectID": "slides/02-documentation/index.html#documenting-dependencies",
     "href": "slides/02-documentation/index.html#documenting-dependencies",
     "title": "Function documentation and dependencies",
