@@ -475,6 +475,12 @@ Works today...
 
 ... but next year, what if **pkg2** adds a `fun1` function?
 
+## Metapackages
+
+It is bad practice to import "metapackages" (i.e. packages that are collections of packages), such as **tidyverse**. 
+
+See the blog post <https://www.tidyverse.org/blog/2018/06/tidyverse-not-for-packages/> for more details.
+
 ## Documenting dependencies
 
 <br>
