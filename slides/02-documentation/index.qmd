@@ -375,6 +375,228 @@ Or you might want to use an infix function
 
 ```{r}
 #| eval: false
+`%+%` <- roperators::`%+%`
+
+welcome <- function(name, place){
+  message("Welcome " %+% name %+% " from " %+% place %+% "!")
+}
+```
+
+## Aside: `%>%` vs `|>`
+
+The native pipe, `|>`, has been available in R since 4.1.0, 
+and we now prefer this to importing the `%>%` pipe from **magrittr**.
+
+There are then two options:
+
+- Depend on R >= 4.1.0, with this in DESCRIPTION:
+
+```
+Depends:
+    R (>= 4.1.0)
+```
+
+- Use the methods outlined in [this tidyverse blog post](https://www.tidyverse.org/blog/2023/04/base-vs-magrittr-pipe/#using-the-native-pipe-in-packages) to ensure the package can still work with older versions of R.
+
+## You can `import` functions into the package
+
+```{r}
+#| eval: false
+#' @importFrom purrr keep modify
+
+col_summary <- function(df, fun) {
+  stopifnot(is.data.frame(df))
+
+  df |>
+    keep(is.numeric) |>
+    modify(fun)
+}
+```
+
+`devtools::document()` will add corresponding `import()` statements to the NAMESPACE, e.g. `import(purr, keep, modify)`.
+
+Adding formal imports is slightly more efficient than using `::`.
+
+Here, the `@importFrom` tag is placed above the function in which the imported function is used.
+
+
+## Package-level import file
+
+Imports belong to the package, not to individual functions, so alternatively you can recognise this by storing them in a central location, e.g. `R/animalsounds-package.R`
+
+```r
+#' @importFrom purrr keep modify
+#' @importFrom roperators %+%
+NULL
+```
+
+::: {.notes}
+This removes the possibility of multiple (redundant) imports of the same function. But harder to remember to remove import if function changes! It's a matter of personal taste.
+:::
+
+## `usethis::use_import_from()`
+
+There can be several steps to importing a function. `usethis::use_import_from()` takes care of all of them.
+
+It will first create the package documentation file `R/animalsounds-package.R` (if it doesn't already exist -- you will also need to agree to this).
+
+```{r}
+#| eval: false
+usethis::use_import_from("purrr", c("keep", "modify"))
+```
+
+```
+✔ Adding 'purrr' to Imports field in DESCRIPTION
+✔ Adding '@importFrom purrr keep', '@importFrom purrr modify' to 'R/animalsounds-package.R'
+✔ Writing 'NAMESPACE'
+✔ Loading animalsounds
+```
+
+::: {.notes}
+use_import_from() is opinionated in implementing package-level import (rather than above the function in which they are used).
+
+May need to close and reopen R/animalsounds-package.R to see the changes.  
+:::
+
+##  It may be tempting to import a whole package...
+
+```r
+#' @import purrr
+col_summary <- function(df, fun) {
+  stopifnot(is.data.frame(df))
+
+  df |>
+    keep(is.numeric) |>
+    map_dfc(fun)
+}
+
+```
+
+## ...but it is dangerous
+
+```r
+#' @import pkg1
+#' @import pkg2
+fun <- function(x) {
+  fun1(x) + fun2(x)
+}
+
+```
+
+Works today...
+
+... but next year, what if **pkg2** adds a `fun1` function?
+
+## Metapackages
+
+It is bad practice to import "metapackages" (i.e. packages that are collections of packages), such as **tidyverse**. 
+
+See the blog post <https://www.tidyverse.org/blog/2018/06/tidyverse-not-for-packages/> for more details.
+
+## Documenting dependencies
+
+<br>
+
+DESCRIPTION                 | NAMESPACE
+--------------------------- | -------------
+Makes **package** available | Makes function available
+Mandatory                   | Optional (can use :: instead)
+`use_package()`             | `use_import_from()`
+
+## Example: rlang and cli
+
+Currently we are using `stopifnot()` for argument validation
+
+```{r, eval = FALSE}
+stopifnot(is.character(animal) & length(animal) == 1)
+stopifnot(is.character(sound) & length(sound) == 1)
+```
+
+We might instead use `rlang::is_character()` with `cli::cli_abort()`
+
+```{r}
+#| error: true
+sound <- c("woof", "bark")
+
+if (!rlang::is_character(sound, n = 1)) {
+  cli::cli_abort("`sound` must be a single string!")
+}
+```
+
+::: {.notes}
+in `is_character`, n tests for length of the vector.
+
+cli::cli_abort() has some really nice capability
+- glue interpolation (next slide)
+- inline classes (next slide)
+- features that make it easier to write tests (covered later in this course)
+
+https://cli.r-lib.org/reference/inline-markup.html
+
+:::
+
+## Aside: informative messages with `cli`
+
+**cli** functions can combine glue interpolation and inline classes to produce informative, nicely-formatted error messages.
+
+In `animal_sounds()` we can use
+
+```{r}
+#| eval: false
+cli::cli_abort(
+  c("{.var animal} must be a single string!",
+    "i" = "It was {.type {animal}} of length {length(animal)} instead.")
+)
+```
+
+```{r}
+#| echo: false
+animal_sounds <- function(animal, sound) {
+  if (!rlang::is_character(animal, 1)) {
+    cli::cli_abort(
+      c("{.var animal} must be a single string!",
+        "i" = "It was {.type {animal}} of length {length(animal)} instead."),
+      class = "error_not_single_string"
+    )
+  }
+  
+  if (!rlang::is_character(sound, 1)) {
+    cli::cli_abort(
+      c("{.var sound} must be a single string!",
+        "i" = "It was {.type {sound}} of length {length(sound)} instead."),
+      class = "error_not_single_string"
+    )
+  }
+  
+  paste0("The ", animal, " goes ", sound, "!")
+}
+```
+
+This gives the error message
+
+```{r}
+#| error: true
+animal_sounds(c("dog", "cat"), c("woof", "miaow"))
+```
+
+::: {.notes}
+Informative error messages will make using your package a much nicer experience for you and others.  
+:::
+
+## Your turn
+
+1. Use `use_package()` to add `rlang` and `cli` to `Imports`.
+2. Update `animal_sounds()` to use `is_character()` to check the arguments and `cli_abort` to throw an informative error if necessary, using `::` to fully qualify the function calls.
+3. Load all and try giving `animal_sounds()` invalid inputs for animal and/or sound.
+4. Commit your changes to git.
+5. Push your commits for this session.
+
+## You might get tired of using `::` all the time
+
+Or you might want to use an infix function
+
+```{r}
+#| eval: false
 `%>%` <- magittr::`%>%`
 
 col_summary <- function(df, fun) {
