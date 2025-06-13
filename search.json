@@ -396,7 +396,7 @@
     "href": "slides/01-package-foundations/index.html#usethisuse_r",
     "title": "Package foundations",
     "section": "usethis::use_r()",
-    "text": "usethis::use_r()\nCreate a new R file in your package called animal_sounds.R\n\nusethis::use_r(\"animal_sounds\")\n\nThe output includes:\n\n• Modify 'R/animal_sounds.R'  \n• Call `use_test()` to create a matching test file \n\nIgnore the instruction to call use_test() for now – we’ll cover testing later."
+    "text": "usethis::use_r()\nCreate a new R file in your package called animal_sounds.R\n\nusethis::use_r(\"animal_sounds\")\n\nThe output includes:\n\n• Modify 'R/animal_sounds.R'"
   },
   {
     "objectID": "slides/01-package-foundations/index.html#add-a-function",
