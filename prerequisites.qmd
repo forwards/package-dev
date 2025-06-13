@@ -81,8 +81,6 @@ and components to install; check the box to add rtools to the system PATH.
 Install XCode. Either:
 
 1.  Download and install XCode from the Mac AppStore: <http://itunes.apple.com/us/app/xcode/id497799835?mt=12>
-2.  Within XCode go to Preferences : Downloads and install the Command Line 
-Tools
 
 Or for a smaller download size:
 
