@@ -375,10 +375,14 @@ Or you might want to use an infix function
 
 ```{r}
 #| eval: false
-`%+%` <- roperators::`%+%`
+`%-=%` <- roperators::`%-=%`
 
-welcome <- function(name, place){
-  message("Welcome " %+% name %+% " from " %+% place %+% "!")
+center <- function(df, select) {
+  for (nm in names(df[select])){
+    # overwrite column after subtracting the mean 
+    df[[nm]] %-=% mean(df[[nm]])
+  }
+  df
 }
 ```
 
@@ -426,7 +430,7 @@ Imports belong to the package, not to individual functions, so alternatively you
 
 ```r
 #' @importFrom purrr keep modify
-#' @importFrom roperators %+%
+#' @importFrom roperators %-=%
 NULL
 ```
 
