@@ -581,10 +581,7 @@ The output includes:
 
 ```{r eval = FALSE}
 • Modify 'R/animal_sounds.R'  
-• Call `use_test()` to create a matching test file 
 ```
-
-Ignore the instruction to call `use_test()` for now -- we'll cover testing later.
 
 ## Add a function
 
