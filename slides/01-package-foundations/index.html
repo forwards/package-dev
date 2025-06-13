@@ -1522,17 +1522,25 @@ display:block!important;
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>usethis<span class="sc">::</span><span class="fu">git_sitrep</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
-<li>Check that your user name and email are defined. If not, run</li>
-</ul>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_git_config</span>(</span>
-<span id="cb12-2"><a></a>  <span class="at">user.name =</span> <span class="st">&quot;YOUR NAME&quot;</span>,     <span class="co"># your full name</span></span>
-<span id="cb12-3"><a></a>  <span class="at">user.email =</span> <span class="st">&quot;name@example.com&quot;</span>  <span class="co"># email associated with GitHub account</span></span>
-<span id="cb12-4"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<ul>
 <li><p>Check whether you have a PAT (will set up in a couple of slides if not)</p>
 <pre><code>Personal access token for &#39;https://github.com&#39;: &#39;&lt;discovered&gt;&#39;</code></pre></li>
+</ul>
+</section>
+<section id="configure-git" class="slide level2">
+<h2>Configure git</h2>
+<ul>
+<li>Check in <code>git_sitrep</code> output, under <code>Git global (user)</code>, that your user name and email are defined. If not, run</li>
+</ul>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_git_config</span>(</span>
+<span id="cb13-2"><a></a>  <span class="at">user.name =</span> <span class="st">&quot;YOUR NAME&quot;</span>,     <span class="co"># your full name</span></span>
+<span id="cb13-3"><a></a>  <span class="at">user.email =</span> <span class="st">&quot;name@example.com&quot;</span>  <span class="co"># email associated with GitHub account</span></span>
+<span id="cb13-4"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>To keep your email private:</p>
+<ul>
+<li>Go to <a href="https://github.com/settings/emails" class="uri">https://github.com/settings/emails</a>, select “Keep my email address private” and “Block command line pushes that expose my email” options</li>
+<li>Configure git to use the address provided of the form <a href="mailto:ID+username@users.noreply.github.com">ID+username@users.noreply.github.com</a></li>
 </ul>
 </section>
 <section id="git-vaccinate" class="slide level2">

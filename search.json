@@ -277,7 +277,14 @@
     "href": "slides/01-package-foundations/index.html#git-sitrep",
     "title": "Package foundations",
     "section": "git sitrep",
-    "text": "git sitrep\n\nAsk for a situation report:\n\n\nusethis::git_sitrep()\n\n\nCheck that your user name and email are defined. If not, run\n\n\nusethis::use_git_config(\n  user.name = \"YOUR NAME\",     # your full name\n  user.email = \"name@example.com\"  # email associated with GitHub account\n)\n\n\nCheck whether you have a PAT (will set up in a couple of slides if not)\nPersonal access token for 'https://github.com': '&lt;discovered&gt;'"
+    "text": "git sitrep\n\nAsk for a situation report:\n\n\nusethis::git_sitrep()\n\n\nCheck whether you have a PAT (will set up in a couple of slides if not)\nPersonal access token for 'https://github.com': '&lt;discovered&gt;'"
+  },
+  {
+    "objectID": "slides/01-package-foundations/index.html#configure-git",
+    "href": "slides/01-package-foundations/index.html#configure-git",
+    "title": "Package foundations",
+    "section": "Configure git",
+    "text": "Configure git\n\nCheck in git_sitrep output, under Git global (user), that your user name and email are defined. If not, run\n\n\nusethis::use_git_config(\n  user.name = \"YOUR NAME\",     # your full name\n  user.email = \"name@example.com\"  # email associated with GitHub account\n)\n\nTo keep your email private:\n\nGo to https://github.com/settings/emails, select “Keep my email address private” and “Block command line pushes that expose my email” options\nConfigure git to use the address provided of the form ID+username@users.noreply.github.com"
   },
   {
     "objectID": "slides/01-package-foundations/index.html#git-vaccinate",
