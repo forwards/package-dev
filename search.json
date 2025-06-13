@@ -116,7 +116,7 @@
     "href": "workshops/summer-2025-cohort-1-intro.html#instructors",
     "title": "Welcome and introduction",
     "section": "Instructors",
-    "text": "Instructors\n\n\nElla Kaye\n\n\nResearch Software Engineer\nUniversity of Warwick\nhttps://ellakaye.co.uk\n\n\nPao Corrales\n\n\nResearch Software Engineer\n21st Century Weather Centre\nhttps://paocorrales.github.io/"
+    "text": "Instructors\n\n\nElla Kaye\n\n\nResearch Software Engineer\nUniversity of Warwick\n\n\nPao Corrales\n\n\nResearch Software Engineer\n21st Century Weather Centre\n\n\nElio Campitelli\n\n\nAtmospheric Scientist\nMonash University"
   },
   {
     "objectID": "workshops/summer-2025-cohort-1-intro.html#course-material",
@@ -130,7 +130,7 @@
     "href": "workshops/summer-2025-cohort-1-intro.html#schedule",
     "title": "Welcome and introduction",
     "section": "Schedule",
-    "text": "Schedule\nMondays, 09:00-10:30 UTC\n\n\n\nModule\nDate\nLead\nFacilitator\n\n\n\n\nPackage foundations\nJune 2nd\nPao\nElla\n\n\nFunction documentation and dependencies\nJune 16th\nElla\nPao\n\n\nTesting\nJune 30th\nPao\nElla\n\n\nPackage check and documentation\nJuly 14th\nElla\nPao\n\n\nPackaging data; Publication and maintenance\nJuly 28th\nPao\nElla"
+    "text": "Schedule\nMondays, 09:00-10:30 UTC\n\n\n\nModule\nDate\nLead\nFacilitator\n\n\n\n\nPackage foundations\nJune 2nd\nPao\nElla\n\n\nFunction documentation and dependencies\nJune 16th\nElla\nPao\n\n\nTesting\nJune 30th\nPao\nElio\n\n\nPackage check and documentation\nJuly 14th\nElla\nPao\n\n\nPackaging data; Publication and maintenance\nJuly 28th\nPao\nElio"
   },
   {
     "objectID": "workshops/summer-2025-cohort-1-intro.html#pieces-of-a-puzzle",
@@ -1418,14 +1418,14 @@
     "href": "workshops/summer-2025-cohort-1.html#instructors",
     "title": "Summer 2025, cohort 1",
     "section": "Instructors",
-    "text": "Instructors\n   Ella Kaye and Pao Corrales\n   ella.m.kaye@warwick.ac.uk"
+    "text": "Instructors\n   Ella Kaye, Pao Corrales, and Elio Campitelli.\n   ella.m.kaye@warwick.ac.uk"
   },
   {
     "objectID": "workshops/summer-2025-cohort-1.html#schedule",
     "href": "workshops/summer-2025-cohort-1.html#schedule",
     "title": "Summer 2025, cohort 1",
     "section": "Schedule",
-    "text": "Schedule\n   Every other Monday, starting June 2nd\n   09:00–10:30 UTC. See in your time zone.\n\n\n\nModule\nDate\nLead\nFacilitator\n\n\n\n\nPackage foundations\nJune 2nd\nPao\nElla\n\n\nFunction documentation and dependencies\nJune 16th\nElla\nPao\n\n\nTesting\nJune 30th\nPao\nElla\n\n\nPackage check and documentation\nJuly 14th\nElla\nPao\n\n\nPackaging data; Publication and maintenance\nJuly 28th\nPao\nElla"
+    "text": "Schedule\n   Every other Monday, starting June 2nd\n   09:00–10:30 UTC. See in your time zone.\n\n\n\nModule\nDate\nLead\nFacilitator\n\n\n\n\nPackage foundations\nJune 2nd\nPao\nElla\n\n\nFunction documentation and dependencies\nJune 16th\nElla\nPao\n\n\nTesting\nJune 30th\nPao\nElio\n\n\nPackage check and documentation\nJuly 14th\nElla\nPao\n\n\nPackaging data; Publication and maintenance\nJuly 28th\nPao\nElio"
   },
   {
     "objectID": "workshops/summer-2025-cohort-1.html#welcome-and-introduction",
