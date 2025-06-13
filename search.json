@@ -781,7 +781,7 @@
     "href": "slides/02-documentation/index.html#you-might-get-tired-of-using-all-the-time",
     "title": "Function documentation and dependencies",
     "section": "You might get tired of using :: all the time",
-    "text": "You might get tired of using :: all the time\nOr you might want to use an infix function\n\n`%+%` &lt;- roperators::`%+%`\n\nwelcome &lt;- function(name, place){\n  message(\"Welcome \" %+% name %+% \" from \" %+% place %+% \"!\")\n}"
+    "text": "You might get tired of using :: all the time\nOr you might want to use an infix function\n\n`%-=%` &lt;- roperators::`%-=%`\n\ncenter &lt;- function(df, select) {\n  for (nm in names(df[select])){\n    # overwrite column after subtracting the mean \n    df[[nm]] %-=% mean(df[[nm]])\n  }\n  df\n}"
   },
   {
     "objectID": "slides/02-documentation/index.html#aside-vs",
@@ -802,7 +802,7 @@
     "href": "slides/02-documentation/index.html#package-level-import-file",
     "title": "Function documentation and dependencies",
     "section": "Package-level import file",
-    "text": "Package-level import file\nImports belong to the package, not to individual functions, so alternatively you can recognise this by storing them in a central location, e.g. R/animalsounds-package.R\n#' @importFrom purrr keep modify\n#' @importFrom roperators %+%\nNULL\n\nThis removes the possibility of multiple (redundant) imports of the same function. But harder to remember to remove import if function changes! It’s a matter of personal taste."
+    "text": "Package-level import file\nImports belong to the package, not to individual functions, so alternatively you can recognise this by storing them in a central location, e.g. R/animalsounds-package.R\n#' @importFrom purrr keep modify\n#' @importFrom roperators %-=%\nNULL\n\nThis removes the possibility of multiple (redundant) imports of the same function. But harder to remember to remove import if function changes! It’s a matter of personal taste."
   },
   {
     "objectID": "slides/02-documentation/index.html#usethisuse_import_from",

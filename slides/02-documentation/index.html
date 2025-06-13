@@ -1472,11 +1472,15 @@ display:block!important;
 <h2>You might get tired of using <code>::</code> all the time</h2>
 <p>Or you might want to use an infix function</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="st">`</span><span class="at">%+%</span><span class="st">`</span> <span class="ot">&lt;-</span> roperators<span class="sc">::</span><span class="st">`</span><span class="at">%+%</span><span class="st">`</span></span>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="st">`</span><span class="at">%-=%</span><span class="st">`</span> <span class="ot">&lt;-</span> roperators<span class="sc">::</span><span class="st">`</span><span class="at">%-=%</span><span class="st">`</span></span>
 <span id="cb15-2"><a></a></span>
-<span id="cb15-3"><a></a>welcome <span class="ot">&lt;-</span> <span class="cf">function</span>(name, place){</span>
-<span id="cb15-4"><a></a>  <span class="fu">message</span>(<span class="st">&quot;Welcome &quot;</span> <span class="sc">%+%</span> name <span class="sc">%+%</span> <span class="st">&quot; from &quot;</span> <span class="sc">%+%</span> place <span class="sc">%+%</span> <span class="st">&quot;!&quot;</span>)</span>
-<span id="cb15-5"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb15-3"><a></a>center <span class="ot">&lt;-</span> <span class="cf">function</span>(df, select) {</span>
+<span id="cb15-4"><a></a>  <span class="cf">for</span> (nm <span class="cf">in</span> <span class="fu">names</span>(df[select])){</span>
+<span id="cb15-5"><a></a>    <span class="co"># overwrite column after subtracting the mean </span></span>
+<span id="cb15-6"><a></a>    df[[nm]] <span class="sc">%-=%</span> <span class="fu">mean</span>(df[[nm]])</span>
+<span id="cb15-7"><a></a>  }</span>
+<span id="cb15-8"><a></a>  df</span>
+<span id="cb15-9"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="aside-vs" class="slide level2">
@@ -1513,7 +1517,7 @@ display:block!important;
 <h2>Package-level import file</h2>
 <p>Imports belong to the package, not to individual functions, so alternatively you can recognise this by storing them in a central location, e.g. <code>R/animalsounds-package.R</code></p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a><span class="co">#&#39; @importFrom purrr keep modify</span></span>
-<span id="cb18-2"><a></a><span class="co">#&#39; @importFrom roperators %+%</span></span>
+<span id="cb18-2"><a></a><span class="co">#&#39; @importFrom roperators %-=%</span></span>
 <span id="cb18-3"><a></a><span class="cn">NULL</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <aside class="notes">
 <p>This removes the possibility of multiple (redundant) imports of the same function. But harder to remember to remove import if function changes! It’s a matter of personal taste.</p>
