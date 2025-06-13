@@ -781,21 +781,28 @@
     "href": "slides/02-documentation/index.html#you-might-get-tired-of-using-all-the-time",
     "title": "Function documentation and dependencies",
     "section": "You might get tired of using :: all the time",
-    "text": "You might get tired of using :: all the time\nOr you might want to use an infix function\n\n`%&gt;%` &lt;- magittr::`%&gt;%`\n\ncol_summary &lt;- function(df, fun) {\n  stopifnot(is.data.frame(df))\n\n  df %&gt;%\n    purrr::keep(is.numeric) %&gt;%\n    purrr::modify(fun)\n}"
+    "text": "You might get tired of using :: all the time\nOr you might want to use an infix function\n\n`%+%` &lt;- roperators::`%+%`\n\nwelcome &lt;- function(name, place){\n  message(\"Welcome \" %+% name %+% \" from \" %+% place %+% \"!\")\n}"
+  },
+  {
+    "objectID": "slides/02-documentation/index.html#aside-vs",
+    "href": "slides/02-documentation/index.html#aside-vs",
+    "title": "Function documentation and dependencies",
+    "section": "Aside: %>% vs |>",
+    "text": "Aside: %&gt;% vs |&gt;\nThe native pipe, |&gt;, has been available in R since 4.1.0, and we now prefer this to importing the %&gt;% pipe from magrittr.\nThere are then two options:\n\nDepend on R &gt;= 4.1.0, with this in DESCRIPTION:\n\nDepends:\n    R (&gt;= 4.1.0)\n\nUse the methods outlined in this tidyverse blog post to ensure the package can still work with older versions of R."
   },
   {
     "objectID": "slides/02-documentation/index.html#you-can-import-functions-into-the-package",
     "href": "slides/02-documentation/index.html#you-can-import-functions-into-the-package",
     "title": "Function documentation and dependencies",
     "section": "You can import functions into the package",
-    "text": "You can import functions into the package\n\n#' @importFrom purrr keep modify\n#' @importFrom magrittr %&gt;%\ncol_summary &lt;- function(df, fun) {\n  stopifnot(is.data.frame(df))\n\n  df %&gt;%\n    keep(is.numeric) %&gt;%\n    modify(fun)\n}\n\ndevtools::document() will add corresponding import() statements to the NAMESPACE, e.g. import(purr, keep, modify).\nAdding formal imports is slightly more efficient than using ::.\nHere, the @importFrom tag is placed above the function in which the imported function is used."
+    "text": "You can import functions into the package\n\n#' @importFrom purrr keep modify\n\ncol_summary &lt;- function(df, fun) {\n  stopifnot(is.data.frame(df))\n\n  df |&gt;\n    keep(is.numeric) |&gt;\n    modify(fun)\n}\n\ndevtools::document() will add corresponding import() statements to the NAMESPACE, e.g. import(purr, keep, modify).\nAdding formal imports is slightly more efficient than using ::.\nHere, the @importFrom tag is placed above the function in which the imported function is used."
   },
   {
     "objectID": "slides/02-documentation/index.html#package-level-import-file",
     "href": "slides/02-documentation/index.html#package-level-import-file",
     "title": "Function documentation and dependencies",
     "section": "Package-level import file",
-    "text": "Package-level import file\nImports belong to the package, not to individual functions, so alternatively you can recognise this by storing them in a central location, e.g. R/animalsounds-package.R\n#' @importFrom purrr keep modify\n#' @importFrom magrittr %&gt;%\nNULL\n\nThis removes the possibility of multiple (redundant) imports of the same function. But harder to remember to remove import if function changes! It’s a matter of personal taste."
+    "text": "Package-level import file\nImports belong to the package, not to individual functions, so alternatively you can recognise this by storing them in a central location, e.g. R/animalsounds-package.R\n#' @importFrom purrr keep modify\n#' @importFrom roperators %+%\nNULL\n\nThis removes the possibility of multiple (redundant) imports of the same function. But harder to remember to remove import if function changes! It’s a matter of personal taste."
   },
   {
     "objectID": "slides/02-documentation/index.html#usethisuse_import_from",
@@ -809,7 +816,7 @@
     "href": "slides/02-documentation/index.html#it-may-be-tempting-to-import-a-whole-package",
     "title": "Function documentation and dependencies",
     "section": "It may be tempting to import a whole package…",
-    "text": "It may be tempting to import a whole package…\n#' @import purrr\ncol_summary &lt;- function(df, fun) {\n  stopifnot(is.data.frame(df))\n\n  df %&gt;%\n    keep(is.numeric) %&gt;%\n    map_dfc(fun)\n}"
+    "text": "It may be tempting to import a whole package…\n#' @import purrr\ncol_summary &lt;- function(df, fun) {\n  stopifnot(is.data.frame(df))\n\n  df |&gt;\n    keep(is.numeric) |&gt;\n    map_dfc(fun)\n}"
   },
   {
     "objectID": "slides/02-documentation/index.html#but-it-is-dangerous",
@@ -849,6 +856,83 @@
   {
     "objectID": "slides/02-documentation/index.html#your-turn-2",
     "href": "slides/02-documentation/index.html#your-turn-2",
+    "title": "Function documentation and dependencies",
+    "section": "Your turn",
+    "text": "Your turn\n\nUse use_package() to add rlang and cli to Imports.\nUpdate animal_sounds() to use is_character() to check the arguments and cli_abort to throw an informative error if necessary, using :: to fully qualify the function calls.\nLoad all and try giving animal_sounds() invalid inputs for animal and/or sound.\nCommit your changes to git.\nPush your commits for this session."
+  },
+  {
+    "objectID": "slides/02-documentation/index.html#you-might-get-tired-of-using-all-the-time-1",
+    "href": "slides/02-documentation/index.html#you-might-get-tired-of-using-all-the-time-1",
+    "title": "Function documentation and dependencies",
+    "section": "You might get tired of using :: all the time",
+    "text": "You might get tired of using :: all the time\nOr you might want to use an infix function\n\n`%&gt;%` &lt;- magittr::`%&gt;%`\n\ncol_summary &lt;- function(df, fun) {\n  stopifnot(is.data.frame(df))\n\n  df %&gt;%\n    purrr::keep(is.numeric) %&gt;%\n    purrr::modify(fun)\n}"
+  },
+  {
+    "objectID": "slides/02-documentation/index.html#you-can-import-functions-into-the-package-1",
+    "href": "slides/02-documentation/index.html#you-can-import-functions-into-the-package-1",
+    "title": "Function documentation and dependencies",
+    "section": "You can import functions into the package",
+    "text": "You can import functions into the package\n\n#' @importFrom purrr keep modify\n#' @importFrom magrittr %&gt;%\ncol_summary &lt;- function(df, fun) {\n  stopifnot(is.data.frame(df))\n\n  df %&gt;%\n    keep(is.numeric) %&gt;%\n    modify(fun)\n}\n\ndevtools::document() will add corresponding import() statements to the NAMESPACE, e.g. import(purr, keep, modify).\nAdding formal imports is slightly more efficient than using ::.\nHere, the @importFrom tag is placed above the function in which the imported function is used."
+  },
+  {
+    "objectID": "slides/02-documentation/index.html#package-level-import-file-1",
+    "href": "slides/02-documentation/index.html#package-level-import-file-1",
+    "title": "Function documentation and dependencies",
+    "section": "Package-level import file",
+    "text": "Package-level import file\nImports belong to the package, not to individual functions, so alternatively you can recognise this by storing them in a central location, e.g. R/animalsounds-package.R\n#' @importFrom purrr keep modify\n#' @importFrom magrittr %&gt;%\nNULL\n\nThis removes the possibility of multiple (redundant) imports of the same function. But harder to remember to remove import if function changes! It’s a matter of personal taste."
+  },
+  {
+    "objectID": "slides/02-documentation/index.html#usethisuse_import_from-1",
+    "href": "slides/02-documentation/index.html#usethisuse_import_from-1",
+    "title": "Function documentation and dependencies",
+    "section": "usethis::use_import_from()",
+    "text": "usethis::use_import_from()\nThere can be several steps to importing a function. usethis::use_import_from() takes care of all of them.\nIt will first create the package documentation file R/animalsounds-package.R (if it doesn’t already exist – you will also need to agree to this).\n\nusethis::use_import_from(\"purrr\", c(\"keep\", \"modify\"))\n\n✔ Adding 'purrr' to Imports field in DESCRIPTION\n✔ Adding '@importFrom purrr keep', '@importFrom purrr modify' to 'R/animalsounds-package.R'\n✔ Writing 'NAMESPACE'\n✔ Loading animalsounds\n\nuse_import_from() is opinionated in implementing package-level import (rather than above the function in which they are used).\nMay need to close and reopen R/animalsounds-package.R to see the changes."
+  },
+  {
+    "objectID": "slides/02-documentation/index.html#it-may-be-tempting-to-import-a-whole-package-1",
+    "href": "slides/02-documentation/index.html#it-may-be-tempting-to-import-a-whole-package-1",
+    "title": "Function documentation and dependencies",
+    "section": "It may be tempting to import a whole package…",
+    "text": "It may be tempting to import a whole package…\n#' @import purrr\ncol_summary &lt;- function(df, fun) {\n  stopifnot(is.data.frame(df))\n\n  df %&gt;%\n    keep(is.numeric) %&gt;%\n    map_dfc(fun)\n}"
+  },
+  {
+    "objectID": "slides/02-documentation/index.html#but-it-is-dangerous-1",
+    "href": "slides/02-documentation/index.html#but-it-is-dangerous-1",
+    "title": "Function documentation and dependencies",
+    "section": "…but it is dangerous",
+    "text": "…but it is dangerous\n#' @import pkg1\n#' @import pkg2\nfun &lt;- function(x) {\n  fun1(x) + fun2(x)\n}\nWorks today…\n… but next year, what if pkg2 adds a fun1 function?"
+  },
+  {
+    "objectID": "slides/02-documentation/index.html#metapackages-1",
+    "href": "slides/02-documentation/index.html#metapackages-1",
+    "title": "Function documentation and dependencies",
+    "section": "Metapackages",
+    "text": "Metapackages\nIt is bad practice to import “metapackages” (i.e. packages that are collections of packages), such as tidyverse.\nSee the blog post https://www.tidyverse.org/blog/2018/06/tidyverse-not-for-packages/ for more details."
+  },
+  {
+    "objectID": "slides/02-documentation/index.html#documenting-dependencies-1",
+    "href": "slides/02-documentation/index.html#documenting-dependencies-1",
+    "title": "Function documentation and dependencies",
+    "section": "Documenting dependencies",
+    "text": "Documenting dependencies\n\n\n\n\nDESCRIPTION\nNAMESPACE\n\n\n\n\nMakes package available\nMakes function available\n\n\nMandatory\nOptional (can use :: instead)\n\n\nuse_package()\nuse_import_from()"
+  },
+  {
+    "objectID": "slides/02-documentation/index.html#example-rlang-and-cli-1",
+    "href": "slides/02-documentation/index.html#example-rlang-and-cli-1",
+    "title": "Function documentation and dependencies",
+    "section": "Example: rlang and cli",
+    "text": "Example: rlang and cli\nCurrently we are using stopifnot() for argument validation\n\nstopifnot(is.character(animal) & length(animal) == 1)\nstopifnot(is.character(sound) & length(sound) == 1)\n\nWe might instead use rlang::is_character() with cli::cli_abort()\n\nsound &lt;- c(\"woof\", \"bark\")\n\nif (!rlang::is_character(sound, n = 1)) {\n  cli::cli_abort(\"`sound` must be a single string!\")\n}\n\nError:\n! `sound` must be a single string!\n\n\n\nin is_character, n tests for length of the vector.\ncli::cli_abort() has some really nice capability - glue interpolation (next slide) - inline classes (next slide) - features that make it easier to write tests (covered later in this course)\nhttps://cli.r-lib.org/reference/inline-markup.html"
+  },
+  {
+    "objectID": "slides/02-documentation/index.html#aside-informative-messages-with-cli-1",
+    "href": "slides/02-documentation/index.html#aside-informative-messages-with-cli-1",
+    "title": "Function documentation and dependencies",
+    "section": "Aside: informative messages with cli",
+    "text": "Aside: informative messages with cli\ncli functions can combine glue interpolation and inline classes to produce informative, nicely-formatted error messages.\nIn animal_sounds() we can use\n\ncli::cli_abort(\n  c(\"{.var animal} must be a single string!\",\n    \"i\" = \"It was {.type {animal}} of length {length(animal)} instead.\")\n)\n\nThis gives the error message\n\nanimal_sounds(c(\"dog\", \"cat\"), c(\"woof\", \"miaow\"))\n\nError in `animal_sounds()`:\n! `animal` must be a single string!\nℹ It was a character vector of length 2 instead.\n\n\n\nInformative error messages will make using your package a much nicer experience for you and others."
+  },
+  {
+    "objectID": "slides/02-documentation/index.html#your-turn-3",
+    "href": "slides/02-documentation/index.html#your-turn-3",
     "title": "Function documentation and dependencies",
     "section": "Your turn",
     "text": "Your turn\n\nUse use_package() to add rlang and cli to Imports.\nUpdate animal_sounds() to use is_character() to check the arguments and cli_abort to throw an informative error if necessary, using :: to fully qualify the function calls.\nLoad all and try giving animal_sounds() invalid inputs for animal and/or sound.\nCommit your changes to git.\nPush your commits for this session."
