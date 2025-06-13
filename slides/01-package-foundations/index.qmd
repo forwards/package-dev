@@ -311,7 +311,15 @@ packageVersion("usethis")
 usethis::git_sitrep()
 ```
 
-- Check that your user name and email are defined. If not, run
+- Check whether you have a PAT (will set up in a couple of slides if not)
+
+  ```
+  Personal access token for 'https://github.com': '<discovered>'
+  ```
+
+## Configure git
+
+- Check in `git_sitrep` output, under `Git global (user)`, that your user name and email are defined. If not, run
 
 ```{r}
 #| eval: false
@@ -321,11 +329,11 @@ usethis::use_git_config(
 )
 ```
 
-- Check whether you have a PAT (will set up in a couple of slides if not)
+To keep your email private:
 
-  ```
-  Personal access token for 'https://github.com': '<discovered>'
-  ```
+- Go to <https://github.com/settings/emails>, select “Keep my email address private” and “Block command line pushes that expose my email” options
+- Configure git to use the address provided of the form [ID+username@users.noreply.github.com](mailto:ID+username@users.noreply.github.com)
+
 
 ## git vaccinate
 
