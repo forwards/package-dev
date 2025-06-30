@@ -350,7 +350,7 @@ Note the next steps with snapshot_accept and snapshot_review
 1. Make this test pass
 
    ```r
-   giraffe <- animalSounds("giraffe")
+   giraffe <- animal_sounds("giraffe")
    expect_equal(giraffe, 
                 "The giraffe makes no sound.")
    ```
