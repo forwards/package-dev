@@ -275,7 +275,7 @@ test_that("error message for invalid input", {
 ```
 
 Snapshot tests can not be run interactively by sending to the console, instead 
-we must use `devtools::test()` or `testthat::testfile()`.
+we must use `devtools::test()` or `testthat::test_file()`.
 
 ::: {.notes}
 expect_error for testing that an error is thrown, expect_snapshot for testing the appearance of the error message
