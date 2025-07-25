@@ -549,17 +549,11 @@ Blog post: [Package spring cleaning](https://www.tidyverse.org/blog/2023/06/spri
 
 You have written a package!
 
-. . .
+## We value your feedback
 
-Final session on incorporating Rcpp code into a package.
+Please take a few minutes to complete this anonymous [feedback form](https://docs.google.com/forms/d/e/1FAIpQLSenADnqVZfmWCTlz1VMMfuod1qFcqqWd0kaj6ekZ4Y6QFAzlQ/viewform?usp=dialog)
 
-But first some admin...
-
-## Admin
-
-- Feedback form: [warwick.ac.uk/ellakaye/r-packages-2024-feedback](https://warwick.ac.uk/ellakaye/r-packages-2024-feedback)
-
-- Register
+Thanks!
 
 # End matter {.inverse}
 
