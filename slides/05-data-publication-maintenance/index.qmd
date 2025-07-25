@@ -542,7 +542,7 @@ Blog post: [Package spring cleaning](https://www.tidyverse.org/blog/2023/06/spri
 * Buddy-up
   - Review each other's code
   - Co-author each other's packages
-* Take advantage of events e.g. [Hacktoberfest](https://hacktoberfest.digitalocean.com/), [Closember](https://closember.org/) 
+* Take advantage of events e.g. [Hacktoberfest](https://hacktoberfest.digitalocean.com/), Closember 
 * Start work on your next package!
 
 ## Congratulations 🎉 {.inverse .center .center-h}
