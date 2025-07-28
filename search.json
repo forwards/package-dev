@@ -543,7 +543,7 @@
     "href": "slides/05-data-publication-maintenance/index.html#its-an-involved-process",
     "title": "Packaging dataPublication and maintenance",
     "section": "It’s an involved process",
-    "text": "It’s an involved process\n\nRead the official Checklist for CRAN Submissions to check requirements beyond the automated checks.\nRead the community-created Prepare for CRAN checklist.\nUseful functions for additional checks:\n\ngoodpractice::gp\nspelling::spell_check_package"
+    "text": "It’s an involved process\n\nRead the official Checklist for CRAN Submissions to check requirements beyond the automated checks.\nRead the community-created Prepare for CRAN checklist.\nUseful functions for additional checks:\n\ngoodpractice::gp()\nspelling::spell_check_package()"
   },
   {
     "objectID": "slides/05-data-publication-maintenance/index.html#usethisuse_release_issue",
@@ -564,7 +564,7 @@
     "href": "slides/05-data-publication-maintenance/index.html#r-hub-v2",
     "title": "Packaging dataPublication and maintenance",
     "section": "R-hub v2",
-    "text": "R-hub v2\n\nA new (since April 2024) check system.\nWorks best if the package is on GitHub\nWorks with GitHub Actions\n\n\n# run once\ninstall.packages(rhub) \nrhub::rhub_setup() # guides through set-up process\nrhub::rhub_doctor() # checks the set-up\n\n# run the checks\nrhub::rhub_check()\n\nSee the r-hub blog post for more details"
+    "text": "R-hub v2\n\nA new (since April 2024) check system.\nWorks best if the package is on GitHub\nWorks with GitHub Actions\n\n\n# run once\ninstall.packages(\"rhub\") \nrhub::rhub_setup() # guides through set-up process\nrhub::rhub_doctor() # checks the set-up\n\n# run the checks\nrhub::rhub_check()\n\nSee the r-hub blog post for more details"
   },
   {
     "objectID": "slides/05-data-publication-maintenance/index.html#cran-comments.md",
@@ -599,7 +599,7 @@
     "href": "slides/05-data-publication-maintenance/index.html#subsequent-submissions-to-cran",
     "title": "Packaging dataPublication and maintenance",
     "section": "Subsequent submissions to CRAN",
-    "text": "Subsequent submissions to CRAN\nProceed as before. If you have reverse dependencies you need to also run R CMD check on them, and notify CRAN if you have deliberately broken them.\nFortunately the revdepcheck package makes this fairly easy\nremotes::install_github(\"r-lib/revdepcheck\")\nusethis::use_revdep()\nlibrary(revdepcheck)\nrevdep_check()\nrevdep_report_cran()"
+    "text": "Subsequent submissions to CRAN\nProceed as before. If you have reverse dependencies you need to also run R CMD check on them, and notify CRAN if you have deliberately broken them.\nFortunately the revdepcheck package makes this fairly easy\nremotes::install_github(\"r-lib/revdepcheck\")\nusethis::use_revdep()\n\nrevdepcheck::revdep_check()\nrevdepcheck::revdep_report_cran() # get intermediate report for cran"
   },
   {
     "objectID": "slides/05-data-publication-maintenance/index.html#promoting-your-package",

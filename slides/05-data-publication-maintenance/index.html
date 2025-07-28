@@ -1386,8 +1386,8 @@ display:block!important;
 <li><p>Read the community-created <a href="https://github.com/ThinkR-open/prepare-for-cran">Prepare for CRAN</a> checklist.</p></li>
 <li><p>Useful functions for additional checks:</p>
 <ul>
-<li><code>goodpractice::gp</code></li>
-<li><code>spelling::spell_check_package</code></li>
+<li><code>goodpractice::gp()</code></li>
+<li><code>spelling::spell_check_package()</code></li>
 </ul></li>
 </ul>
 </section>
@@ -1454,7 +1454,7 @@ display:block!important;
 </ul>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a><span class="co"># run once</span></span>
-<span id="cb19-2"><a></a><span class="fu">install.packages</span>(rhub) </span>
+<span id="cb19-2"><a></a><span class="fu">install.packages</span>(<span class="st">&quot;rhub&quot;</span>) </span>
 <span id="cb19-3"><a></a>rhub<span class="sc">::</span><span class="fu">rhub_setup</span>() <span class="co"># guides through set-up process</span></span>
 <span id="cb19-4"><a></a>rhub<span class="sc">::</span><span class="fu">rhub_doctor</span>() <span class="co"># checks the set-up</span></span>
 <span id="cb19-5"><a></a></span>
@@ -1541,9 +1541,9 @@ display:block!important;
 <p>Fortunately the <strong>revdepcheck</strong> package makes this fairly easy</p>
 <div class="sourceCode" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;r-lib/revdepcheck&quot;</span>)</span>
 <span id="cb24-2"><a></a>usethis<span class="sc">::</span><span class="fu">use_revdep</span>()</span>
-<span id="cb24-3"><a></a><span class="fu">library</span>(revdepcheck)</span>
-<span id="cb24-4"><a></a><span class="fu">revdep_check</span>()</span>
-<span id="cb24-5"><a></a><span class="fu">revdep_report_cran</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb24-3"><a></a></span>
+<span id="cb24-4"><a></a>revdepcheck<span class="sc">::</span><span class="fu">revdep_check</span>()</span>
+<span id="cb24-5"><a></a>revdepcheck<span class="sc">::</span><span class="fu">revdep_report_cran</span>() <span class="co"># get intermediate report for cran </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section></section>
 <section>
 <section id="promotion" class="title-slide slide level1 inverse center">
