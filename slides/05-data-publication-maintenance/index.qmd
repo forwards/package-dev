@@ -299,8 +299,8 @@ to check requirements beyond the automated checks.
 - Read the community-created [Prepare for CRAN](https://github.com/ThinkR-open/prepare-for-cran) checklist.
 
 - Useful functions for additional checks:
-  - `goodpractice::gp`
-  - `spelling::spell_check_package`
+  - `goodpractice::gp()`
+  - `spelling::spell_check_package()`
 
 ## `usethis::use_release_issue()`
 
@@ -365,7 +365,7 @@ It's possible that the way your libraries are set up can mask problems with `che
 ```{r}
 #| eval: false
 # run once
-install.packages(rhub) 
+install.packages("rhub") 
 rhub::rhub_setup() # guides through set-up process
 rhub::rhub_doctor() # checks the set-up
 
@@ -453,9 +453,9 @@ Fortunately the **revdepcheck** package makes this fairly easy
 ```r
 remotes::install_github("r-lib/revdepcheck")
 usethis::use_revdep()
-library(revdepcheck)
-revdep_check()
-revdep_report_cran()
+
+revdepcheck::revdep_check()
+revdepcheck::revdep_report_cran() # get intermediate report for cran 
 ```
 
 # Promotion {.inverse}
