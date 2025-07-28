@@ -462,7 +462,7 @@ revdepcheck::revdep_report_cran() # get intermediate report for cran
 
 ## Promoting your package
 
-- Some promotion will/may be done for you: [CRANberries](https://dirk.eddelbuettel.com/cranberries/), [R Views](https://rviews.rstudio.com/) Monthly Top 40, 
+- Some promotion will/may be done for you: [CRANberries](https://dirk.eddelbuettel.com/cranberries/), 
 search engines (vignette/pkgdown site)
 - Some channels are obvious: personal website, blog, Mastodon (#RStats)
 - Publicize your new package via R Weekly <https://rweekly.org/>
