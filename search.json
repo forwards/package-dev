@@ -606,7 +606,7 @@
     "href": "slides/05-data-publication-maintenance/index.html#promoting-your-package",
     "title": "Packaging dataPublication and maintenance",
     "section": "Promoting your package",
-    "text": "Promoting your package\n\nSome promotion will/may be done for you: CRANberries, R Views Monthly Top 40, search engines (vignette/pkgdown site)\nSome channels are obvious: personal website, blog, Mastodon (#RStats)\nPublicize your new package via R Weekly https://rweekly.org/\n\nAdd to the weekly news blog, see CONTRIBUTING, and example pull requests new package, new version.\n\nWould your package fit in a CRAN Task View? https://cran.r-project.org/web/views/\n\nCheck GitHub organization for how to propose addition.\n\n\n\nAnd Twitter, if you must."
+    "text": "Promoting your package\n\nSome promotion will/may be done for you: CRANberries, search engines (vignette/pkgdown site)\nSome channels are obvious: personal website, blog, Mastodon (#RStats)\nPublicize your new package via R Weekly https://rweekly.org/\n\nAdd to the weekly news blog, see CONTRIBUTING, and example pull requests new package, new version.\n\nWould your package fit in a CRAN Task View? https://cran.r-project.org/web/views/\n\nCheck GitHub organization for how to propose addition.\n\n\n\nAnd Twitter, if you must."
   },
   {
     "objectID": "slides/05-data-publication-maintenance/index.html#talks",
