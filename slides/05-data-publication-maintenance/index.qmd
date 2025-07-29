@@ -145,7 +145,7 @@ system.file("extdata", "mtcars.csv", package = "readr")
 1. Run `usethis::use_data_raw("farm_animals")`.
 2. In the script `data-raw/farm_animals.R` write some code to create a small data frame with the names of farm animals and the sound they make.
 3. Run all the code (including the already-present call to `usethis::use_data()`) to create the data and save it in `/data`.
-4. Add an `R/farm_animals.R` script and add some roxygen comments to document the function.
+4. Add an `R/farm_animals.R` script and add some roxygen comments to document the data.
 5. Run `devtools::document()` to create the documentation for the `farm_animals` data. Preview the documentation to check it.
 6. Commit all the changes to your repo.
 
