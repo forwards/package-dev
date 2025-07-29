@@ -108,7 +108,7 @@ This should either be a url, e.g.
 
 ```{r, eval = FALSE}
 #' @source Henderson and Velleman (1981), Building multiple  
-#' #' regression models interactively. *Biometrics*, **37**, 391–411.
+#'  regression models interactively. *Biometrics*, **37**, 391–411.
 ```
 
 ## Internal data
