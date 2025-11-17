@@ -108,7 +108,7 @@ This should either be a url, e.g.
 
 ```{r, eval = FALSE}
 #' @source Henderson and Velleman (1981), Building multiple  
-#' #' regression models interactively. *Biometrics*, **37**, 391–411.
+#'  regression models interactively. *Biometrics*, **37**, 391–411.
 ```
 
 ## Internal data
@@ -145,7 +145,7 @@ system.file("extdata", "mtcars.csv", package = "readr")
 1. Run `usethis::use_data_raw("farm_animals")`.
 2. In the script `data-raw/farm_animals.R` write some code to create a small data frame with the names of farm animals and the sound they make.
 3. Run all the code (including the already-present call to `usethis::use_data()`) to create the data and save it in `/data`.
-4. Add an `R/farm_animals.R` script and add some roxygen comments to document the function.
+4. Add an `R/farm_animals.R` script and add some roxygen comments to document the data.
 5. Run `devtools::document()` to create the documentation for the `farm_animals` data. Preview the documentation to check it.
 6. Commit all the changes to your repo.
 
@@ -299,8 +299,8 @@ to check requirements beyond the automated checks.
 - Read the community-created [Prepare for CRAN](https://github.com/ThinkR-open/prepare-for-cran) checklist.
 
 - Useful functions for additional checks:
-  - `goodpractice::gp`
-  - `spelling::spell_check_package`
+  - `goodpractice::gp()`
+  - `spelling::spell_check_package()`
 
 ## `usethis::use_release_issue()`
 
@@ -365,7 +365,7 @@ It's possible that the way your libraries are set up can mask problems with `che
 ```{r}
 #| eval: false
 # run once
-install.packages(rhub) 
+install.packages("rhub") 
 rhub::rhub_setup() # guides through set-up process
 rhub::rhub_doctor() # checks the set-up
 
@@ -453,16 +453,16 @@ Fortunately the **revdepcheck** package makes this fairly easy
 ```r
 remotes::install_github("r-lib/revdepcheck")
 usethis::use_revdep()
-library(revdepcheck)
-revdep_check()
-revdep_report_cran()
+
+revdepcheck::revdep_check()
+revdepcheck::revdep_report_cran() # get intermediate report for cran 
 ```
 
 # Promotion {.inverse}
 
 ## Promoting your package
 
-- Some promotion will/may be done for you: [CRANberries](https://dirk.eddelbuettel.com/cranberries/), [R Views](https://rviews.rstudio.com/) Monthly Top 40, 
+- Some promotion will/may be done for you: [CRANberries](https://dirk.eddelbuettel.com/cranberries/), 
 search engines (vignette/pkgdown site)
 - Some channels are obvious: personal website, blog, Mastodon (#RStats)
 - Publicize your new package via R Weekly <https://rweekly.org/>
@@ -542,24 +542,18 @@ Blog post: [Package spring cleaning](https://www.tidyverse.org/blog/2023/06/spri
 * Buddy-up
   - Review each other's code
   - Co-author each other's packages
-* Take advantage of events e.g. [Hacktoberfest](https://hacktoberfest.digitalocean.com/), [Closember](https://closember.org/) 
+* Take advantage of events e.g. [Hacktoberfest](https://hacktoberfest.digitalocean.com/), Closember 
 * Start work on your next package!
 
 ## Congratulations 🎉 {.inverse .center .center-h}
 
 You have written a package!
 
-. . .
+## We value your feedback
 
-Final session on incorporating Rcpp code into a package.
+Please take a few minutes to complete this anonymous [feedback form](https://docs.google.com/forms/d/e/1FAIpQLSenADnqVZfmWCTlz1VMMfuod1qFcqqWd0kaj6ekZ4Y6QFAzlQ/viewform?usp=dialog)
 
-But first some admin...
-
-## Admin
-
-- Feedback form: [warwick.ac.uk/ellakaye/r-packages-2024-feedback](https://warwick.ac.uk/ellakaye/r-packages-2024-feedback)
-
-- Register
+Thanks!
 
 # End matter {.inverse}
 
