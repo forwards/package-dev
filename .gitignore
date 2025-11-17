@@ -3,3 +3,5 @@ _site
 site_libs
 *_files
 .Rproj.user
+
+**/*.quarto_ipynb
