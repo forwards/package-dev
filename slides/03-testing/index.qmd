@@ -335,6 +335,15 @@ old vs new
 Note the next steps with snapshot_accept and snapshot_review  
 :::
 
+## Snapshot tests for images
+
+We can use `expect_snapshot_file()` to create snapshots for images. 
+These allow us to compare binary outputs, though the can't provide an automatic diff when the test fails. Instead, call `snapshot_review()` to launch a Shiny app that allows you to visually review the changes.
+
+See [Whole file snapshotting](https://testthat.r-lib.org/articles/snapshotting.html#whole-file-snapshotting) for further details.
+
+The [vdiffr](https://vdiffr.r-lib.org) package allows comparisons between SVG images.
+
 # Test driven development {.inverse}
 
 ## So far we've done this
