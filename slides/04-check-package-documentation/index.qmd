@@ -124,16 +124,16 @@ The DESCRIPTION file provides some of the package level documentation (or metada
     - for development version building on version MAJOR.MINOR.PATCH, use: MAJOR.MINOR.PATCH.9000
     - can be filled in with `usethis::use_version()`
 
-::: {.notes}
+## Notes of version number
 
 Given a version number MAJOR.MINOR.PATCH, increment the:
 
-MAJOR version when you make incompatible API changes,
-MINOR version when you add functionality in a backwards compatible manner, and
-PATCH version when you make backwards compatible bug fixes.
+- MAJOR version when you make incompatible API changes,
+- MINOR version when you add functionality in a backwards compatible manner, and
+- PATCH version when you make backwards compatible bug fixes.
 
-Will see usethis::use_version() in session on publication
-:::
+See <https://semver.org> for further guidance on when to bump which part of the version number
+
    
 ## Metadata in `DESCRIPTION`
 
