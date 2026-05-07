@@ -74,9 +74,9 @@ Tuesdays, 14:30-16:00 UTC
 |----|----|----|----|
 | [Package foundations](../modules/01-package-foundations/index.qmd) | June 3rd | Emma | Joyce and Heather |
 | [Function documentation and dependencies](../modules/02-documentation/index.qmd) | June 17th | Joyce | Emma and Heather |
-| [Testing](../modules/03-testing/index.qmd) | July 1st | Heather | Joyce |
+| [Testing](../modules/03-data-testing/index.qmd) | July 1st | Heather | Joyce |
 | [Package check and documentation](../modules/04-check-package-documentation/index.qmd) | July 15th | Joyce | Heather |
-| [Packaging data; Publication and maintenance](../modules/05-data-publication-maintenance/index.qmd) | July 29th | Heather | Joyce |
+| [Packaging data; Publication and maintenance](../modules/05-publication-maintenance/index.qmd) | July 29th | Heather | Joyce |
 :::
 
 # Let's begin... {.inverse .center-h}

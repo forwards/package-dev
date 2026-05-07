@@ -74,9 +74,9 @@ Tuesdays, 14:30-16:00 UTC
 |----|----|
 | [Package foundations](../modules/01-package-foundations/index.qmd) | May 20th |
 | [Function documentation and dependencies](../modules/02-documentation/index.qmd) | June 3rd | 
-| [Packaging data; Testing](../modules/03-testing/index.qmd) | June 17th | 
+| [Packaging data; Testing](../modules/03-data-testing/index.qmd) | June 17th | 
 | [Package check and documentation](../modules/04-check-package-documentation/index.qmd) | July 1st | 
-| [Publication and maintenance](../modules/05-data-publication-maintenance/index.qmd) | July 15th | 
+| [Publication and maintenance](../modules/05-publication-maintenance/index.qmd) | July 15th | 
 :::
 
 ## Pieces of a puzzle
