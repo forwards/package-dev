@@ -1,0 +1,37 @@
+---
+title: May-July 2026, cohort 2
+---
+
+## Join
+
+[Register on Luma](URL){.btn .btn-primary target="_blank"}
+
+## Instructors
+
+{{< fa user >}}   [Joyce Robbins](https://datascience.columbia.edu/people/joyce-robbins/), [Jesi Formoso](https://jformoso.github.io/) and [Heather Turner](https://heatherturner.net).
+
+{{< fa envelope >}}   [h.l.turner\@bham.ac.uk](mailto:h.l.turner@bham.ac.uk)
+
+## Schedule
+
+{{< fa calendar >}} &nbsp; Every other **Wednesday**, starting May 20th
+
+{{< fa clock >}} &nbsp; {{< localtime 2026-05-20 14:00 UTC format="%H:%M" >}}-{{< localtime 2026-05-20 16:00 UTC format="%H:%M %Z" >}} (in your local timezone).
+
+| Module | Date | 
+|----|----|
+| [Package foundations](../modules/01-package-foundations/index.qmd) | May 20th |
+| [Function documentation and dependencies](../modules/02-documentation/index.qmd) | June 3rd | 
+| [Packaging data; Testing](../modules/03-testing/index.qmd) | June 17th | 
+| [Package check and documentation](../modules/04-check-package-documentation/index.qmd) | July 1st | 
+| [Publication and maintenance](../modules/05-data-publication-maintenance/index.qmd) | July 15th | 
+
+## Welcome and introduction
+
+Here's a link to the [slides](may-july-2026-cohort-2.qmd){target="_blank"} in a new window. 
+
+Here are the slides embedded:
+
+<iframe class="slide-deck ar16x9" src="may-july-2026-cohort-2-intro.html" title="01-welcome slides">
+</iframe>
+

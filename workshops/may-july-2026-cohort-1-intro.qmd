@@ -1,0 +1,88 @@
+---
+title: Welcome and introduction
+subtitle: R package development workshop
+author: Ella Kaye, Pao Corrales, Elio Campitelli
+format: forwardspres-revealjs
+---
+
+# Hello! {.inverse .center-h}
+
+## Instructors
+
+:::: {.columns}
+
+::: {.column width="33%"}
+### [Ella Kaye](https://ellakaye.co.uk)
+
+![](../images/instructors/ellakaye.jpeg){width=60%}
+
+:::{.smaller80}
+Senior Research Software Engineer 
+
+University of Birmingham
+:::
+:::
+
+::: {.column width="33%"}
+### [Pao Corrales](https://paocorrales.github.io/)
+
+![](../images/instructors/paocorrales.png){width=60%}
+
+:::{.smaller80}
+Research Software Engineer
+
+21st Century Weather Centre
+:::
+:::
+
+::: {.column width="33%"}
+### [Elio Campitelli](https://eliocamp.github.io)
+
+![](../images/instructors/eliocampitelli.jpg){width=60%}
+
+:::{.smaller80}
+Atmospheric Scientist
+
+Monash University
+:::
+
+:::
+
+::::
+
+## Course material
+
+- Website and slides 
+  
+  <https://forwards.github.io/package-dev>
+  
+- Website and slides repo
+
+  <https://github.com/forwards/package-dev>
+  
+- Course text: R Packages (2nd edition), Hadley Wickham and Jennifer Bryan
+
+  <https://r-pkgs.org>
+  
+## Schedule
+
+Mondays, 10:00-12:00 UTC
+
+| Module | Date | Lead | Facilitator |
+|----|----|----|----|
+| [Package foundations](../modules/01-package-foundations/index.qmd) | May 18th | Ella | Pao |
+| [Function documentation and dependencies](../modules/02-documentation/index.qmd) | June 1st | Ella | Elio |
+| [Packaging data; Testing](../modules/03-testing/index.qmd) | June 15th | Ella | Pao |
+| [Package check and documentation](../modules/04-check-package-documentation/index.qmd) | June 29th | Pao | Elio |
+| [Publication and maintenance](../modules/05-data-publication-maintenance/index.qmd) | July 13th | Pao | Elio |
+
+## Pieces of a puzzle
+
+* In each module we will cover different elements of an R package
+  * Think of this elements as pieces of a puzzle, you don't want to miss one! 
+  * The course builds cumulatively
+  
+If you can't attend to a session, please follow the material and do the exersises to catch up before the next one. 
+
+# Let's begin... {.inverse .center-h}
+
