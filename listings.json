@@ -4,9 +4,9 @@
     "items": [
       "/modules/01-package-foundations/index.html",
       "/modules/02-documentation/index.html",
-      "/modules/03-testing/index.html",
+      "/modules/03-data-testing/index.html",
       "/modules/04-check-package-documentation/index.html",
-      "/modules/05-data-publication-maintenance/index.html"
+      "/modules/05-publication-maintenance/index.html"
     ]
   }
 ]
