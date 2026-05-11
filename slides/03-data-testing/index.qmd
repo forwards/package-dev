@@ -7,8 +7,140 @@ format: forwardspres-revealjs
 
 ## Overview
 
+- Packaging data
 - Unit testing with **testthat**
 - Test driven development
+
+# Packaging data {.inverse}
+
+## Including data
+
+There are 3 types of data we might want to include:
+
+- Exported data for the user to access: put in `/data`
+- Internal data for functions to access: put in `/R/sysdata.rda`
+- Raw data: put in `/inst/extdata`
+
+## Exported data
+
+The data should be saved in `/data` as an `.rda` (or `.RData`) file.
+
+`usethis::use_data()` will do this for you, as well as a few other necessary steps:
+
+```{r, eval = FALSE}
+letter_indices <- data.frame(letter = letters, index = seq_along(letters))
+usethis::use_data(letter_indices)
+```
+
+```
+✔ Adding 'R' to Depends field in DESCRIPTION
+✔ Creating 'data/'
+✔ Setting LazyData to 'true' in 'DESCRIPTION'
+✔ Saving 'letter_indices' to 'data/letter_indices.rda'
+• Document your data (see 'https://r-pkgs.org/data.html')
+```
+
+. . .
+
+:::{.callout-note}
+For larger datasets, you can try changing the `compress` argument to get the best compression.
+:::
+
+## Provenance
+
+Often the data that you want to make accessible to the users is one you have created with an R script -- either from scratch or from a raw data set.
+
+It's a good idea to put the R script and any corresponding raw data in `/data-raw`.
+
+`usethis::use_data_raw("dataname")` will set this up:
+
+ - Create `/data-raw`
+ - Add `/data-raw/dataname.R` for you to add the code needed to create the data
+ - Add `^data-raw$` to `.Rbuildignore` as it does not need to be included in the actual package.
+
+You should add any raw data files (e.g. `.csv` files) to `/data-raw`.
+
+## Documenting Data
+
+Datasets in `/data` are always exported, so **must** be documented.
+
+To document a dataset, we must have an `.R` script in `/R` that contains a Roxygen block above the name of the dataset.
+
+As with functions, you can choose how to arrange this, e.g. in one combined `/R/data.R` or in a separate R file for each dataset.
+
+## Example: letter_indices
+
+```
+#' Letters of the Roman Alphabet with Indices
+#'
+#' A dataset of lower-case letters of the Roman alphabet and their 
+#' numeric index from a = 1 to z = 26.
+#'
+#' @format A data frame with 26 rows and 2 variables:
+#' \describe{
+#'   \item{letter}{The letter as a character string.}
+#'   \item{index}{The corresponding numeric index.}
+#' }
+"letter_indices"
+```
+
+`#' @ examples` can be used here too.
+
+## Data source
+
+For collected data, the (original) source should be documented with `#' @source`.
+
+This should either be a url, e.g.
+```{r}
+#| eval: false
+#' @source \url{http://www.diamondse.info/}
+```
+(alternatively `\href{DiamondSearchEngine}{http://www.diamondse.info/}`), or a reference, e.g.
+
+```{r, eval = FALSE}
+#' @source Henderson and Velleman (1981), Building multiple  
+#'  regression models interactively. *Biometrics*, **37**, 391–411.
+```
+
+## Internal data
+
+Sometimes functions need access to reference data, e.g. constants or look-up tables, that don't need to be shared with users.
+
+These objects should be saved in a single `R/sysdata.rda` file.
+
+This can be done with `use_data(..., internal = TRUE)`, e.g.
+
+```{r, eval = FALSE}
+x <- sample(1000)
+usethis::use_data(x, mtcars, internal = TRUE)
+```
+
+The generating code and any raw data can be put in `/data-raw`.
+
+As the objects are not exported, they don't need to be documented.
+
+## Raw data
+
+Sometimes you want to include raw data, to use in examples or vignettes.
+
+These files can be any format and should be added directly into `/inst/extdata`.
+
+When the package is installed, these files will be copied to the `extdata` directory and their path on your system can be found as follows:
+
+```{r}
+system.file("extdata", "mtcars.csv", package = "readr")
+```
+
+## Your turn
+
+1. Run `usethis::use_data_raw("farm_animals")`.
+2. In the script `data-raw/farm_animals.R` write some code to create a small data frame with the names of farm animals and the sound they make.
+3. Run all the code (including the already-present call to `usethis::use_data()`) to create the data and save it in `/data`.
+4. Add an `R/farm_animals.R` script and add some roxygen comments to document the data.
+5. Run `devtools::document()` to create the documentation for the `farm_animals` data. Preview the documentation to check it.
+6. Commit all the changes to your repo.
+
+
 
 # Unit testing with testthat {.inverse}
 

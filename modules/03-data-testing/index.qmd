@@ -1,5 +1,5 @@
 ---
-title: Testing
+title: Packaging data; Testing
 description: Module 3
 author: Forwards teaching team
 draft: false
@@ -7,11 +7,11 @@ draft: false
 
 ## Slides
 
-Here's a link to the [slides](/slides/03-testing/index.qmd){target="_blank"} in a new window. 
+Here's a link to the [slides](/slides/03-data-testing/index.qmd){target="_blank"} in a new window. 
 
 Here are the slides embedded:
 
-<iframe class="slide-deck ar16x9" src="/slides/03-testing/index.html" title="03-testing slides">
+<iframe class="slide-deck ar16x9" src="/slides/03-data-testing/index.html" title="03-data-testing slides">
 </iframe>
 
 ## Resources

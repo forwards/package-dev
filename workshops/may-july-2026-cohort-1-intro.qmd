@@ -17,9 +17,9 @@ format: forwardspres-revealjs
 ![](../images/instructors/ellakaye.jpeg){width=60%}
 
 :::{.smaller80}
-Research Software Engineer 
+Senior Research Software Engineer 
 
-University of Warwick
+University of Birmingham
 :::
 :::
 
@@ -50,8 +50,6 @@ Monash University
 
 ::::
 
-
-
 ## Course material
 
 - Website and slides 
@@ -68,24 +66,23 @@ Monash University
   
 ## Schedule
 
-Mondays, 09:00-10:30 UTC
+Mondays, 10:00-12:00 UTC
 
 | Module | Date | Lead | Facilitator |
 |----|----|----|----|
-| [Package foundations](../modules/01-package-foundations/index.qmd) | June 2nd | Pao | Ella |
-| [Function documentation and dependencies](../modules/02-documentation/index.qmd) | June 16th | Ella | Pao |
-| [Testing](../modules/03-data-testing/index.qmd) | June 30th | Pao | Elio |
-| [Package check and documentation](../modules/04-check-package-documentation/index.qmd) | July 14th | Ella | Pao |
-| [Packaging data; Publication and maintenance](../modules/05-publication-maintenance/index.qmd) | July 28th | Pao | Elio |
+| [Package foundations](../modules/01-package-foundations/index.qmd) | May 18th | Ella | Pao |
+| [Function documentation and dependencies](../modules/02-documentation/index.qmd) | June 1st | Ella | Elio |
+| [Packaging data; Testing](../modules/03-data-testing/index.qmd) | June 15th | Ella | Pao |
+| [Package check and documentation](../modules/04-check-package-documentation/index.qmd) | June 29th | Pao | Elio |
+| [Publication and maintenance](../modules/05-publication-maintenance/index.qmd) | July 13th | Pao | Elio |
 
 ## Pieces of a puzzle
 
 * In each module we will cover different elements of an R package
   * Think of this elements as pieces of a puzzle, you don't want to miss one! 
+  * The course builds cumulatively
   
 If you can't attend to a session, please follow the material and do the exersises to catch up before the next one. 
-
-
 
 # Let's begin... {.inverse .center-h}
 

@@ -6,5 +6,10 @@ title: Workshops
 
 Click on the links below for details on how to join, the schedule, and the instructors.
 
-- [Summer 2025, cohort 1, Zoom](workshops/summer-2025-cohort-1.qmd)
-- [Summer 2025, cohort 2, Zoom](workshops/summer-2025-cohort-2.qmd)
+- [May-July 2026, cohort 1, Zoom](workshops/may-july-2026-cohort-1.qmd)
+- [May-July 2026, cohort 2, Zoom](workshops/may-july-2026-cohort-2.qmd)
+
+## Past workshops
+
+- [June-July 2025, cohort 1, Zoom](workshops/summer-2025-cohort-1.qmd)
+- [June-July 2025, cohort 2, Zoom](workshops/summer-2025-cohort-2.qmd)
