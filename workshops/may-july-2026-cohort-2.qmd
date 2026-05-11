@@ -4,7 +4,14 @@ title: May-July 2026, cohort 2
 
 ## Join
 
-[Register on Luma](URL){.btn .btn-primary target="_blank"}
+::: {.callout-note}
+Please note this workshop consists of a series of **five** sessions, which build on each other.
+Luma does not offer the ability to schedule a series of recurring events. 
+To sign up for the series, please click on the 'Register on Luma' button below, which will take you to the calendar, 
+and make sure you register for all five **cohort 2** sessions (noting that there are also five sessions in the calendar for [cohort 1](may-july-2026-cohort-1.qmd)).
+:::
+
+[Register on Luma](https://luma.com/Forwards_Package_Development){.btn .btn-primary target="_blank"}
 
 ## Instructors
 
