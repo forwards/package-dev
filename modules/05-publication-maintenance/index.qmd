@@ -7,11 +7,11 @@ draft: false
 
 ## Slides
 
-Here's a link to the [slides](/slides/05-data-publication-maintenance/index.qmd){target="_blank"} in a new window. 
+Here's a link to the [slides](/slides/05-publication-maintenance/index.qmd){target="_blank"} in a new window. 
 
 Here are the slides embedded:
 
-<iframe class="slide-deck ar16x9" src="/slides/05-data-publication-maintenance/index.html" title="05-data-publication-maintenance slides">
+<iframe class="slide-deck ar16x9" src="/slides/05-publication-maintenance/index.html" title="05-publication-maintenance slides">
 </iframe>
 
 ## Resources
