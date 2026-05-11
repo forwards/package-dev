@@ -6,8 +6,8 @@ title: Workshops
 
 Click on the links below for details on how to join, the schedule, and the instructors.
 
-- [May-July 2026, cohort 1, Zoom](workshops/may-july-2026-cohort-1.qmd)
-- [May-July 2026, cohort 2, Zoom](workshops/may-july-2026-cohort-2.qmd)
+- [May-July 2026, cohort 1, Zoom, Mondays {{< localtime 2026-05-18 10:00 UTC format="%H:%M" >}}-{{< localtime 2026-05-18 12:00 UTC format="%H:%M %Z" >}}](workshops/may-july-2026-cohort-1.qmd)
+- [May-July 2026, cohort 2, Zoom, Wednesdays {{< localtime 2026-05-20 14:00 UTC format="%H:%M" >}}-{{< localtime 2026-05-20 16:00 UTC format="%H:%M %Z" >}}](workshops/may-july-2026-cohort-2.qmd)
 
 ## Past workshops
 
