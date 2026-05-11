@@ -2,7 +2,7 @@
 title: Prerequisites
 ---
 
-*Last updated: May 16th, 2025*
+*Last updated: May 11th, 2026*
 
 ## Prior knowledge
 
@@ -23,11 +23,13 @@ Although there will be some time dedicated to this in the workshop, it would be 
 - a [GitHub](https://github.com) account
 - a GitHub PAT configured to work with RStudio -- the vignette from the usethis package on [Managing Git(Hub) Credentials](https://usethis.r-lib.org/articles/git-credentials.html) goes through this.
 
+[Happy Git and GitHub for the useR](https://happygitwithr.com/) is an excellent resource for troubleshooting git related issues and checking that your setup works. Note that while the git/GitHub setup is convenient for sharing packages, you can create a package locally without it.
+
 ## R and RStudio
 
-Please ensure that you have the latest versions of R and RStudio installed prior to the first session. Currently, that's R-4.5.0 and RStudio-2025.05.0. 
+Please ensure that you have the latest versions of R and RStudio installed prior to the first session. Currently, that's R-4.6.0 and RStudio-2026.04.0. 
 
-We also **strongly** recommend all participants to install the development tools to avoid potential issues installing packages.
+We also **strongly** recommend that all participants install the development tools to avoid potential issues installing packages.
 
 ### Installing R
 
