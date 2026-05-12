@@ -2,7 +2,7 @@
 title: Prerequisites
 ---
 
-*Last updated: May 11th, 2026*
+*Last updated: May 12th, 2026*
 
 ## Prior knowledge
 
@@ -15,15 +15,6 @@ Two of the modules from the Warwick-Stats-Resources R Foundations course covers 
 - [Introduction to R and RStudio](https://warwick-stats-resources.github.io/r-foundations/content/01-intro/)
 - [Programming in R](https://warwick-stats-resources.github.io/r-foundations/content/03-programming/)
 
-## git and GitHub
-
-Although there will be some time dedicated to this in the workshop, it would be advantageous if you already have:
-
-- `git` installed on your computer. See <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>
-- a [GitHub](https://github.com) account
-- a GitHub PAT configured to work with RStudio -- the vignette from the usethis package on [Managing Git(Hub) Credentials](https://usethis.r-lib.org/articles/git-credentials.html) goes through this.
-
-[Happy Git and GitHub for the useR](https://happygitwithr.com/) is an excellent resource for troubleshooting git related issues and checking that your setup works. Note that while the git/GitHub setup is convenient for sharing packages, you can create a package locally without it.
 
 ## R and RStudio
 
@@ -37,11 +28,11 @@ Download the pre-compiled binary for your OS from https://cloud.r-project.org/ a
 
 **For Windows**
 
-Click "Download R for Windows", then "base", then "Download R-4.5.0 for Windows". This will download an `.exe` file; once downloaded, open to start the installation. 
+Click "Download R for Windows", then "base", then "Download R-4.6.0 for Windows". This will download an `.exe` file; once downloaded, open to start the installation. 
 
 **For Mac**
 
-Click "Download R for macOS", then "R-4.5.0-arm64.pkg" (the first option) to download the installer for Macs with **Apple Silicon** chips or "R-4.5.0-x86_64.pkg" (the second option) to download the installer for Macs with **Intel** chips. Run the installer to complete installation.
+Click "Download R for macOS", then "R-4.6.0-arm64.pkg" (the first option) to download the installer for Macs with **Apple Silicon** chips or "R-4.6.0-x86_64.pkg" (the second option) to download the installer for Macs with **Intel** chips. Run the installer to complete installation.
 
 **For Linux**
 
@@ -63,7 +54,7 @@ Download the relevant installer for your OS listed under "Installers for Support
 
 ### Development Tools
 
-Some additional tools may be required to compile R packages from source.
+Some additional tools are required to compile R packages from source, which is a necessary part of the package development process. These tools are not part of a typical R/RStudio setup so please follow the steps below to install them.
 
 **For Windows with no admin rights**
 
@@ -96,3 +87,16 @@ If you installed `r-base-dev`, when installing R, you should have all you need
 to build packages from source. Otherwise return to the instructions for 
 installing R for your distribution and follow the instructions there to install 
 the additional tools.
+
+## git and GitHub
+
+Although there will be some time dedicated to this in the workshop, it would be advantageous if you already have:
+
+- `git` installed on your computer. See <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>
+- a [GitHub](https://github.com) account
+- a GitHub PAT configured to work with RStudio -- the vignette from the usethis package on [Managing Git(Hub) Credentials](https://usethis.r-lib.org/articles/git-credentials.html) goes through this.
+
+[Happy Git and GitHub for the useR](https://happygitwithr.com/) is an excellent resource for troubleshooting git related issues and checking that your setup works.
+
+Whilst git/GitHub isn't essential for package development, it is best practice and we will be making use of GitHub features during the course, e.g. publishing a package documentation website using GitHub pages. However, you can create a package locally without it.
+
