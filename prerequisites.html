@@ -292,13 +292,13 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#prior-knowledge" id="toc-prior-knowledge" class="nav-link active" data-scroll-target="#prior-knowledge">Prior knowledge</a></li>
-  <li><a href="#git-and-github" id="toc-git-and-github" class="nav-link" data-scroll-target="#git-and-github">git and GitHub</a></li>
   <li><a href="#r-and-rstudio" id="toc-r-and-rstudio" class="nav-link" data-scroll-target="#r-and-rstudio">R and RStudio</a>
   <ul class="collapse">
   <li><a href="#installing-r" id="toc-installing-r" class="nav-link" data-scroll-target="#installing-r">Installing R</a></li>
   <li><a href="#installing-r-studio-desktop-open-source-edition" id="toc-installing-r-studio-desktop-open-source-edition" class="nav-link" data-scroll-target="#installing-r-studio-desktop-open-source-edition">Installing R Studio Desktop (Open Source Edition)</a></li>
   <li><a href="#development-tools" id="toc-development-tools" class="nav-link" data-scroll-target="#development-tools">Development Tools</a></li>
   </ul></li>
+  <li><a href="#git-and-github" id="toc-git-and-github" class="nav-link" data-scroll-target="#git-and-github">git and GitHub</a></li>
   </ul>
 </nav>
     </div>
@@ -325,7 +325,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><em>Last updated: May 11th, 2026</em></p>
+<p><em>Last updated: May 12th, 2026</em></p>
 <section id="prior-knowledge" class="level2">
 <h2 class="anchored" data-anchor-id="prior-knowledge">Prior knowledge</h2>
 <p>We do not assume any prior knowledge of R pacakge development, but basic knowledge of R is expected. In particular, participants should be confident writing functions. Some experience with RStudio is beneficial.</p>
@@ -335,16 +335,6 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://warwick-stats-resources.github.io/r-foundations/content/03-programming/">Programming in R</a></li>
 </ul>
 </section>
-<section id="git-and-github" class="level2">
-<h2 class="anchored" data-anchor-id="git-and-github">git and GitHub</h2>
-<p>Although there will be some time dedicated to this in the workshop, it would be advantageous if you already have:</p>
-<ul>
-<li><code>git</code> installed on your computer. See <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" class="uri">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a></li>
-<li>a <a href="https://github.com">GitHub</a> account</li>
-<li>a GitHub PAT configured to work with RStudio – the vignette from the usethis package on <a href="https://usethis.r-lib.org/articles/git-credentials.html">Managing Git(Hub) Credentials</a> goes through this.</li>
-</ul>
-<p><a href="https://happygitwithr.com/">Happy Git and GitHub for the useR</a> is an excellent resource for troubleshooting git related issues and checking that your setup works. Note that while the git/GitHub setup is convenient for sharing packages, you can create a package locally without it.</p>
-</section>
 <section id="r-and-rstudio" class="level2">
 <h2 class="anchored" data-anchor-id="r-and-rstudio">R and RStudio</h2>
 <p>Please ensure that you have the latest versions of R and RStudio installed prior to the first session. Currently, that’s R-4.6.0 and RStudio-2026.04.0.</p>
@@ -353,9 +343,9 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="installing-r">Installing R</h3>
 <p>Download the pre-compiled binary for your OS from https://cloud.r-project.org/ and install. More specifically:</p>
 <p><strong>For Windows</strong></p>
-<p>Click “Download R for Windows”, then “base”, then “Download R-4.5.0 for Windows”. This will download an <code>.exe</code> file; once downloaded, open to start the installation.</p>
+<p>Click “Download R for Windows”, then “base”, then “Download R-4.6.0 for Windows”. This will download an <code>.exe</code> file; once downloaded, open to start the installation.</p>
 <p><strong>For Mac</strong></p>
-<p>Click “Download R for macOS”, then “R-4.5.0-arm64.pkg” (the first option) to download the installer for Macs with <strong>Apple Silicon</strong> chips or “R-4.5.0-x86_64.pkg” (the second option) to download the installer for Macs with <strong>Intel</strong> chips. Run the installer to complete installation.</p>
+<p>Click “Download R for macOS”, then “R-4.6.0-arm64.pkg” (the first option) to download the installer for Macs with <strong>Apple Silicon</strong> chips or “R-4.6.0-x86_64.pkg” (the second option) to download the installer for Macs with <strong>Intel</strong> chips. Run the installer to complete installation.</p>
 <p><strong>For Linux</strong></p>
 <p>Click “Download R for Linux”. Instructions on installing are given for Debian, Fedora, Redhat, Suse and Ubuntu distributions. Where there is a choice, install both <code>r-base</code> and <code>r-base-dev</code>.</p>
 </section>
@@ -370,7 +360,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="development-tools" class="level3">
 <h3 class="anchored" data-anchor-id="development-tools">Development Tools</h3>
-<p>Some additional tools may be required to compile R packages from source.</p>
+<p>Some additional tools are required to compile R packages from source, which is a necessary part of the package development process. These tools are not part of a typical R/RStudio setup so please follow the steps below to install them.</p>
 <p><strong>For Windows with no admin rights</strong></p>
 <p>Download the latest (recommended) Rtools installer, <code>Rtools.exe</code>, from <a href="https://cran.r-project.org/bin/windows/Rtools/" class="uri">https://cran.r-project.org/bin/windows/Rtools/</a>. Run the installer keeping the default settings.</p>
 <p><strong>For Windows with admin rights</strong></p>
@@ -387,9 +377,20 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 <p><strong>For Linux</strong></p>
 <p>If you installed <code>r-base-dev</code>, when installing R, you should have all you need to build packages from source. Otherwise return to the instructions for installing R for your distribution and follow the instructions there to install the additional tools.</p>
-
-
 </section>
+</section>
+<section id="git-and-github" class="level2">
+<h2 class="anchored" data-anchor-id="git-and-github">git and GitHub</h2>
+<p>Although there will be some time dedicated to this in the workshop, it would be advantageous if you already have:</p>
+<ul>
+<li><code>git</code> installed on your computer. See <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" class="uri">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a></li>
+<li>a <a href="https://github.com">GitHub</a> account</li>
+<li>a GitHub PAT configured to work with RStudio – the vignette from the usethis package on <a href="https://usethis.r-lib.org/articles/git-credentials.html">Managing Git(Hub) Credentials</a> goes through this.</li>
+</ul>
+<p><a href="https://happygitwithr.com/">Happy Git and GitHub for the useR</a> is an excellent resource for troubleshooting git related issues and checking that your setup works.</p>
+<p>Whilst git/GitHub isn’t essential for package development, it is best practice and we will be making use of GitHub features during the course, e.g.&nbsp;publishing a package documentation website using GitHub pages. However, you can create a package locally without it.</p>
+
+
 </section>
 
 </main> <!-- /main -->
