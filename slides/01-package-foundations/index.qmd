@@ -266,7 +266,9 @@ Option 2
 We'll be using the following tools for package development:
 
 - RStudio: to manage and edit the package source code
+  - Feel free to use any IDE you're comfortable with
 - git + GitHub: to version control the package source code
+  - See <https://happygitwithr.com/big-picture> if unfamiliar
 - **devtools** and **usethis** R packages: 
     - **devtools** for functions supporting the development workflow
     - **usethis** for setup tasks
@@ -342,6 +344,15 @@ It's also a good idea to vaccinate. This implements best practice by adding file
 ```{r}
 #| eval: false
 usethis::git_vaccinate() 
+```
+
+## Default branch
+
+Set the default branch to "main" (globally)
+
+```{r}
+#| eval: false
+usethis::git_default_branch_configure(name = "main") 
 ```
 
 ## Create a GitHub PAT
@@ -536,10 +547,10 @@ usethis::use_github()
 ```
 
 ```{r eval = FALSE}
- ✔ Creating GitHub repository 'Warwick-Stats-Resources/animalsounds'
- ✔ Setting remote 'origin' to 'https://github.com/Warwick-Stats-Resources/animalsounds.git'
- ✔ Setting URL field in DESCRIPTION to  'https://github.com/Warwick-Stats-Resources/animalsounds'
- ✔ Setting BugReports field in DESCRIPTION to  'https://github.com/Warwick-Stats-Resources/animalsounds/issues'
+ ✔ Creating GitHub repository 'forwards/animalsounds'
+ ✔ Setting remote 'origin' to 'https://github.com/forwards/animalsounds.git'
+ ✔ Setting URL field in DESCRIPTION to  'https://github.com/forwards/animalsounds'
+ ✔ Setting BugReports field in DESCRIPTION to  'https://github.com/forwards/animalsounds/issues'
  There is 1 uncommitted file:
  * 'DESCRIPTION'
  Is it ok to commit it?
@@ -551,10 +562,12 @@ usethis::use_github()
 
 Choose the affirmative option! (The exact options may vary.)
 
+Note that you will see `<USER>/animalsounds` instead of `forwards/animalsounds`.
+
 ::: {.notes}
 Take a look at the repo on GitHub. There is no `/R` folder as that folder is empty at the moment!
 
-During the demo, will need to run `use_github("Warwick-Stats-Resources")` as by default use_github goes to my personal repo
+During the demo, will need to run `use_github("forwards")` as by default use_github goes to my personal repo
 :::
 
 ## Adding functions
