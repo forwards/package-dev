@@ -501,6 +501,11 @@ The [vdiffr](https://vdiffr.r-lib.org) package allows comparisons between SVG im
 
 ## When you stop work, leave a test failing. {.inverse .center .center-h}
 
+# Minute cards {.inverse}
+
+- [Cohort 1](https://tally.so/r/LZa1Yp)
+- [Cohort 2](https://tally.so/r/aQANEb)
+
 # End matter {.inverse}
 
 ## References

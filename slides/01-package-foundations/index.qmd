@@ -661,6 +661,11 @@ To actually install the package:
 
 - from GitHub: `remotes::install_github("USERNAME/REPO")` or `pak::pak("USERNAME/REPO")`
 
+# Minute cards {.inverse}
+
+- [Cohort 1](https://tally.so/r/ODdWrY)
+- [Cohort 2](https://tally.so/r/Zj15YB)
+
 # End matter {.inverse}
 
 ## References

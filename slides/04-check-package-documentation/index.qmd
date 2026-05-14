@@ -568,6 +568,11 @@ You can add more information to `_pkgdown.yml` to customise the package website:
 5. Click on the link to the website under the **About** section of the repo.
 6. (Bonus) Change the appearance of the site with a Bootswatch theme: <https://pkgdown.r-lib.org/articles/customise.html#bootswatch-themes>. 
 
+# Minute cards {.inverse}
+
+- [Cohort 1](https://tally.so/r/VLbEYy)
+- [Cohort 2](https://tally.so/r/kdJa7e)
+
 # End matter {.inverse}
 
 ## References

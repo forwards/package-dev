@@ -595,6 +595,11 @@ Informative error messages will make using your package a much nicer experience 
 4. Commit your changes to git.
 5. Push your commits for this session.
 
+# Minute cards {.inverse}
+
+- [Cohort 1](https://tally.so/r/A74PDz)
+- [Cohort 2](https://tally.so/r/q4JZW9)
+
 # End matter {.inverse}
 
 ## References
