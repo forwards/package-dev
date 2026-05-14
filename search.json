@@ -956,7 +956,7 @@
     "href": "slides/01-package-foundations/index.html#package-structure",
     "title": "Package foundations",
     "section": "Package structure",
-    "text": "Package structure\nAn R package is developed as a directory of source code files.\nThe names of files and directories must follow the specification laid out in the Writing R Extensions manual - we’ll cover the main components in this workshop.\nDirectory tree for an example RStudio package project:\n\n\nmypackage\n├── DESCRIPTION\n├── NAMESPACE\n├── R\n└── mypackage.Rproj"
+    "text": "Package structure\nAn R package is developed as a directory of source code files.\nThe names of files and directories must follow the specification laid out in the Writing R Extensions manual - we’ll cover the main components in this workshop.\nDirectory tree for an example RStudio package project:\n\n\nmypackage\n├── DESCRIPTION\n├── NAMESPACE\n└── mypackage.Rproj"
   },
   {
     "objectID": "slides/01-package-foundations/index.html#package-states",
@@ -1026,7 +1026,7 @@
     "href": "slides/01-package-foundations/index.html#the-setup-well-be-using",
     "title": "Package foundations",
     "section": "The setup we’ll be using",
-    "text": "The setup we’ll be using\nWe’ll be using the following tools for package development:\n\nRStudio: to manage and edit the package source code\ngit + GitHub: to version control the package source code\ndevtools and usethis R packages:\n\ndevtools for functions supporting the development workflow\nusethis for setup tasks\ndevtools depends on usethis package\nIntegrated with RStudio: projects, menu items/shortcuts\nUses system utilities internally: R CMD utilities bundled with R"
+    "text": "The setup we’ll be using\nWe’ll be using the following tools for package development:\n\nRStudio: to manage and edit the package source code\n\nFeel free to use any IDE you’re comfortable with\n\ngit + GitHub: to version control the package source code\n\nSee https://happygitwithr.com/big-picture if unfamiliar\n\ndevtools and usethis R packages:\n\ndevtools for functions supporting the development workflow\nusethis for setup tasks\ndevtools depends on usethis package\nIntegrated with RStudio: projects, menu items/shortcuts\nUses system utilities internally: R CMD utilities bundled with R"
   },
   {
     "objectID": "slides/01-package-foundations/index.html#follow-along",
@@ -1040,7 +1040,7 @@
     "href": "slides/01-package-foundations/index.html#devtools-and-usethis",
     "title": "Package foundations",
     "section": "devtools and usethis",
-    "text": "devtools and usethis\nWe can use devtools right away to check our system is setup for package development.\n\ninstall.packages(\"devtools\")\n\n\nlibrary(devtools)\n\n\nhas_devel()\n\nYour system is ready to build packages!\n\n\nInstalling devtools will also install usethis.\nCheck you have the latest version of usethis and update if not:\n\npackageVersion(\"usethis\")\n\n[1] '3.1.0'"
+    "text": "devtools and usethis\nWe can use devtools right away to check our system is setup for package development.\n\ninstall.packages(\"devtools\")\n\n\nlibrary(devtools)\n\n\nhas_devel()\n\nYour system is ready to build packages!\n\n\nInstalling devtools will also install usethis.\nCheck you have the latest version of usethis and update if not:\n\npackageVersion(\"usethis\")\n\n[1] '3.2.1'"
   },
   {
     "objectID": "slides/01-package-foundations/index.html#git-sitrep",
@@ -1062,6 +1062,13 @@
     "title": "Package foundations",
     "section": "git vaccinate",
     "text": "git vaccinate\nIt’s also a good idea to vaccinate. This implements best practice by adding files to your global .gitignore:\n\nusethis::git_vaccinate()"
+  },
+  {
+    "objectID": "slides/01-package-foundations/index.html#default-branch",
+    "href": "slides/01-package-foundations/index.html#default-branch",
+    "title": "Package foundations",
+    "section": "Default branch",
+    "text": "Default branch\nSet the default branch to “main” (globally)\n\nusethis::git_default_branch_configure(name = \"main\")"
   },
   {
     "objectID": "slides/01-package-foundations/index.html#create-a-github-pat",
@@ -1159,7 +1166,7 @@
     "href": "slides/01-package-foundations/index.html#use_github-output",
     "title": "Package foundations",
     "section": "use_github() output",
-    "text": "use_github() output\n\nusethis::use_github()\n\n\n ✔ Creating GitHub repository 'Warwick-Stats-Resources/animalsounds'\n ✔ Setting remote 'origin' to 'https://github.com/Warwick-Stats-Resources/animalsounds.git'\n ✔ Setting URL field in DESCRIPTION to  'https://github.com/Warwick-Stats-Resources/animalsounds'\n ✔ Setting BugReports field in DESCRIPTION to  'https://github.com/Warwick-Stats-Resources/animalsounds/issues'\n There is 1 uncommitted file:\n * 'DESCRIPTION'\n Is it ok to commit it?\n\n 1: Nope\n 2: For sure\n 3: No way\n\nChoose the affirmative option! (The exact options may vary.)\n\nTake a look at the repo on GitHub. There is no /R folder as that folder is empty at the moment!\nDuring the demo, will need to run use_github(\"Warwick-Stats-Resources\") as by default use_github goes to my personal repo"
+    "text": "use_github() output\n\nusethis::use_github()\n\n\n ✔ Creating GitHub repository 'forwards/animalsounds'\n ✔ Setting remote 'origin' to 'https://github.com/forwards/animalsounds.git'\n ✔ Setting URL field in DESCRIPTION to  'https://github.com/forwards/animalsounds'\n ✔ Setting BugReports field in DESCRIPTION to  'https://github.com/forwards/animalsounds/issues'\n There is 1 uncommitted file:\n * 'DESCRIPTION'\n Is it ok to commit it?\n\n 1: Nope\n 2: For sure\n 3: No way\n\nChoose the affirmative option! (The exact options may vary.)\nNote that you will see &lt;USER&gt;/animalsounds instead of forwards/animalsounds.\n\nTake a look at the repo on GitHub. There is no /R folder as that folder is empty at the moment!\nDuring the demo, will need to run use_github(\"forwards\") as by default use_github goes to my personal repo"
   },
   {
     "objectID": "slides/01-package-foundations/index.html#adding-functions",
