@@ -1,94 +1,66 @@
 [
   {
-    "objectID": "workshops.html",
-    "href": "workshops.html",
-    "title": "Workshops",
+    "objectID": "join.html",
+    "href": "join.html",
+    "title": "Apply for the workshop",
     "section": "",
-    "text": "Click on the links below for details on how to join, the schedule, and the instructors.\n\nMay-July 2026, cohort 1, Zoom, Mondays 2026-05-18 10:00 UTC-2026-05-18 12:00 UTC\nMay-July 2026, cohort 2, Zoom, Wednesdays 2026-05-20 14:00 UTC-2026-05-20 16:00 UTC"
+    "text": "Please click below to register your interest in participating in the workshop. Note that the course runs for two days and participation for the entire workshop is expected.\nApply\nPlease note that filling in this form does not guarantee a place. Priority will be given to those in the Department of Statistics (as the department is funding the course) though graduate students and staff from all departments are welcome.\nThe form closes on Tuesday, June 18th, 2024 and you will be notified if you have a place on June 19th at the latest.\nSkillsForge credit will also be available for those eligible. Details of how to register for those will be given to enrolled participants."
   },
   {
-    "objectID": "workshops.html#upcoming-workshops",
-    "href": "workshops.html#upcoming-workshops",
-    "title": "Workshops",
+    "objectID": "workshops/may-july-2026-cohort-2.html",
+    "href": "workshops/may-july-2026-cohort-2.html",
+    "title": "May-July 2026, cohort 2",
     "section": "",
-    "text": "Click on the links below for details on how to join, the schedule, and the instructors.\n\nMay-July 2026, cohort 1, Zoom, Mondays 2026-05-18 10:00 UTC-2026-05-18 12:00 UTC\nMay-July 2026, cohort 2, Zoom, Wednesdays 2026-05-20 14:00 UTC-2026-05-20 16:00 UTC"
+    "text": "Note\n\n\n\nPlease note this workshop consists of a series of five sessions, which build on each other. Luma does not offer the ability to schedule a series of recurring events. To sign up for the series, please click on the ‘Register on Luma’ button below, which will take you to the calendar, and make sure you register for all five cohort 2 sessions (noting that there are also five sessions in the calendar for cohort 1).\n\n\nRegister on Luma"
   },
   {
-    "objectID": "workshops.html#past-workshops",
-    "href": "workshops.html#past-workshops",
-    "title": "Workshops",
-    "section": "Past workshops",
-    "text": "Past workshops\n\nJune-July 2025, cohort 1, Zoom\nJune-July 2025, cohort 2, Zoom"
-  },
-  {
-    "objectID": "modules/03-data-testing/index.html",
-    "href": "modules/03-data-testing/index.html",
-    "title": "Packaging data; Testing",
+    "objectID": "workshops/may-july-2026-cohort-2.html#join",
+    "href": "workshops/may-july-2026-cohort-2.html#join",
+    "title": "May-July 2026, cohort 2",
     "section": "",
-    "text": "Here’s a link to the slides in a new window.\nHere are the slides embedded:"
+    "text": "Note\n\n\n\nPlease note this workshop consists of a series of five sessions, which build on each other. Luma does not offer the ability to schedule a series of recurring events. To sign up for the series, please click on the ‘Register on Luma’ button below, which will take you to the calendar, and make sure you register for all five cohort 2 sessions (noting that there are also five sessions in the calendar for cohort 1).\n\n\nRegister on Luma"
   },
   {
-    "objectID": "modules/03-data-testing/index.html#slides",
-    "href": "modules/03-data-testing/index.html#slides",
-    "title": "Packaging data; Testing",
-    "section": "",
-    "text": "Here’s a link to the slides in a new window.\nHere are the slides embedded:"
+    "objectID": "workshops/may-july-2026-cohort-2.html#instructors",
+    "href": "workshops/may-july-2026-cohort-2.html#instructors",
+    "title": "May-July 2026, cohort 2",
+    "section": "Instructors",
+    "text": "Instructors\n   Joyce Robbins, Jesi Formoso and Heather Turner.\n   h.l.turner@bham.ac.uk"
   },
   {
-    "objectID": "modules/03-data-testing/index.html#resources",
-    "href": "modules/03-data-testing/index.html#resources",
-    "title": "Packaging data; Testing",
-    "section": "Resources",
-    "text": "Resources\n\nReading\n\nWickham, H and Bryan, J, R Packages (2nd edition)\nhttps://r-pkgs.org\nR Core Team, Writing R Extensions\nhttps://cran.r-project.org/doc/manuals/r-release/R-exts.html\n\n\n\nPackages\n\ndevtools\nhttps://devtools.r-lib.org\nusethis\nhttps://usethis.r-lib.org\ntestthat\nhttps://testthat.r-lib.org"
+    "objectID": "workshops/may-july-2026-cohort-2.html#schedule",
+    "href": "workshops/may-july-2026-cohort-2.html#schedule",
+    "title": "May-July 2026, cohort 2",
+    "section": "Schedule",
+    "text": "Schedule\n   Every other Wednesday, starting May 20th\n   2026-05-20 14:00 UTC-2026-05-20 16:00 UTC (in your local timezone).\n\n\n\nModule\nDate\n\n\n\n\nPackage foundations\nMay 20th\n\n\nFunction documentation and dependencies\nJune 3rd\n\n\nPackaging data; Testing\nJune 17th\n\n\nPackage check and documentation\nJuly 1st\n\n\nPublication and maintenance\nJuly 15th"
   },
   {
-    "objectID": "modules/04-check-package-documentation/index.html",
-    "href": "modules/04-check-package-documentation/index.html",
-    "title": "Package check and documentation",
-    "section": "",
-    "text": "Here’s a link to the slides in a new window.\nHere are the slides embedded:"
+    "objectID": "workshops/may-july-2026-cohort-2.html#welcome-and-introduction",
+    "href": "workshops/may-july-2026-cohort-2.html#welcome-and-introduction",
+    "title": "May-July 2026, cohort 2",
+    "section": "Welcome and introduction",
+    "text": "Welcome and introduction\nHere’s a link to the slides in a new window.\nHere are the slides embedded:"
   },
   {
-    "objectID": "modules/04-check-package-documentation/index.html#slides",
-    "href": "modules/04-check-package-documentation/index.html#slides",
-    "title": "Package check and documentation",
-    "section": "",
-    "text": "Here’s a link to the slides in a new window.\nHere are the slides embedded:"
-  },
-  {
-    "objectID": "modules/04-check-package-documentation/index.html#resources",
-    "href": "modules/04-check-package-documentation/index.html#resources",
-    "title": "Package check and documentation",
-    "section": "Resources",
-    "text": "Resources\n\nReading\n\nWickham, H and Bryan, J, R Packages (2nd edition)\nhttps://r-pkgs.org\nR Core Team, Writing R Extensions\nhttps://cran.r-project.org/doc/manuals/r-release/R-exts.html\n\n\n\nPackages\n\ndevtools\nhttps://devtools.r-lib.org\nusethis\nhttps://usethis.r-lib.org\npkgdown\nhttps://pkgdown.r-lib.org"
-  },
-  {
-    "objectID": "workshops/may-july-2026-cohort-2-intro.html#instructors",
-    "href": "workshops/may-july-2026-cohort-2-intro.html#instructors",
+    "objectID": "workshops/summer-2025-cohort-2-intro.html#instructors",
+    "href": "workshops/summer-2025-cohort-2-intro.html#instructors",
     "title": "Welcome and introduction",
     "section": "Instructors",
-    "text": "Instructors\n\n\nJoyce Robbins\n\n\nSenior Lecturer in Statistics\nColumbia University\n\n\nJesi Formoso\n\n\nAssociate Researcher\nUniversity of Buenos Aires\n\n\nHeather Turner\n\n\nPrincipal RSE\nUniversity of Birmingham"
+    "text": "Instructors\n\n\nEmma Rand\n\n\nProfessor of Biology\nUniversity of York\n\n\nJoyce Robbins\n\n\nSenior Lecturer in Statistics\nColumbia University\n\n\nHeather Turner\n\n\nRSE Fellow\nUniversity of Warwick"
   },
   {
-    "objectID": "workshops/may-july-2026-cohort-2-intro.html#course-material",
-    "href": "workshops/may-july-2026-cohort-2-intro.html#course-material",
+    "objectID": "workshops/summer-2025-cohort-2-intro.html#course-material",
+    "href": "workshops/summer-2025-cohort-2-intro.html#course-material",
     "title": "Welcome and introduction",
     "section": "Course material",
     "text": "Course material\n\nWebsite and slides\nhttps://forwards.github.io/package-dev\nWebsite and slides repo\nhttps://github.com/forwards/package-dev\nCourse text: R Packages (2nd edition), Hadley Wickham and Jennifer Bryan\nhttps://r-pkgs.org"
   },
   {
-    "objectID": "workshops/may-july-2026-cohort-2-intro.html#schedule",
-    "href": "workshops/may-july-2026-cohort-2-intro.html#schedule",
+    "objectID": "workshops/summer-2025-cohort-2-intro.html#schedule",
+    "href": "workshops/summer-2025-cohort-2-intro.html#schedule",
     "title": "Welcome and introduction",
     "section": "Schedule",
-    "text": "Schedule\nTuesdays, 14:30-16:00 UTC\n\n\n\n\nModule\nDate\n\n\n\n\nPackage foundations\nMay 20th\n\n\nFunction documentation and dependencies\nJune 3rd\n\n\nPackaging data; Testing\nJune 17th\n\n\nPackage check and documentation\nJuly 1st\n\n\nPublication and maintenance\nJuly 15th"
-  },
-  {
-    "objectID": "workshops/may-july-2026-cohort-2-intro.html#pieces-of-a-puzzle",
-    "href": "workshops/may-july-2026-cohort-2-intro.html#pieces-of-a-puzzle",
-    "title": "Welcome and introduction",
-    "section": "Pieces of a puzzle",
-    "text": "Pieces of a puzzle\n\nIn each module we will cover different elements of an R package\n\nThink of this elements as pieces of a puzzle, you don’t want to miss one!\nThe course builds cumulatively\n\n\nIf you can’t attend to a session, please follow the material and do the exersises to catch up before the next one."
+    "text": "Schedule\nTuesdays, 14:30-16:00 UTC\n\n\n\n\nModule\nDate\nLead\nFacilitator(s)\n\n\n\n\nPackage foundations\nJune 3rd\nEmma\nJoyce and Heather\n\n\nFunction documentation and dependencies\nJune 17th\nJoyce\nEmma and Heather\n\n\nTesting\nJuly 1st\nHeather\nJoyce\n\n\nPackage check and documentation\nJuly 15th\nJoyce\nHeather\n\n\nPackaging data; Publication and maintenance\nJuly 29th\nHeather\nJoyce"
   },
   {
     "objectID": "workshops/may-july-2026-cohort-1-intro.html#instructors",
@@ -119,41 +91,6 @@
     "text": "Pieces of a puzzle\n\nIn each module we will cover different elements of an R package\n\nThink of this elements as pieces of a puzzle, you don’t want to miss one!\nThe course builds cumulatively\n\n\nIf you can’t attend to a session, please follow the material and do the exersises to catch up before the next one."
   },
   {
-    "objectID": "workshops/summer-2025-cohort-2.html",
-    "href": "workshops/summer-2025-cohort-2.html",
-    "title": "Summer 2025, cohort 2",
-    "section": "",
-    "text": "Register on Zoom"
-  },
-  {
-    "objectID": "workshops/summer-2025-cohort-2.html#join",
-    "href": "workshops/summer-2025-cohort-2.html#join",
-    "title": "Summer 2025, cohort 2",
-    "section": "",
-    "text": "Register on Zoom"
-  },
-  {
-    "objectID": "workshops/summer-2025-cohort-2.html#instructors",
-    "href": "workshops/summer-2025-cohort-2.html#instructors",
-    "title": "Summer 2025, cohort 2",
-    "section": "Instructors",
-    "text": "Instructors\n   Joyce Robbins, Emma Rand and Heather Turner\n   h.turner.1@warwick.ac.uk"
-  },
-  {
-    "objectID": "workshops/summer-2025-cohort-2.html#schedule",
-    "href": "workshops/summer-2025-cohort-2.html#schedule",
-    "title": "Summer 2025, cohort 2",
-    "section": "Schedule",
-    "text": "Schedule\n   Every other Tuesday, starting June 3rd\n   14:30–16:00 UTC. See in your time zone.\n\n\n\nModule\nDate\nLead\nFacilitator(s)\n\n\n\n\nPackage foundations\nJune 3rd\nEmma\nJoyce and Heather\n\n\nFunction documentation and dependencies\nJune 17th\nJoyce\nEmma and Heather\n\n\nTesting\nJuly 1st\nHeather\nJoyce\n\n\nPackage check and documentation\nJuly 15th\nJoyce\nHeather\n\n\nPackaging data; Publication and maintenance\nJuly 29th\nHeather\nJoyce"
-  },
-  {
-    "objectID": "workshops/summer-2025-cohort-2.html#welcome-and-introduction",
-    "href": "workshops/summer-2025-cohort-2.html#welcome-and-introduction",
-    "title": "Summer 2025, cohort 2",
-    "section": "Welcome and introduction",
-    "text": "Welcome and introduction\nHere’s a link to the slides in a new window.\nHere are the slides embedded:"
-  },
-  {
     "objectID": "workshops/summer-2025-cohort-1-intro.html#instructors",
     "href": "workshops/summer-2025-cohort-1-intro.html#instructors",
     "title": "Welcome and introduction",
@@ -182,60 +119,256 @@
     "text": "Pieces of a puzzle\n\nIn each module we will cover different elements of an R package\n\nThink of this elements as pieces of a puzzle, you don’t want to miss one!\n\n\nIf you can’t attend to a session, please follow the material and do the exersises to catch up before the next one."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "R package development workshop",
-    "section": "",
-    "text": "NoteRegistration is now open for workshops running May-July 2026!\n\n\n\nSee the workshops page for further details.\nWelcome to the Forwards R package development workshop!\nThe modules use materials developed by Forwards, the taskforce for underrepresented groups in the R community.\nhttps://forwards.github.io/"
+    "objectID": "slides/04-check-package-documentation/index.html#overview",
+    "href": "slides/04-check-package-documentation/index.html#overview",
+    "title": "Package check and documentation",
+    "section": "Overview",
+    "text": "Overview\n\nCheck your package!\nDESCRIPTION\nREADME\nContinuous Integration (CI)\nVignettes\nNEWS\nPackage website with pkgdown"
   },
   {
-    "objectID": "index.html#syllabus-overview",
-    "href": "index.html#syllabus-overview",
-    "title": "R package development workshop",
-    "section": "Syllabus overview",
-    "text": "Syllabus overview\nThis is a hands-on workshop consisting of five modules, covering the entire process of creating an R package: functions and data, checking and testing, all levels of documentation, publication and maintenance.\nThe material is based on the book R Packages (2nd edition) by Hadley Wickham and Jennifer Bryan. It is freely availble online.\nAll slides and further resources can be accessed from the modules page."
+    "objectID": "slides/04-check-package-documentation/index.html#r-cmd-check",
+    "href": "slides/04-check-package-documentation/index.html#r-cmd-check",
+    "title": "Package check and documentation",
+    "section": "R CMD check",
+    "text": "R CMD check\nR CMD check is the command line utility provided by R to check R packages.\nIt checks that all the components are valid and consistent with each other, in particular:\n\nMetadata in DESCRIPTION\nImports and exports in NAMESPACE\n.Rd files in /man\n\nIt will also run any examples and tests you have written.\ndevtools::check() will run R CMD check in the background, with the results shown in the Build pane.\n\nNote that this doesn’t check the correctness of code - this is the role of tests"
   },
   {
-    "objectID": "index.html#workshops",
-    "href": "index.html#workshops",
-    "title": "R package development workshop",
-    "section": "Workshops",
-    "text": "Workshops\nThe content of the modules is not tied to a specific offering of the workshop. For individual taught offerings of the material, see the workshops page. From there, the page for each workshop contains its schedule as well as details on the instructors, how to join, and an introductory slide-deck."
+    "objectID": "slides/04-check-package-documentation/index.html#run-devtoolscheck",
+    "href": "slides/04-check-package-documentation/index.html#run-devtoolscheck",
+    "title": "Package check and documentation",
+    "section": "Run devtools::check()",
+    "text": "Run devtools::check()\nYou will get lots of output. It will end with:\n-- R CMD check results ---------- animalsounds 0.0.0.9000 ----\nDuration: 9.3s\n\n&gt; checking DESCRIPTION meta-information ... WARNING\n  Non-standard license specification:\n    `use_mit_license()`, `use_gpl3_license()` or friends to pick a\n    license\n  Standardizable: FALSE\n\n0 errors √ | 1 warnings x | 0 notes √\nWe haven’t yet specified a license for our package.\n\nOn running check() you may get an error if you are using a networked drive. There’s a fix coming in a few slides."
   },
   {
-    "objectID": "index.html#prerequistes",
-    "href": "index.html#prerequistes",
-    "title": "R package development workshop",
-    "section": "Prerequistes",
-    "text": "Prerequistes\nPlease see the prerequisites page for details on getting set up in advance of the first module."
+    "objectID": "slides/04-check-package-documentation/index.html#aside-in-case-of-error",
+    "href": "slides/04-check-package-documentation/index.html#aside-in-case-of-error",
+    "title": "Package check and documentation",
+    "section": "Aside: in case of error",
+    "text": "Aside: in case of error\nOn running devtools::check() you may get an error of the form\nUpdating animalsounds documentation  \nError: The specified file is not readable: path-to\\animalsounds\\NAMESPACE  \nThis can happen if your repo is on a networked drive.\nThis is covered in this Stackoverflow question and can be fixed."
   },
   {
-    "objectID": "prerequisites.html",
-    "href": "prerequisites.html",
-    "title": "Prerequisites",
-    "section": "",
-    "text": "Last updated: May 12th, 2026"
+    "objectID": "slides/04-check-package-documentation/index.html#aside-a-fix-for-networked-drives",
+    "href": "slides/04-check-package-documentation/index.html#aside-a-fix-for-networked-drives",
+    "title": "Package check and documentation",
+    "section": "Aside: a fix for networked drives",
+    "text": "Aside: a fix for networked drives\n\nSave a copy of this file: fix_for_networked_drives.R\nSave it somewhere other than the animalsounds directory\nOpen the file from the animalsounds project session\nRun the whole file\n\nYou should now find that devtools::check() proceeds normally."
   },
   {
-    "objectID": "prerequisites.html#prior-knowledge",
-    "href": "prerequisites.html#prior-knowledge",
-    "title": "Prerequisites",
-    "section": "Prior knowledge",
-    "text": "Prior knowledge\nWe do not assume any prior knowledge of R pacakge development, but basic knowledge of R is expected. In particular, participants should be confident writing functions. Some experience with RStudio is beneficial.\nTwo of the modules from the Warwick-Stats-Resources R Foundations course covers the required material:\n\nIntroduction to R and RStudio\nProgramming in R"
+    "objectID": "slides/04-check-package-documentation/index.html#types-of-problem",
+    "href": "slides/04-check-package-documentation/index.html#types-of-problem",
+    "title": "Package check and documentation",
+    "section": "Types of problem",
+    "text": "Types of problem\n\n\n\n\nERROR\nMust fix to get the code/example/test working\n\n\nWARNING\nFix if sharing with others\n\n\nNOTE\nFix if submitting to CRAN\n\n\n\n\nIt is possible to submit to CRAN with a NOTE, but it’s best avoided.\n\nNOTES best avoid for CRAN as they require a person to respond. One unavoidable case of a NOTE on CRAN submission: first submission of a package"
   },
   {
-    "objectID": "prerequisites.html#r-and-rstudio",
-    "href": "prerequisites.html#r-and-rstudio",
-    "title": "Prerequisites",
-    "section": "R and RStudio",
-    "text": "R and RStudio\nPlease ensure that you have the latest versions of R and RStudio installed prior to the first session. Currently, that’s R-4.6.0 and RStudio-2026.04.0.\nWe also strongly recommend that all participants install the development tools to avoid potential issues installing packages.\n\nInstalling R\nDownload the pre-compiled binary for your OS from https://cloud.r-project.org/ and install. More specifically:\nFor Windows\nClick “Download R for Windows”, then “base”, then “Download R-4.6.0 for Windows”. This will download an .exe file; once downloaded, open to start the installation.\nFor Mac\nClick “Download R for macOS”, then “R-4.6.0-arm64.pkg” (the first option) to download the installer for Macs with Apple Silicon chips or “R-4.6.0-x86_64.pkg” (the second option) to download the installer for Macs with Intel chips. Run the installer to complete installation.\nFor Linux\nClick “Download R for Linux”. Instructions on installing are given for Debian, Fedora, Redhat, Suse and Ubuntu distributions. Where there is a choice, install both r-base and r-base-dev.\n\n\nInstalling R Studio Desktop (Open Source Edition)\nDownloads are available from https://posit.co/download/rstudio-desktop/\nDownload the relevant installer either under the “Install RStudio” header or, scrolling down the page, from the ‘All installers and Tarballs’ section. Run the installer to complete installation.\nFor Windows with no admin rights\nDownload the .zip source archive under “Zip/Tarballs”. Extract the files to a folder where you have write access, e.g. C:\\Users\\username\\RStudio. In this folder, open the bin directory and find the RStudio program: it is named rstudio.exe, but the file extension will typically be hidden, so look for rstudio. Right-click this executable to create a desktop shortcut. Double-click the executable or use the shortcut to open.\nFor all other operating systems\nDownload the relevant installer for your OS listed under “Installers for Supported Platforms”. Run the installer to complete installation.\n\n\nDevelopment Tools\nSome additional tools are required to compile R packages from source, which is a necessary part of the package development process. These tools are not part of a typical R/RStudio setup so please follow the steps below to install them.\nFor Windows with no admin rights\nDownload the latest (recommended) Rtools installer, Rtools.exe, from https://cran.r-project.org/bin/windows/Rtools/. Run the installer keeping the default settings.\nFor Windows with admin rights\nDownload the latest Rtools installer, Rtools.exe, from https://cran.r-project.org/bin/windows/Rtools/. Run the installer making the following selections: keep the default settings for the installation location and components to install; check the box to add rtools to the system PATH.\nFor Mac\nInstall XCode. Either:\n\nDownload and install XCode from the Mac AppStore: http://itunes.apple.com/us/app/xcode/id497799835?mt=12\n\nOr for a smaller download size:\n\nRegister as an Apple Developer (free) here: https://developer.apple.com/programs/enroll/\nDownload the Command Line Tools for XCode appropriate for the version of OS X you are running from here: https://developer.apple.com/downloads/\n\nFor Linux\nIf you installed r-base-dev, when installing R, you should have all you need to build packages from source. Otherwise return to the instructions for installing R for your distribution and follow the instructions there to install the additional tools."
+    "objectID": "slides/04-check-package-documentation/index.html#check-regularly-fix-issues-as-they-arise",
+    "href": "slides/04-check-package-documentation/index.html#check-regularly-fix-issues-as-they-arise",
+    "title": "Package check and documentation",
+    "section": "Check regularly, fix issues as they arise",
+    "text": "Check regularly, fix issues as they arise\n\nWill see later in this session how to do this automatically with Continuous Integration"
   },
   {
-    "objectID": "prerequisites.html#git-and-github",
-    "href": "prerequisites.html#git-and-github",
-    "title": "Prerequisites",
-    "section": "git and GitHub",
-    "text": "git and GitHub\nAlthough there will be some time dedicated to this in the workshop, it would be advantageous if you already have:\n\ngit installed on your computer. See https://git-scm.com/book/en/v2/Getting-Started-Installing-Git\na GitHub account\na GitHub PAT configured to work with RStudio – the vignette from the usethis package on Managing Git(Hub) Credentials goes through this.\n\nHappy Git and GitHub for the useR is an excellent resource for troubleshooting git related issues and checking that your setup works.\nWhilst git/GitHub isn’t essential for package development, it is best practice and we will be making use of GitHub features during the course, e.g. publishing a package documentation website using GitHub pages. However, you can create a package locally without it."
+    "objectID": "slides/04-check-package-documentation/index.html#metadata-in-description",
+    "href": "slides/04-check-package-documentation/index.html#metadata-in-description",
+    "title": "Package check and documentation",
+    "section": "Metadata in DESCRIPTION",
+    "text": "Metadata in DESCRIPTION\n\nPackage: The package name. The changer package can help you change the name!\nTitle: One line, title case, with no period. Fewer than 65 characters.\nVersion\n\nfor release: MAJOR.MINOR.PATCH version.\nfor development version building on version MAJOR.MINOR.PATCH, use: MAJOR.MINOR.PATCH.9000\ncan be filled in with usethis::use_version()"
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#notes-of-version-number",
+    "href": "slides/04-check-package-documentation/index.html#notes-of-version-number",
+    "title": "Package check and documentation",
+    "section": "Notes of version number",
+    "text": "Notes of version number\nGiven a version number MAJOR.MINOR.PATCH, increment the:\n\nMAJOR version when you make incompatible API changes,\nMINOR version when you add functionality in a backwards compatible manner, and\nPATCH version when you make backwards compatible bug fixes.\n\nSee https://semver.org for further guidance on when to bump which part of the version number"
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#metadata-in-description-1",
+    "href": "slides/04-check-package-documentation/index.html#metadata-in-description-1",
+    "title": "Package check and documentation",
+    "section": "Metadata in DESCRIPTION",
+    "text": "Metadata in DESCRIPTION\n\n\nAuthors@R: A call to person() that is run to create the Author field when the package tarball is built. “aut” means author, “cre” means creator (maintainer), “ctb” means contributor.\nA placeholder call to person() is inserted in DESCRIPTION when a package is created with usethis::create_package() which can be edited directly:\n\nperson(\"A\", \"Person\", email = \"a.person@email.com\", \n       role = c(\"aut\", \"cre\"),\n       comment = c(ORCID = \"0000-0001-2345-6789\"))\n\nAlternatively, this can be overwritten with a call to usethis::use_author():\n\nuse_author(\"A\", \"Person\", email = \"a.person@email.com\", \n     role = c(\"aut\", \"cre\"),\n     comment = c(ORCID = \"0000-0001-2345-6789\"))\n\n\n\n\nusethis::use_author() is new in usethis 2.2.0"
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#metadata-in-description-2",
+    "href": "slides/04-check-package-documentation/index.html#metadata-in-description-2",
+    "title": "Package check and documentation",
+    "section": "Metadata in DESCRIPTION",
+    "text": "Metadata in DESCRIPTION\n\nDescription: One paragraph describing what the package does. Keep the width of the paragraph to 80 characters; indent subsequent lines with 4 spaces.\nLicense: Will discuss later\nEncoding: How to encode text, use UTF-8 encoding.\nLazyData: If true data sets in the package are stored in a database during package installation and loaded from the database as required. Recommended if shipping data with package – usethis::use_data() will set this for you.\n\n\nusethis::create_package() sets UTF-8 encoding\nlazy loading means that data is only loaded if needed. This means that they won’t occupy any memory until you use them. do NOT include LazyData: true in DESCRIPTION unless you actually ship data in your package."
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#open-source-licenses",
+    "href": "slides/04-check-package-documentation/index.html#open-source-licenses",
+    "title": "Package check and documentation",
+    "section": "Open source licenses",
+    "text": "Open source licenses\nThere are three main open source licenses:\n\nCC0: “public domain”, best for data packages.\n\nusethis::use_cc0_license()\n\nMIT: Free for anyone to do anything with (including bundling in closed source product).\n\nusethis::use_mit_license()\n\nGPL: Changes and bundles must also be GPL\n\nusethis::use_gpl_license()\n\nIf you are including someone else’s GPL code directly, you must use GPL yourself.\n\n\nhttps://bookdown.org/rdpeng/RProgDA/open-source-licensing.html\nsomewhat personal down to how important you consider open source to be and what you are happy with people doing with your code\nSuggest academic: GPL; community/other: MIT"
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#proprietary-packages",
+    "href": "slides/04-check-package-documentation/index.html#proprietary-packages",
+    "title": "Package check and documentation",
+    "section": "Proprietary packages",
+    "text": "Proprietary packages\nYou can use usethis::use_proprietary() to make it clear that your package isn’t open source.\n\nusethis::use_proprietary(copyright_holder = \"ACME Ltd\")\n\nIn DESCRIPTION:\nLicense: file LICENSE\nIn LICENSE:\nCopyright 2023 ACME Ltd. All rights reserved."
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#licensing-considerations-at-universities",
+    "href": "slides/04-check-package-documentation/index.html#licensing-considerations-at-universities",
+    "title": "Package check and documentation",
+    "section": "Licensing considerations at universities",
+    "text": "Licensing considerations at universities\n\n\n\n\n\n\nThis slide is specific for The University of Warwick, but similar considerations are likely to be true at other Universities.\n\n\n\n\n\nSoftware is defined as a creative output (unlike scholarly works, e.g. thesis, conference paper)\nThe university owns the IP of any software created by Warwick PhD students and staff in the course of their work\nBefore making code public or publishing software under any license, contact Brendan at B.Spillane@warwick.ac.uk\n\nPermission to publish under an open source license likely to be granted for research code\nNot necessary to obtain permission if open source software was part of grant proposal (as proposal will have already been checked by Research & Impact Services, who will have identified any IP issues).\n\n\n\n\nExtra note from Brendan: “they don’t need to come to me with every single bit of code they open source. I’m more interested in the entirety of the project rather than approving 2000 bits of individual code!”"
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#your-turn",
+    "href": "slides/04-check-package-documentation/index.html#your-turn",
+    "title": "Package check and documentation",
+    "section": "Your turn",
+    "text": "Your turn\n\nOpen the DESCRIPTION file and add a title and description.\nAdd yourself as an author and creator.\nAdd an MIT license.\nRun the package check.\nCommit changes to GitHub.\n\n\n\n\n\n\n\nTip\n\n\nIn RStudio, you can use the ‘Go to file/function’ box or Ctrl + . [period] and start typing a file name to open a file for editing."
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#readme-1",
+    "href": "slides/04-check-package-documentation/index.html#readme-1",
+    "title": "Package check and documentation",
+    "section": "README",
+    "text": "README\nThe README is the quick start guide to your package.\nIt should include\n\na brief overview\ninstructions on how to install the package\na few examples\n\nYou should be able to borrow from the DESCRIPTION and help files!\nIt’s readable on the package’s GitHub repo and on the homepage of its website (more on that later)."
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#creating-a-readme",
+    "href": "slides/04-check-package-documentation/index.html#creating-a-readme",
+    "title": "Package check and documentation",
+    "section": "Creating a README",
+    "text": "Creating a README\nusethis has functions to set up a README with/without R code\nusethis::use_readme_rmd()\nusethis::use_readme_md()\nREADME.Rmd must be rendered to make README.md each time it is changed.\nusethis::use_readme_rmd() creates a pre-commit hook to check if README.Rmd and README.md are out of sync before committing.\nUse build_readme() to render with the latest version of the code.\n\nbuild_readme creates a temporary version of the package"
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#running-automatic-checks",
+    "href": "slides/04-check-package-documentation/index.html#running-automatic-checks",
+    "title": "Package check and documentation",
+    "section": "Running automatic checks",
+    "text": "Running automatic checks\nGitHub Actions (GHAs) allow you to run code every time you push to GitHub.\nThe most useful ones for packages can be selected from a call to usethis::use_github_action():\nuse_github_action()\nWhich action do you want to add? (0 to exit)\n(See &lt;https://github.com/r-lib/actions/tree/v2/examples&gt; for other options) \n\n1: check-standard: Run `R CMD check` on Linux, macOS, and Windows\n2: test-coverage: Compute test coverage and report to https://about.codecov.io\n3: pr-commands: Add /document and /style commands for pull requests\ncheck-standard sets up a GHA that runs R CMD check with the latest release of R on Linux, Mac, and Windows and with both the previous release and development release of R on Linux.\n\nThis behaviour of use_github_action() is new in usethis 2.2.\nuse_github_actions() is deprecated."
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#use_github_actioncheck-release",
+    "href": "slides/04-check-package-documentation/index.html#use_github_actioncheck-release",
+    "title": "Package check and documentation",
+    "section": "use_github_action(\"check-release\")",
+    "text": "use_github_action(\"check-release\")\nThe check-standard GHA is best-practice for ‘serious’ projects, e.g. those aiming for CRAN, but is overkill for our purposes.\nWe can set up a simpler GHA by specifying an alternative:\nuse_github_action(\"check-release\")\nThis sets up a bare-minimum workflow that runs R CMD check with the latest release of R on Linux.\nIt’s good for simple package with no OS-sepcific code, and if you want a quick start with R CI.\n\ni.e. it’s perfect for us!\nReminder to fix any issues as soon as they arise!"
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#your-turn-1",
+    "href": "slides/04-check-package-documentation/index.html#your-turn-1",
+    "title": "Package check and documentation",
+    "section": "Your turn",
+    "text": "Your turn\n\nCreate a README for animalsounds with usethis::use_readme_rmd().\nFill in the description and an example.\nTry adding the README in a git commit – it should fail! Render the README with build_readme(), then add both README.Rmd and README.md in a git commit.\nRun usethis::use_github_action(\"check-release\"). It adds a badge to the README, so you will need to render the README again.\nCommit all the changes to git."
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#vignettes-1",
+    "href": "slides/04-check-package-documentation/index.html#vignettes-1",
+    "title": "Package check and documentation",
+    "section": "Vignettes",
+    "text": "Vignettes\nVignettes are long-form documentation for your package.\nThey use R markdown to integrate code and output into the documentation. Typically:\n\nA single/main vignette showing a complete workflow.\nOptional further vignette(s) going deeper on one aspect/application\nOptional further vignette(s) for specialist audience (methodologists or developers)\n\nA vignette with the same name as the package (e.g., vignettes/animalsounds.Rmd or vignettes/articles/animalsounds.Rmd) automatically becomes a top-level “Get started” link.\n\nFairly short read ~10 minutes"
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#use_vignette",
+    "href": "slides/04-check-package-documentation/index.html#use_vignette",
+    "title": "Package check and documentation",
+    "section": "use_vignette()",
+    "text": "use_vignette()\nEasiest way to get started is with usethis::use_vignette()\nusethis::use_vignette(\"name\")\nAdds to DESCRIPTION\nSuggests: knitr\nVignetteBuilder: knitr\n\nCreates vignettes/\nDrafts vignettes/name.Rmd\n\nuse_vignette() will fill both title fields with the “name” of the file, but you’ll want to edit to something more descriptive.\nNeeds to be .Rmd not .qmd. Quarto is not R-specific and CRAN can’t publish .qmd files."
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#vignette-rmarkdown-special-metadata",
+    "href": "slides/04-check-package-documentation/index.html#vignette-rmarkdown-special-metadata",
+    "title": "Package check and documentation",
+    "section": "Vignette = Rmarkdown + special metadata",
+    "text": "Vignette = Rmarkdown + special metadata\n---\ntitle: \"Vignette Title\"\nauthor: \"Vignette author\"\ndate: \"2026-05-14\"\noutput: rmarkdown::html_vignette\nvignette: &gt;\n%\\VignetteIndexEntry{Vignette Title}\n%\\VignetteEngine{knitr::rmarkdown}\n%\\VignetteEncoding{UTF-8}\n---\n\n\nhtml_vignette output uses a custom style sheet to keep the file size of the HTML as small as possible.\nThe vignette: field contains special metadata needed when the package is built. Don’t forget to change the title here too!"
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#vignette-workflow",
+    "href": "slides/04-check-package-documentation/index.html#vignette-workflow",
+    "title": "Package check and documentation",
+    "section": "Vignette workflow",
+    "text": "Vignette workflow\n\n\nNeed to install package so can call with library()"
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#articles",
+    "href": "slides/04-check-package-documentation/index.html#articles",
+    "title": "Package check and documentation",
+    "section": "Articles",
+    "text": "Articles\nVignette code needs to be able to run on CRAN. There are some cases where this is not possible.\nAs an alternative, you can use articles instead of vignettes:\nusethis::use_article(\"my-article\")\n✔ Adding 'rmarkdown' to Config/Needs/website\n✔ Creating 'vignettes/'\n✔ Creating 'vignettes/articles/'\n✔ Adding '*.html', '*.R' to 'vignettes/.gitignore'\n✔ Writing 'vignettes/articles/my-article.Rmd'\n• Modify 'vignettes/articles/my-article.Rmd'\n✔ Adding '^vignettes/articles$' to '.Rbuildignore'"
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#your-turn-2",
+    "href": "slides/04-check-package-documentation/index.html#your-turn-2",
+    "title": "Package check and documentation",
+    "section": "Your turn",
+    "text": "Your turn\n\nInstall your animalsounds package and restart R (Install button).\nCreate a simple vignette, animalsounds, that shows how to use animal_sounds().\nFix the “vignette title” in the YAML header.\nKnit the vignette to preview it.\nRun devtools::install(build_vignettes = TRUE) to install the package with the vignettes. Call browseVignettes(\"animalsounds\") to open your vignette.\nCommit your changes to git."
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#track-changes-in-a-news-file",
+    "href": "slides/04-check-package-documentation/index.html#track-changes-in-a-news-file",
+    "title": "Package check and documentation",
+    "section": "Track changes in a NEWS file",
+    "text": "Track changes in a NEWS file\n\nusethis::use_news_md()\n\nAdd news for the latest version at the top.\nUse a top-level heading for each release version\n# animalsounds 1.0.0"
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#what-news-to-include",
+    "href": "slides/04-check-package-documentation/index.html#what-news-to-include",
+    "title": "Package check and documentation",
+    "section": "What news to include",
+    "text": "What news to include\nAdd each change in a bulleted list:\n\nIf you have many changes, split into subsections (e.g. ## Major changes, ## Minor improvements, ## Bug fixes).\nWait until release to decide if subsections are necessary\n\nNote connections to GitHub:\n\nIf related to a GitHub issue, add the issue number, e.g. (#10).\nIf related to a pull request, add the pull request number and the author, e.g. (#101, @hadley)."
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#a-package-website-pkgdown",
+    "href": "slides/04-check-package-documentation/index.html#a-package-website-pkgdown",
+    "title": "Package check and documentation",
+    "section": "A package website pkgdown",
+    "text": "A package website pkgdown\nThe pkgdown package is designed to make it quick and easy to build a website for your package:\n\nusethis::use_pkgdown()\n\nWhy have a website for your package?\n\nGoogle-ability\nEasy-to-read and browse documentation and package information in one place\nExamples with output!"
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#build-a-website",
+    "href": "slides/04-check-package-documentation/index.html#build-a-website",
+    "title": "Package check and documentation",
+    "section": "Build a website",
+    "text": "Build a website\npkgdown::build_site() creates a package website based on the standard documentation files.\nHome page: based on README\nReference:\n\none page for each help file\ngenerates an index page, with functions listed alphabetically by default\n\n\nFor packages with lots of functions, it’s good to organise them by theme or functionality."
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#build-a-website-ctd",
+    "href": "slides/04-check-package-documentation/index.html#build-a-website-ctd",
+    "title": "Package check and documentation",
+    "section": "Build a website (ctd)",
+    "text": "Build a website (ctd)\nArticles: one page for each vignette\nGet Started: if you have a vignette with filename = package name\nNews: based on NEWS.md\nPlus:\n\nA link to your GitHub repo (if listed in the DESCRIPTION url field).\nA link to the License\nAny badges added to your README (e.g. from GitHub Actions)"
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#hosting-your-website",
+    "href": "slides/04-check-package-documentation/index.html#hosting-your-website",
+    "title": "Package check and documentation",
+    "section": "Hosting your website",
+    "text": "Hosting your website\n\nYou can host your website directly from its GitHub repo (repo has to be public)\nThe recommended approach is to let GitHub build your page (instead of calling pkgdown::build_site() and committing and pushing the artifacts of the built website (i.e., html files) to GitHub\nAdd an action to your GitHub repo to be run automatically every time you push to it to rebuild the site:\nusethis::use_pkgdown_github_pages()\nThe URL will be https://USERNAME.github.io/animalsounds\n\n\nuse_pkgdown_github_pages() will:\n\ncall use_pkgdown() - allow it to overwrite existing _pkgdown.yml (will add the url)\nset up a gh-pages branch from which to deploy the site\nadd a pkgdown.yml to .github/workflows\n\nWill still need to call pkgdown::build_site() to preview locally"
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#customising-your-website",
+    "href": "slides/04-check-package-documentation/index.html#customising-your-website",
+    "title": "Package check and documentation",
+    "section": "Customising your website",
+    "text": "Customising your website\nYou can add more information to _pkgdown.yml to customise the package website:\n\ncurate the index for the Reference page - functions can be grouped and described in categories\nhttps://pkgdown.r-lib.org/articles/pkgdown.html#reference\ncustomise the appearance\nhttps://pkgdown.r-lib.org/articles/customise.html"
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#your-turn-3",
+    "href": "slides/04-check-package-documentation/index.html#your-turn-3",
+    "title": "Package check and documentation",
+    "section": "Your turn",
+    "text": "Your turn\n\nRun usethis::use_pkgdown_github_pages() – this will ask you to install pkgdown if you don’t already have it.\nRead through all the output in the console to see the many things that this function does.\nLook at the diffs in the Git pane. Commit and push all changes.\nGo to your GitHub repo of the package. Click on Actions. If there’s a green tick next to “pages build and deployment” then your site is ready to view!\nClick on the link to the website under the About section of the repo.\n(Bonus) Change the appearance of the site with a Bootswatch theme: https://pkgdown.r-lib.org/articles/customise.html#bootswatch-themes."
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#references",
+    "href": "slides/04-check-package-documentation/index.html#references",
+    "title": "Package check and documentation",
+    "section": "References",
+    "text": "References\nWickham, H and Bryan, J, R Packages (2nd edn, in progress), https://r-pkgs.org.\nR Core Team, Writing R Extensions, https://cran.r-project.org/doc/manuals/r-release/R-exts.html"
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#license",
+    "href": "slides/04-check-package-documentation/index.html#license",
+    "title": "Package check and documentation",
+    "section": "License",
+    "text": "License\nLicensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
   },
   {
     "objectID": "slides/03-data-testing/index.html#overview",
@@ -483,256 +616,319 @@
     "text": "License\nLicensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#overview",
-    "href": "slides/04-check-package-documentation/index.html#overview",
-    "title": "Package check and documentation",
+    "objectID": "slides/02-documentation/index.html#overview",
+    "href": "slides/02-documentation/index.html#overview",
+    "title": "Function documentation and dependencies",
     "section": "Overview",
-    "text": "Overview\n\nCheck your package!\nDESCRIPTION\nREADME\nContinuous Integration (CI)\nVignettes\nNEWS\nPackage website with pkgdown"
+    "text": "Overview\n\nDocumenting functions with roxygen2\nNAMESPACE: exporting functions\nNAMESPACE: importing functions"
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#r-cmd-check",
-    "href": "slides/04-check-package-documentation/index.html#r-cmd-check",
-    "title": "Package check and documentation",
-    "section": "R CMD check",
-    "text": "R CMD check\nR CMD check is the command line utility provided by R to check R packages.\nIt checks that all the components are valid and consistent with each other, in particular:\n\nMetadata in DESCRIPTION\nImports and exports in NAMESPACE\n.Rd files in /man\n\nIt will also run any examples and tests you have written.\ndevtools::check() will run R CMD check in the background, with the results shown in the Build pane.\n\nNote that this doesn’t check the correctness of code - this is the role of tests"
+    "objectID": "slides/02-documentation/index.html#roxygen2",
+    "href": "slides/02-documentation/index.html#roxygen2",
+    "title": "Function documentation and dependencies",
+    "section": "roxygen2",
+    "text": "roxygen2\nThe roxygen2 package generates documentation from specially formatted comments, that we write above the function code, e.g.\n\n#' @param x A numeric vector.\n\n\n#' is a roxygen comment.\n@param is a roxygen tag.\nThe @param tag takes an argument: the name of the parameter\nThe remaining text (until the next tag in the file) is the documentation relevant to the tag."
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#run-devtoolscheck",
-    "href": "slides/04-check-package-documentation/index.html#run-devtoolscheck",
-    "title": "Package check and documentation",
-    "section": "Run devtools::check()",
-    "text": "Run devtools::check()\nYou will get lots of output. It will end with:\n-- R CMD check results ---------- animalsounds 0.0.0.9000 ----\nDuration: 9.3s\n\n&gt; checking DESCRIPTION meta-information ... WARNING\n  Non-standard license specification:\n    `use_mit_license()`, `use_gpl3_license()` or friends to pick a\n    license\n  Standardizable: FALSE\n\n0 errors √ | 1 warnings x | 0 notes √\nWe haven’t yet specified a license for our package.\n\nOn running check() you may get an error if you are using a networked drive. There’s a fix coming in a few slides."
+    "objectID": "slides/02-documentation/index.html#common-tags",
+    "href": "slides/02-documentation/index.html#common-tags",
+    "title": "Function documentation and dependencies",
+    "section": "Common tags",
+    "text": "Common tags\nThere are four tags you’ll use for most functions:\n\n\n\n\nTag\nPurpose\n\n\n\n\n@param arg\nDescribe inputs\n\n\n@examples\nShow how the function works\n\n\n@return\nDescribe the return value (not needed if NULL)\n\n\n@export\nAdd this tag if the function should be user-visible\n\n\n\n Usual RStudio shortcuts work in the @examples section, allowing you to run code interactively.\n\nOther important ones: @seealso | Pointers to related functions @references @importFRom @method @note @rdname @keywords internal @format (data) @section"
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#aside-in-case-of-error",
-    "href": "slides/04-check-package-documentation/index.html#aside-in-case-of-error",
-    "title": "Package check and documentation",
-    "section": "Aside: in case of error",
-    "text": "Aside: in case of error\nOn running devtools::check() you may get an error of the form\nUpdating animalsounds documentation  \nError: The specified file is not readable: path-to\\animalsounds\\NAMESPACE  \nThis can happen if your repo is on a networked drive.\nThis is covered in this Stackoverflow question and can be fixed."
+    "objectID": "slides/02-documentation/index.html#the-description-block",
+    "href": "slides/02-documentation/index.html#the-description-block",
+    "title": "Function documentation and dependencies",
+    "section": "The description block",
+    "text": "The description block\nThe roxygen comment should start with a description block.\n\nFirst sentence is the title.\nNext paragraph is the description.\nEverything else is the details (optional).\n\n#' Title in Title Case of up to 65 Characters\n#'\n#' Mandatory description of what the function does. \n#' Should be a short paragraph of a few lines only.\n#'\n#' The details section is optional and may be several paragraphs. It can even\n#' contain sub-sections (not illustrated here)."
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#aside-a-fix-for-networked-drives",
-    "href": "slides/04-check-package-documentation/index.html#aside-a-fix-for-networked-drives",
-    "title": "Package check and documentation",
-    "section": "Aside: a fix for networked drives",
-    "text": "Aside: a fix for networked drives\n\nSave a copy of this file: fix_for_networked_drives.R\nSave it somewhere other than the animalsounds directory\nOpen the file from the animalsounds project session\nRun the whole file\n\nYou should now find that devtools::check() proceeds normally."
+    "objectID": "slides/02-documentation/index.html#rstudio-helps-you-get-started",
+    "href": "slides/02-documentation/index.html#rstudio-helps-you-get-started",
+    "title": "Function documentation and dependencies",
+    "section": "RStudio helps you get started",
+    "text": "RStudio helps you get started\nPut your cursor inside a function, then select ‘Insert Roxygen Skeleton’ from the Code menu.\n\n\n\n\n\n#' Title\n#'\n#' @param animal\n#' @param sound\n#'\n#' @return\n#' @export\n#'\n#' @examples\nanimal_sounds &lt;- function(animal, sound) {\n  stopifnot(is.character(animal) & length(animal) == 1)\n  stopifnot(is.character(sound) & length(sound) == 1)\n  paste0(\"The \", animal, \" goes \", sound, \"!\")\n}"
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#types-of-problem",
-    "href": "slides/04-check-package-documentation/index.html#types-of-problem",
-    "title": "Package check and documentation",
-    "section": "Types of problem",
-    "text": "Types of problem\n\n\n\n\nERROR\nMust fix to get the code/example/test working\n\n\nWARNING\nFix if sharing with others\n\n\nNOTE\nFix if submitting to CRAN\n\n\n\n\nIt is possible to submit to CRAN with a NOTE, but it’s best avoided.\n\nNOTES best avoid for CRAN as they require a person to respond. One unavoidable case of a NOTE on CRAN submission: first submission of a package"
+    "objectID": "slides/02-documentation/index.html#example-roxygen-documentation",
+    "href": "slides/02-documentation/index.html#example-roxygen-documentation",
+    "title": "Function documentation and dependencies",
+    "section": "Example roxygen documentation",
+    "text": "Example roxygen documentation\n#' Sort a Numeric Vector in Decreasing Order\n#'\n#' Sort a numeric vector so that the values are in deceasing order.  \n#' Missing values are optionally removed or put last.\n#'\n#' @param x A numeric vector.\n#' @param na.rm A logical value indicating whether to remove missing values\n#' before sorting.\n#' @return A vector with the values sorted in descreasing order.\n#' @export\n#'\n#' @examples\n#' x &lt;- c(3, 7, 2, NA)\n#' high_to_low(x)\n#' high_to_low(x, na.rm = TRUE)"
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#check-regularly-fix-issues-as-they-arise",
-    "href": "slides/04-check-package-documentation/index.html#check-regularly-fix-issues-as-they-arise",
-    "title": "Package check and documentation",
-    "section": "Check regularly, fix issues as they arise",
-    "text": "Check regularly, fix issues as they arise\n\nWill see later in this session how to do this automatically with Continuous Integration"
+    "objectID": "slides/02-documentation/index.html#r-documentation-file",
+    "href": "slides/02-documentation/index.html#r-documentation-file",
+    "title": "Function documentation and dependencies",
+    "section": "R documentation file",
+    "text": "R documentation file\nroxygen2 converts the roxygen block to an .Rd file in the /man directory\n% Generated by roxygen2: do not edit by hand\n% Please edit documentation in R/high_to_low.R\n\\name{high_to_low}\n\\alias{high_to_low}\n\\title{Sort a Numeric Vector in Decreasing Order}\n\\usage{\nhigh_to_low(x, na.rm = FALSE)\n}\n\\arguments{\n\\item{x}{A numeric vector.}\n\\item{na.rm}{A logical value indicating whether to remove missing values\nbefore sorting.}\n}\n\\value{\n...\n\nThis is in a toy package, sortnum, created for the R Forwards package development workshops:\nhttps://github.com/forwards/workshops/tree/master/sortnum"
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#metadata-in-description",
-    "href": "slides/04-check-package-documentation/index.html#metadata-in-description",
-    "title": "Package check and documentation",
-    "section": "Metadata in DESCRIPTION",
-    "text": "Metadata in DESCRIPTION\n\nPackage: The package name. The changer package can help you change the name!\nTitle: One line, title case, with no period. Fewer than 65 characters.\nVersion\n\nfor release: MAJOR.MINOR.PATCH version.\nfor development version building on version MAJOR.MINOR.PATCH, use: MAJOR.MINOR.PATCH.9000\ncan be filled in with usethis::use_version()"
+    "objectID": "slides/02-documentation/index.html#html-file",
+    "href": "slides/02-documentation/index.html#html-file",
+    "title": "Function documentation and dependencies",
+    "section": "HTML file",
+    "text": "HTML file\nWhen the package is installed, the .Rd is converted by R to HTML on demand"
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#notes-of-version-number",
-    "href": "slides/04-check-package-documentation/index.html#notes-of-version-number",
-    "title": "Package check and documentation",
-    "section": "Notes of version number",
-    "text": "Notes of version number\nGiven a version number MAJOR.MINOR.PATCH, increment the:\n\nMAJOR version when you make incompatible API changes,\nMINOR version when you add functionality in a backwards compatible manner, and\nPATCH version when you make backwards compatible bug fixes.\n\nSee https://semver.org for further guidance on when to bump which part of the version number"
+    "objectID": "slides/02-documentation/index.html#regular-documentation-workflow",
+    "href": "slides/02-documentation/index.html#regular-documentation-workflow",
+    "title": "Function documentation and dependencies",
+    "section": "Regular documentation workflow",
+    "text": "Regular documentation workflow\n\n\nYou must have loaded the package with load_all() at least once."
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#metadata-in-description-1",
-    "href": "slides/04-check-package-documentation/index.html#metadata-in-description-1",
-    "title": "Package check and documentation",
-    "section": "Metadata in DESCRIPTION",
-    "text": "Metadata in DESCRIPTION\n\n\nAuthors@R: A call to person() that is run to create the Author field when the package tarball is built. “aut” means author, “cre” means creator (maintainer), “ctb” means contributor.\nA placeholder call to person() is inserted in DESCRIPTION when a package is created with usethis::create_package() which can be edited directly:\n\nperson(\"A\", \"Person\", email = \"a.person@email.com\", \n       role = c(\"aut\", \"cre\"),\n       comment = c(ORCID = \"0000-0001-2345-6789\"))\n\nAlternatively, this can be overwritten with a call to usethis::use_author():\n\nuse_author(\"A\", \"Person\", email = \"a.person@email.com\", \n     role = c(\"aut\", \"cre\"),\n     comment = c(ORCID = \"0000-0001-2345-6789\"))\n\n\n\n\nusethis::use_author() is new in usethis 2.2.0"
+    "objectID": "slides/02-documentation/index.html#a-namespace-splits-functions-into-two-classes",
+    "href": "slides/02-documentation/index.html#a-namespace-splits-functions-into-two-classes",
+    "title": "Function documentation and dependencies",
+    "section": "A namespace splits functions into two classes",
+    "text": "A namespace splits functions into two classes\n\n\n\n\nInternal\nExternal\n\n\n\n\nOnly for use within package\nFor use by others\n\n\nDocumentation optional\nMust be documented\n\n\nEasily changed\nChanging will break other people’s code"
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#metadata-in-description-2",
-    "href": "slides/04-check-package-documentation/index.html#metadata-in-description-2",
-    "title": "Package check and documentation",
-    "section": "Metadata in DESCRIPTION",
-    "text": "Metadata in DESCRIPTION\n\nDescription: One paragraph describing what the package does. Keep the width of the paragraph to 80 characters; indent subsequent lines with 4 spaces.\nLicense: Will discuss later\nEncoding: How to encode text, use UTF-8 encoding.\nLazyData: If true data sets in the package are stored in a database during package installation and loaded from the database as required. Recommended if shipping data with package – usethis::use_data() will set this for you.\n\n\nusethis::create_package() sets UTF-8 encoding\nlazy loading means that data is only loaded if needed. This means that they won’t occupy any memory until you use them. do NOT include LazyData: true in DESCRIPTION unless you actually ship data in your package."
+    "objectID": "slides/02-documentation/index.html#default-namespace",
+    "href": "slides/02-documentation/index.html#default-namespace",
+    "title": "Function documentation and dependencies",
+    "section": "Default NAMESPACE",
+    "text": "Default NAMESPACE\n\nIt is best to export functions explicitly\nThe NAMESPACE file as created by usethis::create_package() does not export anything by default.\n\n\n\n\n\n\n\n\nWarning\n\n\nA package created from the RStudio menus via File &gt; New Project &gt; New Directory &gt; R Package creates a NAMESPACE that exports everything by default, with exportPattern(\"^[[:alpha:]]+\")\nThis is a good reason not to do this: always call usethis::create_package() to create a package.\nFor similar reasons, also avoid package.skeleton()."
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#open-source-licenses",
-    "href": "slides/04-check-package-documentation/index.html#open-source-licenses",
-    "title": "Package check and documentation",
-    "section": "Open source licenses",
-    "text": "Open source licenses\nThere are three main open source licenses:\n\nCC0: “public domain”, best for data packages.\n\nusethis::use_cc0_license()\n\nMIT: Free for anyone to do anything with (including bundling in closed source product).\n\nusethis::use_mit_license()\n\nGPL: Changes and bundles must also be GPL\n\nusethis::use_gpl_license()\n\nIf you are including someone else’s GPL code directly, you must use GPL yourself.\n\n\nhttps://bookdown.org/rdpeng/RProgDA/open-source-licensing.html\nsomewhat personal down to how important you consider open source to be and what you are happy with people doing with your code\nSuggest academic: GPL; community/other: MIT"
+    "objectID": "slides/02-documentation/index.html#exporting-functions",
+    "href": "slides/02-documentation/index.html#exporting-functions",
+    "title": "Function documentation and dependencies",
+    "section": "Exporting functions",
+    "text": "Exporting functions\n#' @export\nfun1 &lt;- function(...) {}\nWhen we call devtools::document(), an export() directive will be added to NAMESPACE for each function that has an #' @export comment.\n# Generated by roxygen2: do not edit by hand\n\nexport(fun1)"
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#proprietary-packages",
-    "href": "slides/04-check-package-documentation/index.html#proprietary-packages",
-    "title": "Package check and documentation",
-    "section": "Proprietary packages",
-    "text": "Proprietary packages\nYou can use usethis::use_proprietary() to make it clear that your package isn’t open source.\n\nusethis::use_proprietary(copyright_holder = \"ACME Ltd\")\n\nIn DESCRIPTION:\nLicense: file LICENSE\nIn LICENSE:\nCopyright 2023 ACME Ltd. All rights reserved."
+    "objectID": "slides/02-documentation/index.html#what-to-export",
+    "href": "slides/02-documentation/index.html#what-to-export",
+    "title": "Function documentation and dependencies",
+    "section": "What to export",
+    "text": "What to export\nOnly export functions that you want your package users to use, i.e. those that are relevant to the purpose of the package.\nDon’t export internal helpers, e.g.\n# Defaults for NULL values\n`%||%` &lt;- function(a, b) if (is.null(a)) b else a\n\n# Remove NULLs from a list\ncompact &lt;- function(x) {\n  x[!vapply(x, is.null, logical(1))]\n}\n\n\n\n\n\n\n\nNote\n\n\nUsing the ‘Insert Roxygen Skeleton’ option adds an @export tag."
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#licensing-considerations-at-universities",
-    "href": "slides/04-check-package-documentation/index.html#licensing-considerations-at-universities",
-    "title": "Package check and documentation",
-    "section": "Licensing considerations at universities",
-    "text": "Licensing considerations at universities\n\n\n\n\n\n\nThis slide is specific for The University of Warwick, but similar considerations are likely to be true at other Universities.\n\n\n\n\n\nSoftware is defined as a creative output (unlike scholarly works, e.g. thesis, conference paper)\nThe university owns the IP of any software created by Warwick PhD students and staff in the course of their work\nBefore making code public or publishing software under any license, contact Brendan at B.Spillane@warwick.ac.uk\n\nPermission to publish under an open source license likely to be granted for research code\nNot necessary to obtain permission if open source software was part of grant proposal (as proposal will have already been checked by Research & Impact Services, who will have identified any IP issues).\n\n\n\n\nExtra note from Brendan: “they don’t need to come to me with every single bit of code they open source. I’m more interested in the entirety of the project rather than approving 2000 bits of individual code!”"
-  },
-  {
-    "objectID": "slides/04-check-package-documentation/index.html#your-turn",
-    "href": "slides/04-check-package-documentation/index.html#your-turn",
-    "title": "Package check and documentation",
+    "objectID": "slides/02-documentation/index.html#your-turn",
+    "href": "slides/02-documentation/index.html#your-turn",
+    "title": "Function documentation and dependencies",
     "section": "Your turn",
-    "text": "Your turn\n\nOpen the DESCRIPTION file and add a title and description.\nAdd yourself as an author and creator.\nAdd an MIT license.\nRun the package check.\nCommit changes to GitHub.\n\n\n\n\n\n\n\nTip\n\n\nIn RStudio, you can use the ‘Go to file/function’ box or Ctrl + . [period] and start typing a file name to open a file for editing."
+    "text": "Your turn\nFor the animal_sounds function:\n\n\nInsert a Roxygen skeleton using the RStudio helper.\nCreate a draft documentation file with devtools::document() or Cmd/Ctrl + Shift + D.\nClick on “Diff” in the Git pane and view the changes that have been made.\nPreview the HTML help with ?animal_sounds.\nFill in the Roxygen skeleton for animal_sounds(), recreating the documentation file and previewing the HTML help to view your updates.\nWhen you have finished editing, run devtools::document() to ensure the .Rd file is in sync. Make a git commit with your updated R/animal_sounds.R file, the updated NAMESPACE, and the new man/animal_sounds.Rd file."
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#readme-1",
-    "href": "slides/04-check-package-documentation/index.html#readme-1",
-    "title": "Package check and documentation",
-    "section": "README",
-    "text": "README\nThe README is the quick start guide to your package.\nIt should include\n\na brief overview\ninstructions on how to install the package\na few examples\n\nYou should be able to borrow from the DESCRIPTION and help files!\nIt’s readable on the package’s GitHub repo and on the homepage of its website (more on that later)."
+    "objectID": "slides/02-documentation/index.html#rd-markup",
+    "href": "slides/02-documentation/index.html#rd-markup",
+    "title": "Function documentation and dependencies",
+    "section": ".Rd Markup",
+    "text": ".Rd Markup\n.Rd files recognise LaTeX-like mark-up in most text-based fields, e.g.\n#' This is a convenience function that is a wrapper around\n#' \\code{\\link{sort.int}}.\nDetails can be found in the Writing R documentation files section of the Writing R Extensions manual."
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#creating-a-readme",
-    "href": "slides/04-check-package-documentation/index.html#creating-a-readme",
-    "title": "Package check and documentation",
-    "section": "Creating a README",
-    "text": "Creating a README\nusethis has functions to set up a README with/without R code\nusethis::use_readme_rmd()\nusethis::use_readme_md()\nREADME.Rmd must be rendered to make README.md each time it is changed.\nusethis::use_readme_rmd() creates a pre-commit hook to check if README.Rmd and README.md are out of sync before committing.\nUse build_readme() to render with the latest version of the code.\n\nbuild_readme creates a temporary version of the package"
+    "objectID": "slides/02-documentation/index.html#using-markdown",
+    "href": "slides/02-documentation/index.html#using-markdown",
+    "title": "Function documentation and dependencies",
+    "section": "Using markdown",
+    "text": "Using markdown\nMost commonly used mark-up is easier with markdown (and can be mixed with .Rd mark-up).\n\nText formatting: **bold**, _italic_, `code`\nCreate links\n\nTo a function in the same package: [func()]\nTo a function in a different package: [pkg::func()]\nWith different link text, e.g. [link text][func()]\n\n\nFor more details, see the (R)Markdown support vignette.\n\nSeems you no longer need to specify pkg:: - will find the documentation in any installed package. For functions in multiple packages, e.g. select() help pane will offer a choice. Probably still best practice to use pkg:: for disambiguation, though still may not be necessary for base functions"
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#running-automatic-checks",
-    "href": "slides/04-check-package-documentation/index.html#running-automatic-checks",
-    "title": "Package check and documentation",
-    "section": "Running automatic checks",
-    "text": "Running automatic checks\nGitHub Actions (GHAs) allow you to run code every time you push to GitHub.\nThe most useful ones for packages can be selected from a call to usethis::use_github_action():\nuse_github_action()\nWhich action do you want to add? (0 to exit)\n(See &lt;https://github.com/r-lib/actions/tree/v2/examples&gt; for other options) \n\n1: check-standard: Run `R CMD check` on Linux, macOS, and Windows\n2: test-coverage: Compute test coverage and report to https://about.codecov.io\n3: pr-commands: Add /document and /style commands for pull requests\ncheck-standard sets up a GHA that runs R CMD check with the latest release of R on Linux, Mac, and Windows and with both the previous release and development release of R on Linux.\n\nThis behaviour of use_github_action() is new in usethis 2.2.\nuse_github_actions() is deprecated."
-  },
-  {
-    "objectID": "slides/04-check-package-documentation/index.html#use_github_actioncheck-release",
-    "href": "slides/04-check-package-documentation/index.html#use_github_actioncheck-release",
-    "title": "Package check and documentation",
-    "section": "use_github_action(\"check-release\")",
-    "text": "use_github_action(\"check-release\")\nThe check-standard GHA is best-practice for ‘serious’ projects, e.g. those aiming for CRAN, but is overkill for our purposes.\nWe can set up a simpler GHA by specifying an alternative:\nuse_github_action(\"check-release\")\nThis sets up a bare-minimum workflow that runs R CMD check with the latest release of R on Linux.\nIt’s good for simple package with no OS-sepcific code, and if you want a quick start with R CI.\n\ni.e. it’s perfect for us!\nReminder to fix any issues as soon as they arise!"
-  },
-  {
-    "objectID": "slides/04-check-package-documentation/index.html#your-turn-1",
-    "href": "slides/04-check-package-documentation/index.html#your-turn-1",
-    "title": "Package check and documentation",
+    "objectID": "slides/02-documentation/index.html#your-turn-1",
+    "href": "slides/02-documentation/index.html#your-turn-1",
+    "title": "Function documentation and dependencies",
     "section": "Your turn",
-    "text": "Your turn\n\nCreate a README for animalsounds with usethis::use_readme_rmd().\nFill in the description and an example.\nTry adding the README in a git commit – it should fail! Render the README with build_readme(), then add both README.Rmd and README.md in a git commit.\nRun usethis::use_github_action(\"check-release\"). It adds a badge to the README, so you will need to render the README again.\nCommit all the changes to git."
+    "text": "Your turn\n\nAdd some details to the help page for animal_sounds(), with a link to paste0() and some markdown syntax.\nAdd a link to a function from a package you don’t have installed (perhaps basemodels::dummy_classifier()).\nRun devtools::document() and check the link in the help page. What happens?\nRun devtools::check(). Does the link cause problems?\nDelete the link to the package you don’t have installed and run devtools::document() again.\nCommit all your changes to the git repo.\n\n\nIn 3, the link will still be created (and will work if you subsequently install the missing package). It’s a good idea to have the package installed so the link can be checked during R CMD check, otherwise you will get a NOTE.\nbasemodels was added to CRAN the week before the workshop was taught, so very likely to be the case that no-one present has it installed."
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#vignettes-1",
-    "href": "slides/04-check-package-documentation/index.html#vignettes-1",
-    "title": "Package check and documentation",
-    "section": "Vignettes",
-    "text": "Vignettes\nVignettes are long-form documentation for your package.\nThey use R markdown to integrate code and output into the documentation. Typically:\n\nA single/main vignette showing a complete workflow.\nOptional further vignette(s) going deeper on one aspect/application\nOptional further vignette(s) for specialist audience (methodologists or developers)\n\nA vignette with the same name as the package (e.g., vignettes/animalsounds.Rmd or vignettes/articles/animalsounds.Rmd) automatically becomes a top-level “Get started” link.\n\nFairly short read ~10 minutes"
+    "objectID": "slides/02-documentation/index.html#dependencies-1",
+    "href": "slides/02-documentation/index.html#dependencies-1",
+    "title": "Function documentation and dependencies",
+    "section": "Dependencies",
+    "text": "Dependencies\nDependencies are other R packages that our package uses. There are three types of dependency:\nImports: required packages, will be installed when our package is installed if they are not already installed.\nSuggests: optional packages, e.g. only used for development; only used in documentation. Not installed automatically with our package.\nDepends: essentially deprecated for packages, may be used to specify a minimum required version of R (i.e., version of the core packages)."
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#use_vignette",
-    "href": "slides/04-check-package-documentation/index.html#use_vignette",
-    "title": "Package check and documentation",
-    "section": "use_vignette()",
-    "text": "use_vignette()\nEasiest way to get started is with usethis::use_vignette()\nusethis::use_vignette(\"name\")\nAdds to DESCRIPTION\nSuggests: knitr\nVignetteBuilder: knitr\n\nCreates vignettes/\nDrafts vignettes/name.Rmd\n\nuse_vignette() will fill both title fields with the “name” of the file, but you’ll want to edit to something more descriptive.\nNeeds to be .Rmd not .qmd. Quarto is not R-specific and CRAN can’t publish .qmd files."
+    "objectID": "slides/02-documentation/index.html#imported-packages",
+    "href": "slides/02-documentation/index.html#imported-packages",
+    "title": "Function documentation and dependencies",
+    "section": "Imported packages",
+    "text": "Imported packages\nIn DESCRIPTION\nImports: \n    pkgname1\n    pkgname2\nUse :: to access functions\nnew_function &lt;- function(x, y, z) {\n  w &lt;- pkgname1::imported_function(x, y)\n  pkgname2::imported_function(w, z)\n}"
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#vignette-rmarkdown-special-metadata",
-    "href": "slides/04-check-package-documentation/index.html#vignette-rmarkdown-special-metadata",
-    "title": "Package check and documentation",
-    "section": "Vignette = Rmarkdown + special metadata",
-    "text": "Vignette = Rmarkdown + special metadata\n---\ntitle: \"Vignette Title\"\nauthor: \"Vignette author\"\ndate: \"2025-11-17\"\noutput: rmarkdown::html_vignette\nvignette: &gt;\n%\\VignetteIndexEntry{Vignette Title}\n%\\VignetteEngine{knitr::rmarkdown}\n%\\VignetteEncoding{UTF-8}\n---\n\n\nhtml_vignette output uses a custom style sheet to keep the file size of the HTML as small as possible.\nThe vignette: field contains special metadata needed when the package is built. Don’t forget to change the title here too!"
+    "objectID": "slides/02-documentation/index.html#suggested-packages",
+    "href": "slides/02-documentation/index.html#suggested-packages",
+    "title": "Function documentation and dependencies",
+    "section": "Suggested packages",
+    "text": "Suggested packages\nIn DESCRIPTION\nSuggests: \n    pkgname\nIn package functions or examples, handle the case where pkgname is not available:\nif (!requireNamespace(\"pkgname\", quietly = TRUE)){\n  warning(\"pkgname must be installed to perform this function\",\n          \"returning NULL\")\n  return(NULL)\n}\n\nAlso explain conditional use in vignettes later\nMaybe talk about rlang here as well"
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#vignette-workflow",
-    "href": "slides/04-check-package-documentation/index.html#vignette-workflow",
-    "title": "Package check and documentation",
-    "section": "Vignette workflow",
-    "text": "Vignette workflow\n\n\nNeed to install package so can call with library()"
+    "objectID": "slides/02-documentation/index.html#use_package",
+    "href": "slides/02-documentation/index.html#use_package",
+    "title": "Function documentation and dependencies",
+    "section": "use_package()",
+    "text": "use_package()\nuse_package() will modify the DESCRIPTION and remind you how to use the function.\nBy default, packages will be added to “Imports”.\n\nusethis::use_package(\"rlang\")\nusethis::use_package(\"glue\", type = \"Suggests\")"
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#articles",
-    "href": "slides/04-check-package-documentation/index.html#articles",
-    "title": "Package check and documentation",
-    "section": "Articles",
-    "text": "Articles\nVignette code needs to be able to run on CRAN. There are some cases where this is not possible.\nAs an alternative, you can use articles instead of vignettes:\nusethis::use_article(\"my-article\")\n✔ Adding 'rmarkdown' to Config/Needs/website\n✔ Creating 'vignettes/'\n✔ Creating 'vignettes/articles/'\n✔ Adding '*.html', '*.R' to 'vignettes/.gitignore'\n✔ Writing 'vignettes/articles/my-article.Rmd'\n• Modify 'vignettes/articles/my-article.Rmd'\n✔ Adding '^vignettes/articles$' to '.Rbuildignore'"
+    "objectID": "slides/02-documentation/index.html#you-might-get-tired-of-using-all-the-time",
+    "href": "slides/02-documentation/index.html#you-might-get-tired-of-using-all-the-time",
+    "title": "Function documentation and dependencies",
+    "section": "You might get tired of using :: all the time",
+    "text": "You might get tired of using :: all the time\nOr you might want to use an infix function\n\n`%-=%` &lt;- roperators::`%-=%`\n\ncenter &lt;- function(df, select) {\n  for (nm in names(df[select])){\n    # overwrite column after subtracting the mean \n    df[[nm]] %-=% mean(df[[nm]])\n  }\n  df\n}"
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#your-turn-2",
-    "href": "slides/04-check-package-documentation/index.html#your-turn-2",
-    "title": "Package check and documentation",
+    "objectID": "slides/02-documentation/index.html#aside-vs",
+    "href": "slides/02-documentation/index.html#aside-vs",
+    "title": "Function documentation and dependencies",
+    "section": "Aside: %>% vs |>",
+    "text": "Aside: %&gt;% vs |&gt;\nThe native pipe, |&gt;, has been available in R since 4.1.0, and we now prefer this to importing the %&gt;% pipe from magrittr.\nThere are then two options:\n\nDepend on R &gt;= 4.1.0, with this in DESCRIPTION:\n\nDepends:\n    R (&gt;= 4.1.0)\n\nUse the methods outlined in this tidyverse blog post to ensure the package can still work with older versions of R."
+  },
+  {
+    "objectID": "slides/02-documentation/index.html#you-can-import-functions-into-the-package",
+    "href": "slides/02-documentation/index.html#you-can-import-functions-into-the-package",
+    "title": "Function documentation and dependencies",
+    "section": "You can import functions into the package",
+    "text": "You can import functions into the package\n\n#' @importFrom purrr keep modify\n\ncol_summary &lt;- function(df, fun) {\n  stopifnot(is.data.frame(df))\n\n  df |&gt;\n    keep(is.numeric) |&gt;\n    modify(fun)\n}\n\ndevtools::document() will add corresponding import() statements to the NAMESPACE, e.g. import(purr, keep, modify).\nAdding formal imports is slightly more efficient than using ::.\nHere, the @importFrom tag is placed above the function in which the imported function is used."
+  },
+  {
+    "objectID": "slides/02-documentation/index.html#package-level-import-file",
+    "href": "slides/02-documentation/index.html#package-level-import-file",
+    "title": "Function documentation and dependencies",
+    "section": "Package-level import file",
+    "text": "Package-level import file\nImports belong to the package, not to individual functions, so alternatively you can recognise this by storing them in a central location, e.g. R/animalsounds-package.R\n#' @importFrom purrr keep modify\n#' @importFrom roperators %-=%\nNULL\n\nThis removes the possibility of multiple (redundant) imports of the same function. But harder to remember to remove import if function changes! It’s a matter of personal taste."
+  },
+  {
+    "objectID": "slides/02-documentation/index.html#usethisuse_import_from",
+    "href": "slides/02-documentation/index.html#usethisuse_import_from",
+    "title": "Function documentation and dependencies",
+    "section": "usethis::use_import_from()",
+    "text": "usethis::use_import_from()\nThere can be several steps to importing a function. usethis::use_import_from() takes care of all of them.\nIt will first create the package documentation file R/animalsounds-package.R (if it doesn’t already exist – you will also need to agree to this).\n\nusethis::use_import_from(\"purrr\", c(\"keep\", \"modify\"))\n\n✔ Adding 'purrr' to Imports field in DESCRIPTION\n✔ Adding '@importFrom purrr keep', '@importFrom purrr modify' to 'R/animalsounds-package.R'\n✔ Writing 'NAMESPACE'\n✔ Loading animalsounds\n\nuse_import_from() is opinionated in implementing package-level import (rather than above the function in which they are used).\nMay need to close and reopen R/animalsounds-package.R to see the changes."
+  },
+  {
+    "objectID": "slides/02-documentation/index.html#it-may-be-tempting-to-import-a-whole-package",
+    "href": "slides/02-documentation/index.html#it-may-be-tempting-to-import-a-whole-package",
+    "title": "Function documentation and dependencies",
+    "section": "It may be tempting to import a whole package…",
+    "text": "It may be tempting to import a whole package…\n#' @import purrr\ncol_summary &lt;- function(df, fun) {\n  stopifnot(is.data.frame(df))\n\n  df |&gt;\n    keep(is.numeric) |&gt;\n    map_dfc(fun)\n}"
+  },
+  {
+    "objectID": "slides/02-documentation/index.html#but-it-is-dangerous",
+    "href": "slides/02-documentation/index.html#but-it-is-dangerous",
+    "title": "Function documentation and dependencies",
+    "section": "…but it is dangerous",
+    "text": "…but it is dangerous\n#' @import pkg1\n#' @import pkg2\nfun &lt;- function(x) {\n  fun1(x) + fun2(x)\n}\nWorks today…\n… but next year, what if pkg2 adds a fun1 function?"
+  },
+  {
+    "objectID": "slides/02-documentation/index.html#metapackages",
+    "href": "slides/02-documentation/index.html#metapackages",
+    "title": "Function documentation and dependencies",
+    "section": "Metapackages",
+    "text": "Metapackages\nIt is bad practice to import “metapackages” (i.e. packages that are collections of packages), such as tidyverse.\nSee the blog post https://www.tidyverse.org/blog/2018/06/tidyverse-not-for-packages/ for more details."
+  },
+  {
+    "objectID": "slides/02-documentation/index.html#documenting-dependencies",
+    "href": "slides/02-documentation/index.html#documenting-dependencies",
+    "title": "Function documentation and dependencies",
+    "section": "Documenting dependencies",
+    "text": "Documenting dependencies\n\n\n\n\nDESCRIPTION\nNAMESPACE\n\n\n\n\nMakes package available\nMakes function available\n\n\nMandatory\nOptional (can use :: instead)\n\n\nuse_package()\nuse_import_from()"
+  },
+  {
+    "objectID": "slides/02-documentation/index.html#example-rlang-and-cli",
+    "href": "slides/02-documentation/index.html#example-rlang-and-cli",
+    "title": "Function documentation and dependencies",
+    "section": "Example: rlang and cli",
+    "text": "Example: rlang and cli\nCurrently we are using stopifnot() for argument validation\n\nstopifnot(is.character(animal) & length(animal) == 1)\nstopifnot(is.character(sound) & length(sound) == 1)\n\nWe might instead use rlang::is_character() with cli::cli_abort()\n\nsound &lt;- c(\"woof\", \"bark\")\n\nif (!rlang::is_character(sound, n = 1)) {\n  cli::cli_abort(\"`sound` must be a single string!\")\n}\n\nError:\n! `sound` must be a single string!\n\n\n\nin is_character, n tests for length of the vector.\ncli::cli_abort() has some really nice capability - glue interpolation (next slide) - inline classes (next slide) - features that make it easier to write tests (covered later in this course)\nhttps://cli.r-lib.org/reference/inline-markup.html"
+  },
+  {
+    "objectID": "slides/02-documentation/index.html#aside-informative-messages-with-cli",
+    "href": "slides/02-documentation/index.html#aside-informative-messages-with-cli",
+    "title": "Function documentation and dependencies",
+    "section": "Aside: informative messages with cli",
+    "text": "Aside: informative messages with cli\ncli functions can combine glue interpolation and inline classes to produce informative, nicely-formatted error messages.\nIn animal_sounds() we can use\n\ncli::cli_abort(\n  c(\"{.var animal} must be a single string!\",\n    \"i\" = \"It was {.type {animal}} of length {length(animal)} instead.\")\n)\n\nThis gives the error message\n\nanimal_sounds(c(\"dog\", \"cat\"), c(\"woof\", \"miaow\"))\n\nError in `animal_sounds()`:\n! `animal` must be a single string!\nℹ It was a character vector of length 2 instead.\n\n\n\nInformative error messages will make using your package a much nicer experience for you and others."
+  },
+  {
+    "objectID": "slides/02-documentation/index.html#your-turn-2",
+    "href": "slides/02-documentation/index.html#your-turn-2",
+    "title": "Function documentation and dependencies",
     "section": "Your turn",
-    "text": "Your turn\n\nInstall your animalsounds package and restart R (Install button).\nCreate a simple vignette, animalsounds, that shows how to use animal_sounds().\nFix the “vignette title” in the YAML header.\nKnit the vignette to preview it.\nRun devtools::install(build_vignettes = TRUE) to install the package with the vignettes. Call browseVignettes(\"animalsounds\") to open your vignette.\nCommit your changes to git."
+    "text": "Your turn\n\nUse use_package() to add rlang and cli to Imports.\nUpdate animal_sounds() to use is_character() to check the arguments and cli_abort to throw an informative error if necessary, using :: to fully qualify the function calls.\nLoad all and try giving animal_sounds() invalid inputs for animal and/or sound.\nCommit your changes to git.\nPush your commits for this session."
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#track-changes-in-a-news-file",
-    "href": "slides/04-check-package-documentation/index.html#track-changes-in-a-news-file",
-    "title": "Package check and documentation",
-    "section": "Track changes in a NEWS file",
-    "text": "Track changes in a NEWS file\n\nusethis::use_news_md()\n\nAdd news for the latest version at the top.\nUse a top-level heading for each release version\n# animalsounds 1.0.0"
-  },
-  {
-    "objectID": "slides/04-check-package-documentation/index.html#what-news-to-include",
-    "href": "slides/04-check-package-documentation/index.html#what-news-to-include",
-    "title": "Package check and documentation",
-    "section": "What news to include",
-    "text": "What news to include\nAdd each change in a bulleted list:\n\nIf you have many changes, split into subsections (e.g. ## Major changes, ## Minor improvements, ## Bug fixes).\nWait until release to decide if subsections are necessary\n\nNote connections to GitHub:\n\nIf related to a GitHub issue, add the issue number, e.g. (#10).\nIf related to a pull request, add the pull request number and the author, e.g. (#101, @hadley)."
-  },
-  {
-    "objectID": "slides/04-check-package-documentation/index.html#a-package-website-pkgdown",
-    "href": "slides/04-check-package-documentation/index.html#a-package-website-pkgdown",
-    "title": "Package check and documentation",
-    "section": "A package website pkgdown",
-    "text": "A package website pkgdown\nThe pkgdown package is designed to make it quick and easy to build a website for your package:\n\nusethis::use_pkgdown()\n\nWhy have a website for your package?\n\nGoogle-ability\nEasy-to-read and browse documentation and package information in one place\nExamples with output!"
-  },
-  {
-    "objectID": "slides/04-check-package-documentation/index.html#build-a-website",
-    "href": "slides/04-check-package-documentation/index.html#build-a-website",
-    "title": "Package check and documentation",
-    "section": "Build a website",
-    "text": "Build a website\npkgdown::build_site() creates a package website based on the standard documentation files.\nHome page: based on README\nReference:\n\none page for each help file\ngenerates an index page, with functions listed alphabetically by default\n\n\nFor packages with lots of functions, it’s good to organise them by theme or functionality."
-  },
-  {
-    "objectID": "slides/04-check-package-documentation/index.html#build-a-website-ctd",
-    "href": "slides/04-check-package-documentation/index.html#build-a-website-ctd",
-    "title": "Package check and documentation",
-    "section": "Build a website (ctd)",
-    "text": "Build a website (ctd)\nArticles: one page for each vignette\nGet Started: if you have a vignette with filename = package name\nNews: based on NEWS.md\nPlus:\n\nA link to your GitHub repo (if listed in the DESCRIPTION url field).\nA link to the License\nAny badges added to your README (e.g. from GitHub Actions)"
-  },
-  {
-    "objectID": "slides/04-check-package-documentation/index.html#hosting-your-website",
-    "href": "slides/04-check-package-documentation/index.html#hosting-your-website",
-    "title": "Package check and documentation",
-    "section": "Hosting your website",
-    "text": "Hosting your website\n\nYou can host your website directly from its GitHub repo (repo has to be public)\nThe recommended approach is to let GitHub build your page (instead of calling pkgdown::build_site() and committing and pushing the artifacts of the built website (i.e., html files) to GitHub\nAdd an action to your GitHub repo to be run automatically every time you push to it to rebuild the site:\nusethis::use_pkgdown_github_pages()\nThe URL will be https://USERNAME.github.io/animalsounds\n\n\nuse_pkgdown_github_pages() will:\n\ncall use_pkgdown() - allow it to overwrite existing _pkgdown.yml (will add the url)\nset up a gh-pages branch from which to deploy the site\nadd a pkgdown.yml to .github/workflows\n\nWill still need to call pkgdown::build_site() to preview locally"
-  },
-  {
-    "objectID": "slides/04-check-package-documentation/index.html#customising-your-website",
-    "href": "slides/04-check-package-documentation/index.html#customising-your-website",
-    "title": "Package check and documentation",
-    "section": "Customising your website",
-    "text": "Customising your website\nYou can add more information to _pkgdown.yml to customise the package website:\n\ncurate the index for the Reference page - functions can be grouped and described in categories\nhttps://pkgdown.r-lib.org/articles/pkgdown.html#reference\ncustomise the appearance\nhttps://pkgdown.r-lib.org/articles/customise.html"
-  },
-  {
-    "objectID": "slides/04-check-package-documentation/index.html#your-turn-3",
-    "href": "slides/04-check-package-documentation/index.html#your-turn-3",
-    "title": "Package check and documentation",
-    "section": "Your turn",
-    "text": "Your turn\n\nRun usethis::use_pkgdown_github_pages() – this will ask you to install pkgdown if you don’t already have it.\nRead through all the output in the console to see the many things that this function does.\nLook at the diffs in the Git pane. Commit and push all changes.\nGo to your GitHub repo of the package. Click on Actions. If there’s a green tick next to “pages build and deployment” then your site is ready to view!\nClick on the link to the website under the About section of the repo.\n(Bonus) Change the appearance of the site with a Bootswatch theme: https://pkgdown.r-lib.org/articles/customise.html#bootswatch-themes."
-  },
-  {
-    "objectID": "slides/04-check-package-documentation/index.html#references",
-    "href": "slides/04-check-package-documentation/index.html#references",
-    "title": "Package check and documentation",
+    "objectID": "slides/02-documentation/index.html#references",
+    "href": "slides/02-documentation/index.html#references",
+    "title": "Function documentation and dependencies",
     "section": "References",
     "text": "References\nWickham, H and Bryan, J, R Packages (2nd edn, in progress), https://r-pkgs.org.\nR Core Team, Writing R Extensions, https://cran.r-project.org/doc/manuals/r-release/R-exts.html"
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#license",
-    "href": "slides/04-check-package-documentation/index.html#license",
-    "title": "Package check and documentation",
+    "objectID": "slides/02-documentation/index.html#license",
+    "href": "slides/02-documentation/index.html#license",
+    "title": "Function documentation and dependencies",
     "section": "License",
     "text": "License\nLicensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
+  },
+  {
+    "objectID": "modules/01-package-foundations/index.html",
+    "href": "modules/01-package-foundations/index.html",
+    "title": "Package foundations",
+    "section": "",
+    "text": "Here’s a link to the slides in a new window.\nHere are the slides embedded:"
+  },
+  {
+    "objectID": "modules/01-package-foundations/index.html#slides",
+    "href": "modules/01-package-foundations/index.html#slides",
+    "title": "Package foundations",
+    "section": "",
+    "text": "Here’s a link to the slides in a new window.\nHere are the slides embedded:"
+  },
+  {
+    "objectID": "modules/01-package-foundations/index.html#resources",
+    "href": "modules/01-package-foundations/index.html#resources",
+    "title": "Package foundations",
+    "section": "Resources",
+    "text": "Resources\n\nReading\n\nWickham, H and Bryan, J, R Packages (2nd edition)\nhttps://r-pkgs.org\nR Core Team, Writing R Extensions\nhttps://cran.r-project.org/doc/manuals/r-release/R-exts.html\n\n\n\nPackages\n\ndevtools\nhttps://devtools.r-lib.org\nusethis\nhttps://usethis.r-lib.org"
+  },
+  {
+    "objectID": "modules/05-publication-maintenance/index.html",
+    "href": "modules/05-publication-maintenance/index.html",
+    "title": "Publication and maintenance",
+    "section": "",
+    "text": "Here’s a link to the slides in a new window.\nHere are the slides embedded:"
+  },
+  {
+    "objectID": "modules/05-publication-maintenance/index.html#slides",
+    "href": "modules/05-publication-maintenance/index.html#slides",
+    "title": "Publication and maintenance",
+    "section": "",
+    "text": "Here’s a link to the slides in a new window.\nHere are the slides embedded:"
+  },
+  {
+    "objectID": "modules/05-publication-maintenance/index.html#resources",
+    "href": "modules/05-publication-maintenance/index.html#resources",
+    "title": "Publication and maintenance",
+    "section": "Resources",
+    "text": "Resources\n\nReading\n\nWickham, H and Bryan, J, R Packages (2nd edition)\nhttps://r-pkgs.org\nR Core Team, Writing R Extensions\nhttps://cran.r-project.org/doc/manuals/r-release/R-exts.html\n\n\n\nPackages\n\ndevtools\nhttps://devtools.r-lib.org\nusethis\nhttps://usethis.r-lib.org"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "R package development workshop",
+    "section": "",
+    "text": "NoteRegistration is now open for workshops running May-July 2026!\n\n\n\nSee the workshops page for further details.\nWelcome to the Forwards R package development workshop!\nThe modules use materials developed by Forwards, the taskforce for underrepresented groups in the R community.\nhttps://forwards.github.io/"
+  },
+  {
+    "objectID": "index.html#syllabus-overview",
+    "href": "index.html#syllabus-overview",
+    "title": "R package development workshop",
+    "section": "Syllabus overview",
+    "text": "Syllabus overview\nThis is a hands-on workshop consisting of five modules, covering the entire process of creating an R package: functions and data, checking and testing, all levels of documentation, publication and maintenance.\nThe material is based on the book R Packages (2nd edition) by Hadley Wickham and Jennifer Bryan. It is freely availble online.\nAll slides and further resources can be accessed from the modules page."
+  },
+  {
+    "objectID": "index.html#workshops",
+    "href": "index.html#workshops",
+    "title": "R package development workshop",
+    "section": "Workshops",
+    "text": "Workshops\nThe content of the modules is not tied to a specific offering of the workshop. For individual taught offerings of the material, see the workshops page. From there, the page for each workshop contains its schedule as well as details on the instructors, how to join, and an introductory slide-deck."
+  },
+  {
+    "objectID": "index.html#prerequistes",
+    "href": "index.html#prerequistes",
+    "title": "R package development workshop",
+    "section": "Prerequistes",
+    "text": "Prerequistes\nPlease see the prerequisites page for details on getting set up in advance of the first module."
   },
   {
     "objectID": "modules.html",
@@ -740,6 +936,90 @@
     "title": "Modules",
     "section": "",
     "text": "Title\n\n\n\nDescription\n\n\n\n\n\n\n\n\nPackage foundations\n\n\nModule 1\n\n\n\n\n\n\nFunction documentation and dependencies\n\n\nModule 2\n\n\n\n\n\n\nPackaging data; Testing\n\n\nModule 3\n\n\n\n\n\n\nPackage check and documentation\n\n\nModule 4\n\n\n\n\n\n\nPublication and maintenance\n\n\nModule 5\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "workshops.html",
+    "href": "workshops.html",
+    "title": "Workshops",
+    "section": "",
+    "text": "Click on the links below for details on how to join, the schedule, and the instructors.\n\nMay-July 2026, cohort 1, Zoom, Mondays 2026-05-18 10:00 UTC-2026-05-18 12:00 UTC\nMay-July 2026, cohort 2, Zoom, Wednesdays 2026-05-20 14:00 UTC-2026-05-20 16:00 UTC"
+  },
+  {
+    "objectID": "workshops.html#upcoming-workshops",
+    "href": "workshops.html#upcoming-workshops",
+    "title": "Workshops",
+    "section": "",
+    "text": "Click on the links below for details on how to join, the schedule, and the instructors.\n\nMay-July 2026, cohort 1, Zoom, Mondays 2026-05-18 10:00 UTC-2026-05-18 12:00 UTC\nMay-July 2026, cohort 2, Zoom, Wednesdays 2026-05-20 14:00 UTC-2026-05-20 16:00 UTC"
+  },
+  {
+    "objectID": "workshops.html#past-workshops",
+    "href": "workshops.html#past-workshops",
+    "title": "Workshops",
+    "section": "Past workshops",
+    "text": "Past workshops\n\nJune-July 2025, cohort 1, Zoom\nJune-July 2025, cohort 2, Zoom"
+  },
+  {
+    "objectID": "modules/02-documentation/index.html",
+    "href": "modules/02-documentation/index.html",
+    "title": "Function documentation and dependencies",
+    "section": "",
+    "text": "Here’s a link to the slides in a new window.\nHere are the slides embedded:"
+  },
+  {
+    "objectID": "modules/02-documentation/index.html#slides",
+    "href": "modules/02-documentation/index.html#slides",
+    "title": "Function documentation and dependencies",
+    "section": "",
+    "text": "Here’s a link to the slides in a new window.\nHere are the slides embedded:"
+  },
+  {
+    "objectID": "modules/02-documentation/index.html#resources",
+    "href": "modules/02-documentation/index.html#resources",
+    "title": "Function documentation and dependencies",
+    "section": "Resources",
+    "text": "Resources\n\nReading\n\nWickham, H and Bryan, J, R Packages (2nd edition)\nhttps://r-pkgs.org\nR Core Team, Writing R Extensions\nhttps://cran.r-project.org/doc/manuals/r-release/R-exts.html\n\n\n\nPackages\n\ndevtools\nhttps://devtools.r-lib.org\nusethis\nhttps://usethis.r-lib.org\nroxygen2\nhttps://roxygen2.r-lib.org\nrlang\nhttps://rlang.r-lib.org\ncli\nhttps://cli.r-lib.org"
+  },
+  {
+    "objectID": "modules/03-data-testing/index.html",
+    "href": "modules/03-data-testing/index.html",
+    "title": "Packaging data; Testing",
+    "section": "",
+    "text": "Here’s a link to the slides in a new window.\nHere are the slides embedded:"
+  },
+  {
+    "objectID": "modules/03-data-testing/index.html#slides",
+    "href": "modules/03-data-testing/index.html#slides",
+    "title": "Packaging data; Testing",
+    "section": "",
+    "text": "Here’s a link to the slides in a new window.\nHere are the slides embedded:"
+  },
+  {
+    "objectID": "modules/03-data-testing/index.html#resources",
+    "href": "modules/03-data-testing/index.html#resources",
+    "title": "Packaging data; Testing",
+    "section": "Resources",
+    "text": "Resources\n\nReading\n\nWickham, H and Bryan, J, R Packages (2nd edition)\nhttps://r-pkgs.org\nR Core Team, Writing R Extensions\nhttps://cran.r-project.org/doc/manuals/r-release/R-exts.html\n\n\n\nPackages\n\ndevtools\nhttps://devtools.r-lib.org\nusethis\nhttps://usethis.r-lib.org\ntestthat\nhttps://testthat.r-lib.org"
+  },
+  {
+    "objectID": "modules/04-check-package-documentation/index.html",
+    "href": "modules/04-check-package-documentation/index.html",
+    "title": "Package check and documentation",
+    "section": "",
+    "text": "Here’s a link to the slides in a new window.\nHere are the slides embedded:"
+  },
+  {
+    "objectID": "modules/04-check-package-documentation/index.html#slides",
+    "href": "modules/04-check-package-documentation/index.html#slides",
+    "title": "Package check and documentation",
+    "section": "",
+    "text": "Here’s a link to the slides in a new window.\nHere are the slides embedded:"
+  },
+  {
+    "objectID": "modules/04-check-package-documentation/index.html#resources",
+    "href": "modules/04-check-package-documentation/index.html#resources",
+    "title": "Package check and documentation",
+    "section": "Resources",
+    "text": "Resources\n\nReading\n\nWickham, H and Bryan, J, R Packages (2nd edition)\nhttps://r-pkgs.org\nR Core Team, Writing R Extensions\nhttps://cran.r-project.org/doc/manuals/r-release/R-exts.html\n\n\n\nPackages\n\ndevtools\nhttps://devtools.r-lib.org\nusethis\nhttps://usethis.r-lib.org\npkgdown\nhttps://pkgdown.r-lib.org"
   },
   {
     "objectID": "slides/05-publication-maintenance/index.html#overview",
@@ -1232,326 +1512,60 @@
     "text": "License\nLicensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
   },
   {
-    "objectID": "slides/02-documentation/index.html#overview",
-    "href": "slides/02-documentation/index.html#overview",
-    "title": "Function documentation and dependencies",
-    "section": "Overview",
-    "text": "Overview\n\nDocumenting functions with roxygen2\nNAMESPACE: exporting functions\nNAMESPACE: importing functions"
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#roxygen2",
-    "href": "slides/02-documentation/index.html#roxygen2",
-    "title": "Function documentation and dependencies",
-    "section": "roxygen2",
-    "text": "roxygen2\nThe roxygen2 package generates documentation from specially formatted comments, that we write above the function code, e.g.\n\n#' @param x A numeric vector.\n\n\n#' is a roxygen comment.\n@param is a roxygen tag.\nThe @param tag takes an argument: the name of the parameter\nThe remaining text (until the next tag in the file) is the documentation relevant to the tag."
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#common-tags",
-    "href": "slides/02-documentation/index.html#common-tags",
-    "title": "Function documentation and dependencies",
-    "section": "Common tags",
-    "text": "Common tags\nThere are four tags you’ll use for most functions:\n\n\n\n\nTag\nPurpose\n\n\n\n\n@param arg\nDescribe inputs\n\n\n@examples\nShow how the function works\n\n\n@return\nDescribe the return value (not needed if NULL)\n\n\n@export\nAdd this tag if the function should be user-visible\n\n\n\n Usual RStudio shortcuts work in the @examples section, allowing you to run code interactively.\n\nOther important ones: @seealso | Pointers to related functions @references @importFRom @method @note @rdname @keywords internal @format (data) @section"
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#the-description-block",
-    "href": "slides/02-documentation/index.html#the-description-block",
-    "title": "Function documentation and dependencies",
-    "section": "The description block",
-    "text": "The description block\nThe roxygen comment should start with a description block.\n\nFirst sentence is the title.\nNext paragraph is the description.\nEverything else is the details (optional).\n\n#' Title in Title Case of up to 65 Characters\n#'\n#' Mandatory description of what the function does. \n#' Should be a short paragraph of a few lines only.\n#'\n#' The details section is optional and may be several paragraphs. It can even\n#' contain sub-sections (not illustrated here)."
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#rstudio-helps-you-get-started",
-    "href": "slides/02-documentation/index.html#rstudio-helps-you-get-started",
-    "title": "Function documentation and dependencies",
-    "section": "RStudio helps you get started",
-    "text": "RStudio helps you get started\nPut your cursor inside a function, then select ‘Insert Roxygen Skeleton’ from the Code menu.\n\n\n\n\n\n#' Title\n#'\n#' @param animal\n#' @param sound\n#'\n#' @return\n#' @export\n#'\n#' @examples\nanimal_sounds &lt;- function(animal, sound) {\n  stopifnot(is.character(animal) & length(animal) == 1)\n  stopifnot(is.character(sound) & length(sound) == 1)\n  paste0(\"The \", animal, \" goes \", sound, \"!\")\n}"
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#example-roxygen-documentation",
-    "href": "slides/02-documentation/index.html#example-roxygen-documentation",
-    "title": "Function documentation and dependencies",
-    "section": "Example roxygen documentation",
-    "text": "Example roxygen documentation\n#' Sort a Numeric Vector in Decreasing Order\n#'\n#' Sort a numeric vector so that the values are in deceasing order.  \n#' Missing values are optionally removed or put last.\n#'\n#' @param x A numeric vector.\n#' @param na.rm A logical value indicating whether to remove missing values\n#' before sorting.\n#' @return A vector with the values sorted in descreasing order.\n#' @export\n#'\n#' @examples\n#' x &lt;- c(3, 7, 2, NA)\n#' high_to_low(x)\n#' high_to_low(x, na.rm = TRUE)"
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#r-documentation-file",
-    "href": "slides/02-documentation/index.html#r-documentation-file",
-    "title": "Function documentation and dependencies",
-    "section": "R documentation file",
-    "text": "R documentation file\nroxygen2 converts the roxygen block to an .Rd file in the /man directory\n% Generated by roxygen2: do not edit by hand\n% Please edit documentation in R/high_to_low.R\n\\name{high_to_low}\n\\alias{high_to_low}\n\\title{Sort a Numeric Vector in Decreasing Order}\n\\usage{\nhigh_to_low(x, na.rm = FALSE)\n}\n\\arguments{\n\\item{x}{A numeric vector.}\n\\item{na.rm}{A logical value indicating whether to remove missing values\nbefore sorting.}\n}\n\\value{\n...\n\nThis is in a toy package, sortnum, created for the R Forwards package development workshops:\nhttps://github.com/forwards/workshops/tree/master/sortnum"
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#html-file",
-    "href": "slides/02-documentation/index.html#html-file",
-    "title": "Function documentation and dependencies",
-    "section": "HTML file",
-    "text": "HTML file\nWhen the package is installed, the .Rd is converted by R to HTML on demand"
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#regular-documentation-workflow",
-    "href": "slides/02-documentation/index.html#regular-documentation-workflow",
-    "title": "Function documentation and dependencies",
-    "section": "Regular documentation workflow",
-    "text": "Regular documentation workflow\n\n\nYou must have loaded the package with load_all() at least once."
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#a-namespace-splits-functions-into-two-classes",
-    "href": "slides/02-documentation/index.html#a-namespace-splits-functions-into-two-classes",
-    "title": "Function documentation and dependencies",
-    "section": "A namespace splits functions into two classes",
-    "text": "A namespace splits functions into two classes\n\n\n\n\nInternal\nExternal\n\n\n\n\nOnly for use within package\nFor use by others\n\n\nDocumentation optional\nMust be documented\n\n\nEasily changed\nChanging will break other people’s code"
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#default-namespace",
-    "href": "slides/02-documentation/index.html#default-namespace",
-    "title": "Function documentation and dependencies",
-    "section": "Default NAMESPACE",
-    "text": "Default NAMESPACE\n\nIt is best to export functions explicitly\nThe NAMESPACE file as created by usethis::create_package() does not export anything by default.\n\n\n\n\n\n\n\n\nWarning\n\n\nA package created from the RStudio menus via File &gt; New Project &gt; New Directory &gt; R Package creates a NAMESPACE that exports everything by default, with exportPattern(\"^[[:alpha:]]+\")\nThis is a good reason not to do this: always call usethis::create_package() to create a package.\nFor similar reasons, also avoid package.skeleton()."
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#exporting-functions",
-    "href": "slides/02-documentation/index.html#exporting-functions",
-    "title": "Function documentation and dependencies",
-    "section": "Exporting functions",
-    "text": "Exporting functions\n#' @export\nfun1 &lt;- function(...) {}\nWhen we call devtools::document(), an export() directive will be added to NAMESPACE for each function that has an #' @export comment.\n# Generated by roxygen2: do not edit by hand\n\nexport(fun1)"
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#what-to-export",
-    "href": "slides/02-documentation/index.html#what-to-export",
-    "title": "Function documentation and dependencies",
-    "section": "What to export",
-    "text": "What to export\nOnly export functions that you want your package users to use, i.e. those that are relevant to the purpose of the package.\nDon’t export internal helpers, e.g.\n# Defaults for NULL values\n`%||%` &lt;- function(a, b) if (is.null(a)) b else a\n\n# Remove NULLs from a list\ncompact &lt;- function(x) {\n  x[!vapply(x, is.null, logical(1))]\n}\n\n\n\n\n\n\n\nNote\n\n\nUsing the ‘Insert Roxygen Skeleton’ option adds an @export tag."
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#your-turn",
-    "href": "slides/02-documentation/index.html#your-turn",
-    "title": "Function documentation and dependencies",
-    "section": "Your turn",
-    "text": "Your turn\nFor the animal_sounds function:\n\n\nInsert a Roxygen skeleton using the RStudio helper.\nCreate a draft documentation file with devtools::document() or Cmd/Ctrl + Shift + D.\nClick on “Diff” in the Git pane and view the changes that have been made.\nPreview the HTML help with ?animal_sounds.\nFill in the Roxygen skeleton for animal_sounds(), recreating the documentation file and previewing the HTML help to view your updates.\nWhen you have finished editing, run devtools::document() to ensure the .Rd file is in sync. Make a git commit with your updated R/animal_sounds.R file, the updated NAMESPACE, and the new man/animal_sounds.Rd file."
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#rd-markup",
-    "href": "slides/02-documentation/index.html#rd-markup",
-    "title": "Function documentation and dependencies",
-    "section": ".Rd Markup",
-    "text": ".Rd Markup\n.Rd files recognise LaTeX-like mark-up in most text-based fields, e.g.\n#' This is a convenience function that is a wrapper around\n#' \\code{\\link{sort.int}}.\nDetails can be found in the Writing R documentation files section of the Writing R Extensions manual."
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#using-markdown",
-    "href": "slides/02-documentation/index.html#using-markdown",
-    "title": "Function documentation and dependencies",
-    "section": "Using markdown",
-    "text": "Using markdown\nMost commonly used mark-up is easier with markdown (and can be mixed with .Rd mark-up).\n\nText formatting: **bold**, _italic_, `code`\nCreate links\n\nTo a function in the same package: [func()]\nTo a function in a different package: [pkg::func()]\nWith different link text, e.g. [link text][func()]\n\n\nFor more details, see the (R)Markdown support vignette.\n\nSeems you no longer need to specify pkg:: - will find the documentation in any installed package. For functions in multiple packages, e.g. select() help pane will offer a choice. Probably still best practice to use pkg:: for disambiguation, though still may not be necessary for base functions"
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#your-turn-1",
-    "href": "slides/02-documentation/index.html#your-turn-1",
-    "title": "Function documentation and dependencies",
-    "section": "Your turn",
-    "text": "Your turn\n\nAdd some details to the help page for animal_sounds(), with a link to paste0() and some markdown syntax.\nAdd a link to a function from a package you don’t have installed (perhaps basemodels::dummy_classifier()).\nRun devtools::document() and check the link in the help page. What happens?\nRun devtools::check(). Does the link cause problems?\nDelete the link to the package you don’t have installed and run devtools::document() again.\nCommit all your changes to the git repo.\n\n\nIn 3, the link will still be created (and will work if you subsequently install the missing package). It’s a good idea to have the package installed so the link can be checked during R CMD check, otherwise you will get a NOTE.\nbasemodels was added to CRAN the week before the workshop was taught, so very likely to be the case that no-one present has it installed."
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#dependencies-1",
-    "href": "slides/02-documentation/index.html#dependencies-1",
-    "title": "Function documentation and dependencies",
-    "section": "Dependencies",
-    "text": "Dependencies\nDependencies are other R packages that our package uses. There are three types of dependency:\nImports: required packages, will be installed when our package is installed if they are not already installed.\nSuggests: optional packages, e.g. only used for development; only used in documentation. Not installed automatically with our package.\nDepends: essentially deprecated for packages, may be used to specify a minimum required version of R (i.e., version of the core packages)."
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#imported-packages",
-    "href": "slides/02-documentation/index.html#imported-packages",
-    "title": "Function documentation and dependencies",
-    "section": "Imported packages",
-    "text": "Imported packages\nIn DESCRIPTION\nImports: \n    pkgname1\n    pkgname2\nUse :: to access functions\nnew_function &lt;- function(x, y, z) {\n  w &lt;- pkgname1::imported_function(x, y)\n  pkgname2::imported_function(w, z)\n}"
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#suggested-packages",
-    "href": "slides/02-documentation/index.html#suggested-packages",
-    "title": "Function documentation and dependencies",
-    "section": "Suggested packages",
-    "text": "Suggested packages\nIn DESCRIPTION\nSuggests: \n    pkgname\nIn package functions or examples, handle the case where pkgname is not available:\nif (!requireNamespace(\"pkgname\", quietly = TRUE)){\n  warning(\"pkgname must be installed to perform this function\",\n          \"returning NULL\")\n  return(NULL)\n}\n\nAlso explain conditional use in vignettes later\nMaybe talk about rlang here as well"
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#use_package",
-    "href": "slides/02-documentation/index.html#use_package",
-    "title": "Function documentation and dependencies",
-    "section": "use_package()",
-    "text": "use_package()\nuse_package() will modify the DESCRIPTION and remind you how to use the function.\nBy default, packages will be added to “Imports”.\n\nusethis::use_package(\"rlang\")\nusethis::use_package(\"glue\", type = \"Suggests\")"
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#you-might-get-tired-of-using-all-the-time",
-    "href": "slides/02-documentation/index.html#you-might-get-tired-of-using-all-the-time",
-    "title": "Function documentation and dependencies",
-    "section": "You might get tired of using :: all the time",
-    "text": "You might get tired of using :: all the time\nOr you might want to use an infix function\n\n`%-=%` &lt;- roperators::`%-=%`\n\ncenter &lt;- function(df, select) {\n  for (nm in names(df[select])){\n    # overwrite column after subtracting the mean \n    df[[nm]] %-=% mean(df[[nm]])\n  }\n  df\n}"
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#aside-vs",
-    "href": "slides/02-documentation/index.html#aside-vs",
-    "title": "Function documentation and dependencies",
-    "section": "Aside: %>% vs |>",
-    "text": "Aside: %&gt;% vs |&gt;\nThe native pipe, |&gt;, has been available in R since 4.1.0, and we now prefer this to importing the %&gt;% pipe from magrittr.\nThere are then two options:\n\nDepend on R &gt;= 4.1.0, with this in DESCRIPTION:\n\nDepends:\n    R (&gt;= 4.1.0)\n\nUse the methods outlined in this tidyverse blog post to ensure the package can still work with older versions of R."
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#you-can-import-functions-into-the-package",
-    "href": "slides/02-documentation/index.html#you-can-import-functions-into-the-package",
-    "title": "Function documentation and dependencies",
-    "section": "You can import functions into the package",
-    "text": "You can import functions into the package\n\n#' @importFrom purrr keep modify\n\ncol_summary &lt;- function(df, fun) {\n  stopifnot(is.data.frame(df))\n\n  df |&gt;\n    keep(is.numeric) |&gt;\n    modify(fun)\n}\n\ndevtools::document() will add corresponding import() statements to the NAMESPACE, e.g. import(purr, keep, modify).\nAdding formal imports is slightly more efficient than using ::.\nHere, the @importFrom tag is placed above the function in which the imported function is used."
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#package-level-import-file",
-    "href": "slides/02-documentation/index.html#package-level-import-file",
-    "title": "Function documentation and dependencies",
-    "section": "Package-level import file",
-    "text": "Package-level import file\nImports belong to the package, not to individual functions, so alternatively you can recognise this by storing them in a central location, e.g. R/animalsounds-package.R\n#' @importFrom purrr keep modify\n#' @importFrom roperators %-=%\nNULL\n\nThis removes the possibility of multiple (redundant) imports of the same function. But harder to remember to remove import if function changes! It’s a matter of personal taste."
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#usethisuse_import_from",
-    "href": "slides/02-documentation/index.html#usethisuse_import_from",
-    "title": "Function documentation and dependencies",
-    "section": "usethis::use_import_from()",
-    "text": "usethis::use_import_from()\nThere can be several steps to importing a function. usethis::use_import_from() takes care of all of them.\nIt will first create the package documentation file R/animalsounds-package.R (if it doesn’t already exist – you will also need to agree to this).\n\nusethis::use_import_from(\"purrr\", c(\"keep\", \"modify\"))\n\n✔ Adding 'purrr' to Imports field in DESCRIPTION\n✔ Adding '@importFrom purrr keep', '@importFrom purrr modify' to 'R/animalsounds-package.R'\n✔ Writing 'NAMESPACE'\n✔ Loading animalsounds\n\nuse_import_from() is opinionated in implementing package-level import (rather than above the function in which they are used).\nMay need to close and reopen R/animalsounds-package.R to see the changes."
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#it-may-be-tempting-to-import-a-whole-package",
-    "href": "slides/02-documentation/index.html#it-may-be-tempting-to-import-a-whole-package",
-    "title": "Function documentation and dependencies",
-    "section": "It may be tempting to import a whole package…",
-    "text": "It may be tempting to import a whole package…\n#' @import purrr\ncol_summary &lt;- function(df, fun) {\n  stopifnot(is.data.frame(df))\n\n  df |&gt;\n    keep(is.numeric) |&gt;\n    map_dfc(fun)\n}"
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#but-it-is-dangerous",
-    "href": "slides/02-documentation/index.html#but-it-is-dangerous",
-    "title": "Function documentation and dependencies",
-    "section": "…but it is dangerous",
-    "text": "…but it is dangerous\n#' @import pkg1\n#' @import pkg2\nfun &lt;- function(x) {\n  fun1(x) + fun2(x)\n}\nWorks today…\n… but next year, what if pkg2 adds a fun1 function?"
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#metapackages",
-    "href": "slides/02-documentation/index.html#metapackages",
-    "title": "Function documentation and dependencies",
-    "section": "Metapackages",
-    "text": "Metapackages\nIt is bad practice to import “metapackages” (i.e. packages that are collections of packages), such as tidyverse.\nSee the blog post https://www.tidyverse.org/blog/2018/06/tidyverse-not-for-packages/ for more details."
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#documenting-dependencies",
-    "href": "slides/02-documentation/index.html#documenting-dependencies",
-    "title": "Function documentation and dependencies",
-    "section": "Documenting dependencies",
-    "text": "Documenting dependencies\n\n\n\n\nDESCRIPTION\nNAMESPACE\n\n\n\n\nMakes package available\nMakes function available\n\n\nMandatory\nOptional (can use :: instead)\n\n\nuse_package()\nuse_import_from()"
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#example-rlang-and-cli",
-    "href": "slides/02-documentation/index.html#example-rlang-and-cli",
-    "title": "Function documentation and dependencies",
-    "section": "Example: rlang and cli",
-    "text": "Example: rlang and cli\nCurrently we are using stopifnot() for argument validation\n\nstopifnot(is.character(animal) & length(animal) == 1)\nstopifnot(is.character(sound) & length(sound) == 1)\n\nWe might instead use rlang::is_character() with cli::cli_abort()\n\nsound &lt;- c(\"woof\", \"bark\")\n\nif (!rlang::is_character(sound, n = 1)) {\n  cli::cli_abort(\"`sound` must be a single string!\")\n}\n\nError:\n! `sound` must be a single string!\n\n\n\nin is_character, n tests for length of the vector.\ncli::cli_abort() has some really nice capability - glue interpolation (next slide) - inline classes (next slide) - features that make it easier to write tests (covered later in this course)\nhttps://cli.r-lib.org/reference/inline-markup.html"
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#aside-informative-messages-with-cli",
-    "href": "slides/02-documentation/index.html#aside-informative-messages-with-cli",
-    "title": "Function documentation and dependencies",
-    "section": "Aside: informative messages with cli",
-    "text": "Aside: informative messages with cli\ncli functions can combine glue interpolation and inline classes to produce informative, nicely-formatted error messages.\nIn animal_sounds() we can use\n\ncli::cli_abort(\n  c(\"{.var animal} must be a single string!\",\n    \"i\" = \"It was {.type {animal}} of length {length(animal)} instead.\")\n)\n\nThis gives the error message\n\nanimal_sounds(c(\"dog\", \"cat\"), c(\"woof\", \"miaow\"))\n\nError in `animal_sounds()`:\n! `animal` must be a single string!\nℹ It was a character vector of length 2 instead.\n\n\n\nInformative error messages will make using your package a much nicer experience for you and others."
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#your-turn-2",
-    "href": "slides/02-documentation/index.html#your-turn-2",
-    "title": "Function documentation and dependencies",
-    "section": "Your turn",
-    "text": "Your turn\n\nUse use_package() to add rlang and cli to Imports.\nUpdate animal_sounds() to use is_character() to check the arguments and cli_abort to throw an informative error if necessary, using :: to fully qualify the function calls.\nLoad all and try giving animal_sounds() invalid inputs for animal and/or sound.\nCommit your changes to git.\nPush your commits for this session."
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#references",
-    "href": "slides/02-documentation/index.html#references",
-    "title": "Function documentation and dependencies",
-    "section": "References",
-    "text": "References\nWickham, H and Bryan, J, R Packages (2nd edn, in progress), https://r-pkgs.org.\nR Core Team, Writing R Extensions, https://cran.r-project.org/doc/manuals/r-release/R-exts.html"
-  },
-  {
-    "objectID": "slides/02-documentation/index.html#license",
-    "href": "slides/02-documentation/index.html#license",
-    "title": "Function documentation and dependencies",
-    "section": "License",
-    "text": "License\nLicensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
-  },
-  {
-    "objectID": "join.html",
-    "href": "join.html",
-    "title": "Apply for the workshop",
+    "objectID": "prerequisites.html",
+    "href": "prerequisites.html",
+    "title": "Prerequisites",
     "section": "",
-    "text": "Please click below to register your interest in participating in the workshop. Note that the course runs for two days and participation for the entire workshop is expected.\nApply\nPlease note that filling in this form does not guarantee a place. Priority will be given to those in the Department of Statistics (as the department is funding the course) though graduate students and staff from all departments are welcome.\nThe form closes on Tuesday, June 18th, 2024 and you will be notified if you have a place on June 19th at the latest.\nSkillsForge credit will also be available for those eligible. Details of how to register for those will be given to enrolled participants."
+    "text": "Last updated: May 12th, 2026"
   },
   {
-    "objectID": "workshops/may-july-2026-cohort-2.html",
-    "href": "workshops/may-july-2026-cohort-2.html",
-    "title": "May-July 2026, cohort 2",
-    "section": "",
-    "text": "Note\n\n\n\nPlease note this workshop consists of a series of five sessions, which build on each other. Luma does not offer the ability to schedule a series of recurring events. To sign up for the series, please click on the ‘Register on Luma’ button below, which will take you to the calendar, and make sure you register for all five cohort 2 sessions (noting that there are also five sessions in the calendar for cohort 1).\n\n\nRegister on Luma"
+    "objectID": "prerequisites.html#prior-knowledge",
+    "href": "prerequisites.html#prior-knowledge",
+    "title": "Prerequisites",
+    "section": "Prior knowledge",
+    "text": "Prior knowledge\nWe do not assume any prior knowledge of R pacakge development, but basic knowledge of R is expected. In particular, participants should be confident writing functions. Some experience with RStudio is beneficial.\nTwo of the modules from the Warwick-Stats-Resources R Foundations course covers the required material:\n\nIntroduction to R and RStudio\nProgramming in R"
   },
   {
-    "objectID": "workshops/may-july-2026-cohort-2.html#join",
-    "href": "workshops/may-july-2026-cohort-2.html#join",
-    "title": "May-July 2026, cohort 2",
-    "section": "",
-    "text": "Note\n\n\n\nPlease note this workshop consists of a series of five sessions, which build on each other. Luma does not offer the ability to schedule a series of recurring events. To sign up for the series, please click on the ‘Register on Luma’ button below, which will take you to the calendar, and make sure you register for all five cohort 2 sessions (noting that there are also five sessions in the calendar for cohort 1).\n\n\nRegister on Luma"
+    "objectID": "prerequisites.html#r-and-rstudio",
+    "href": "prerequisites.html#r-and-rstudio",
+    "title": "Prerequisites",
+    "section": "R and RStudio",
+    "text": "R and RStudio\nPlease ensure that you have the latest versions of R and RStudio installed prior to the first session. Currently, that’s R-4.6.0 and RStudio-2026.04.0.\nWe also strongly recommend that all participants install the development tools to avoid potential issues installing packages.\n\nInstalling R\nDownload the pre-compiled binary for your OS from https://cloud.r-project.org/ and install. More specifically:\nFor Windows\nClick “Download R for Windows”, then “base”, then “Download R-4.6.0 for Windows”. This will download an .exe file; once downloaded, open to start the installation.\nFor Mac\nClick “Download R for macOS”, then “R-4.6.0-arm64.pkg” (the first option) to download the installer for Macs with Apple Silicon chips or “R-4.6.0-x86_64.pkg” (the second option) to download the installer for Macs with Intel chips. Run the installer to complete installation.\nFor Linux\nClick “Download R for Linux”. Instructions on installing are given for Debian, Fedora, Redhat, Suse and Ubuntu distributions. Where there is a choice, install both r-base and r-base-dev.\n\n\nInstalling R Studio Desktop (Open Source Edition)\nDownloads are available from https://posit.co/download/rstudio-desktop/\nDownload the relevant installer either under the “Install RStudio” header or, scrolling down the page, from the ‘All installers and Tarballs’ section. Run the installer to complete installation.\nFor Windows with no admin rights\nDownload the .zip source archive under “Zip/Tarballs”. Extract the files to a folder where you have write access, e.g. C:\\Users\\username\\RStudio. In this folder, open the bin directory and find the RStudio program: it is named rstudio.exe, but the file extension will typically be hidden, so look for rstudio. Right-click this executable to create a desktop shortcut. Double-click the executable or use the shortcut to open.\nFor all other operating systems\nDownload the relevant installer for your OS listed under “Installers for Supported Platforms”. Run the installer to complete installation.\n\n\nDevelopment Tools\nSome additional tools are required to compile R packages from source, which is a necessary part of the package development process. These tools are not part of a typical R/RStudio setup so please follow the steps below to install them.\nFor Windows with no admin rights\nDownload the latest (recommended) Rtools installer, Rtools.exe, from https://cran.r-project.org/bin/windows/Rtools/. Run the installer keeping the default settings.\nFor Windows with admin rights\nDownload the latest Rtools installer, Rtools.exe, from https://cran.r-project.org/bin/windows/Rtools/. Run the installer making the following selections: keep the default settings for the installation location and components to install; check the box to add rtools to the system PATH.\nFor Mac\nInstall XCode. Either:\n\nDownload and install XCode from the Mac AppStore: http://itunes.apple.com/us/app/xcode/id497799835?mt=12\n\nOr for a smaller download size:\n\nRegister as an Apple Developer (free) here: https://developer.apple.com/programs/enroll/\nDownload the Command Line Tools for XCode appropriate for the version of OS X you are running from here: https://developer.apple.com/downloads/\n\nFor Linux\nIf you installed r-base-dev, when installing R, you should have all you need to build packages from source. Otherwise return to the instructions for installing R for your distribution and follow the instructions there to install the additional tools."
   },
   {
-    "objectID": "workshops/may-july-2026-cohort-2.html#instructors",
-    "href": "workshops/may-july-2026-cohort-2.html#instructors",
-    "title": "May-July 2026, cohort 2",
+    "objectID": "prerequisites.html#git-and-github",
+    "href": "prerequisites.html#git-and-github",
+    "title": "Prerequisites",
+    "section": "git and GitHub",
+    "text": "git and GitHub\nAlthough there will be some time dedicated to this in the workshop, it would be advantageous if you already have:\n\ngit installed on your computer. See https://git-scm.com/book/en/v2/Getting-Started-Installing-Git\na GitHub account\na GitHub PAT configured to work with RStudio – the vignette from the usethis package on Managing Git(Hub) Credentials goes through this.\n\nHappy Git and GitHub for the useR is an excellent resource for troubleshooting git related issues and checking that your setup works.\nWhilst git/GitHub isn’t essential for package development, it is best practice and we will be making use of GitHub features during the course, e.g. publishing a package documentation website using GitHub pages. However, you can create a package locally without it."
+  },
+  {
+    "objectID": "workshops/may-july-2026-cohort-2-intro.html#instructors",
+    "href": "workshops/may-july-2026-cohort-2-intro.html#instructors",
+    "title": "Welcome and introduction",
     "section": "Instructors",
-    "text": "Instructors\n   Joyce Robbins, Jesi Formoso and Heather Turner.\n   h.l.turner@bham.ac.uk"
+    "text": "Instructors\n\n\nJoyce Robbins\n\n\nSenior Lecturer in Statistics\nColumbia University\n\n\nJesi Formoso\n\n\nAssociate Researcher\nUniversity of Buenos Aires\n\n\nHeather Turner\n\n\nPrincipal RSE\nUniversity of Birmingham"
   },
   {
-    "objectID": "workshops/may-july-2026-cohort-2.html#schedule",
-    "href": "workshops/may-july-2026-cohort-2.html#schedule",
-    "title": "May-July 2026, cohort 2",
+    "objectID": "workshops/may-july-2026-cohort-2-intro.html#course-material",
+    "href": "workshops/may-july-2026-cohort-2-intro.html#course-material",
+    "title": "Welcome and introduction",
+    "section": "Course material",
+    "text": "Course material\n\nWebsite and slides\nhttps://forwards.github.io/package-dev\nWebsite and slides repo\nhttps://github.com/forwards/package-dev\nCourse text: R Packages (2nd edition), Hadley Wickham and Jennifer Bryan\nhttps://r-pkgs.org"
+  },
+  {
+    "objectID": "workshops/may-july-2026-cohort-2-intro.html#schedule",
+    "href": "workshops/may-july-2026-cohort-2-intro.html#schedule",
+    "title": "Welcome and introduction",
     "section": "Schedule",
-    "text": "Schedule\n   Every other Wednesday, starting May 20th\n   2026-05-20 14:00 UTC-2026-05-20 16:00 UTC (in your local timezone).\n\n\n\nModule\nDate\n\n\n\n\nPackage foundations\nMay 20th\n\n\nFunction documentation and dependencies\nJune 3rd\n\n\nPackaging data; Testing\nJune 17th\n\n\nPackage check and documentation\nJuly 1st\n\n\nPublication and maintenance\nJuly 15th"
+    "text": "Schedule\nTuesdays, 14:30-16:00 UTC\n\n\n\n\nModule\nDate\n\n\n\n\nPackage foundations\nMay 20th\n\n\nFunction documentation and dependencies\nJune 3rd\n\n\nPackaging data; Testing\nJune 17th\n\n\nPackage check and documentation\nJuly 1st\n\n\nPublication and maintenance\nJuly 15th"
   },
   {
-    "objectID": "workshops/may-july-2026-cohort-2.html#welcome-and-introduction",
-    "href": "workshops/may-july-2026-cohort-2.html#welcome-and-introduction",
-    "title": "May-July 2026, cohort 2",
-    "section": "Welcome and introduction",
-    "text": "Welcome and introduction\nHere’s a link to the slides in a new window.\nHere are the slides embedded:"
-  },
-  {
-    "objectID": "workshops/summer-2025-cohort-1.html",
-    "href": "workshops/summer-2025-cohort-1.html",
-    "title": "Summer 2025, cohort 1",
-    "section": "",
-    "text": "Register on Zoom"
-  },
-  {
-    "objectID": "workshops/summer-2025-cohort-1.html#join",
-    "href": "workshops/summer-2025-cohort-1.html#join",
-    "title": "Summer 2025, cohort 1",
-    "section": "",
-    "text": "Register on Zoom"
-  },
-  {
-    "objectID": "workshops/summer-2025-cohort-1.html#instructors",
-    "href": "workshops/summer-2025-cohort-1.html#instructors",
-    "title": "Summer 2025, cohort 1",
-    "section": "Instructors",
-    "text": "Instructors\n   Ella Kaye, Pao Corrales, and Elio Campitelli.\n   ella.m.kaye@warwick.ac.uk"
-  },
-  {
-    "objectID": "workshops/summer-2025-cohort-1.html#schedule",
-    "href": "workshops/summer-2025-cohort-1.html#schedule",
-    "title": "Summer 2025, cohort 1",
-    "section": "Schedule",
-    "text": "Schedule\n   Every other Monday, starting June 2nd\n   09:00–10:30 UTC. See in your time zone.\n\n\n\nModule\nDate\nLead\nFacilitator\n\n\n\n\nPackage foundations\nJune 2nd\nPao\nElla\n\n\nFunction documentation and dependencies\nJune 16th\nElla\nPao\n\n\nTesting\nJune 30th\nPao\nElio\n\n\nPackage check and documentation\nJuly 14th\nElla\nPao\n\n\nPackaging data; Publication and maintenance\nJuly 28th\nPao\nElio"
-  },
-  {
-    "objectID": "workshops/summer-2025-cohort-1.html#welcome-and-introduction",
-    "href": "workshops/summer-2025-cohort-1.html#welcome-and-introduction",
-    "title": "Summer 2025, cohort 1",
-    "section": "Welcome and introduction",
-    "text": "Welcome and introduction\nHere’s a link to the slides in a new window.\nHere are the slides embedded:"
+    "objectID": "workshops/may-july-2026-cohort-2-intro.html#pieces-of-a-puzzle",
+    "href": "workshops/may-july-2026-cohort-2-intro.html#pieces-of-a-puzzle",
+    "title": "Welcome and introduction",
+    "section": "Pieces of a puzzle",
+    "text": "Pieces of a puzzle\n\nIn each module we will cover different elements of an R package\n\nThink of this elements as pieces of a puzzle, you don’t want to miss one!\nThe course builds cumulatively\n\n\nIf you can’t attend to a session, please follow the material and do the exersises to catch up before the next one."
   },
   {
     "objectID": "workshops/may-july-2026-cohort-1.html",
@@ -1589,87 +1603,73 @@
     "text": "Welcome and introduction\nHere’s a link to the slides in a new window.\nHere are the slides embedded:"
   },
   {
-    "objectID": "workshops/summer-2025-cohort-2-intro.html#instructors",
-    "href": "workshops/summer-2025-cohort-2-intro.html#instructors",
-    "title": "Welcome and introduction",
+    "objectID": "workshops/summer-2025-cohort-2.html",
+    "href": "workshops/summer-2025-cohort-2.html",
+    "title": "Summer 2025, cohort 2",
+    "section": "",
+    "text": "Register on Zoom"
+  },
+  {
+    "objectID": "workshops/summer-2025-cohort-2.html#join",
+    "href": "workshops/summer-2025-cohort-2.html#join",
+    "title": "Summer 2025, cohort 2",
+    "section": "",
+    "text": "Register on Zoom"
+  },
+  {
+    "objectID": "workshops/summer-2025-cohort-2.html#instructors",
+    "href": "workshops/summer-2025-cohort-2.html#instructors",
+    "title": "Summer 2025, cohort 2",
     "section": "Instructors",
-    "text": "Instructors\n\n\nEmma Rand\n\n\nProfessor of Biology\nUniversity of York\n\n\nJoyce Robbins\n\n\nSenior Lecturer in Statistics\nColumbia University\n\n\nHeather Turner\n\n\nRSE Fellow\nUniversity of Warwick"
+    "text": "Instructors\n   Joyce Robbins, Emma Rand and Heather Turner\n   h.turner.1@warwick.ac.uk"
   },
   {
-    "objectID": "workshops/summer-2025-cohort-2-intro.html#course-material",
-    "href": "workshops/summer-2025-cohort-2-intro.html#course-material",
-    "title": "Welcome and introduction",
-    "section": "Course material",
-    "text": "Course material\n\nWebsite and slides\nhttps://forwards.github.io/package-dev\nWebsite and slides repo\nhttps://github.com/forwards/package-dev\nCourse text: R Packages (2nd edition), Hadley Wickham and Jennifer Bryan\nhttps://r-pkgs.org"
-  },
-  {
-    "objectID": "workshops/summer-2025-cohort-2-intro.html#schedule",
-    "href": "workshops/summer-2025-cohort-2-intro.html#schedule",
-    "title": "Welcome and introduction",
+    "objectID": "workshops/summer-2025-cohort-2.html#schedule",
+    "href": "workshops/summer-2025-cohort-2.html#schedule",
+    "title": "Summer 2025, cohort 2",
     "section": "Schedule",
-    "text": "Schedule\nTuesdays, 14:30-16:00 UTC\n\n\n\n\nModule\nDate\nLead\nFacilitator(s)\n\n\n\n\nPackage foundations\nJune 3rd\nEmma\nJoyce and Heather\n\n\nFunction documentation and dependencies\nJune 17th\nJoyce\nEmma and Heather\n\n\nTesting\nJuly 1st\nHeather\nJoyce\n\n\nPackage check and documentation\nJuly 15th\nJoyce\nHeather\n\n\nPackaging data; Publication and maintenance\nJuly 29th\nHeather\nJoyce"
+    "text": "Schedule\n   Every other Tuesday, starting June 3rd\n   14:30–16:00 UTC. See in your time zone.\n\n\n\nModule\nDate\nLead\nFacilitator(s)\n\n\n\n\nPackage foundations\nJune 3rd\nEmma\nJoyce and Heather\n\n\nFunction documentation and dependencies\nJune 17th\nJoyce\nEmma and Heather\n\n\nTesting\nJuly 1st\nHeather\nJoyce\n\n\nPackage check and documentation\nJuly 15th\nJoyce\nHeather\n\n\nPackaging data; Publication and maintenance\nJuly 29th\nHeather\nJoyce"
   },
   {
-    "objectID": "modules/05-publication-maintenance/index.html",
-    "href": "modules/05-publication-maintenance/index.html",
-    "title": "Publication and maintenance",
+    "objectID": "workshops/summer-2025-cohort-2.html#welcome-and-introduction",
+    "href": "workshops/summer-2025-cohort-2.html#welcome-and-introduction",
+    "title": "Summer 2025, cohort 2",
+    "section": "Welcome and introduction",
+    "text": "Welcome and introduction\nHere’s a link to the slides in a new window.\nHere are the slides embedded:"
+  },
+  {
+    "objectID": "workshops/summer-2025-cohort-1.html",
+    "href": "workshops/summer-2025-cohort-1.html",
+    "title": "Summer 2025, cohort 1",
     "section": "",
-    "text": "Here’s a link to the slides in a new window.\nHere are the slides embedded:"
+    "text": "Register on Zoom"
   },
   {
-    "objectID": "modules/05-publication-maintenance/index.html#slides",
-    "href": "modules/05-publication-maintenance/index.html#slides",
-    "title": "Publication and maintenance",
+    "objectID": "workshops/summer-2025-cohort-1.html#join",
+    "href": "workshops/summer-2025-cohort-1.html#join",
+    "title": "Summer 2025, cohort 1",
     "section": "",
-    "text": "Here’s a link to the slides in a new window.\nHere are the slides embedded:"
+    "text": "Register on Zoom"
   },
   {
-    "objectID": "modules/05-publication-maintenance/index.html#resources",
-    "href": "modules/05-publication-maintenance/index.html#resources",
-    "title": "Publication and maintenance",
-    "section": "Resources",
-    "text": "Resources\n\nReading\n\nWickham, H and Bryan, J, R Packages (2nd edition)\nhttps://r-pkgs.org\nR Core Team, Writing R Extensions\nhttps://cran.r-project.org/doc/manuals/r-release/R-exts.html\n\n\n\nPackages\n\ndevtools\nhttps://devtools.r-lib.org\nusethis\nhttps://usethis.r-lib.org"
+    "objectID": "workshops/summer-2025-cohort-1.html#instructors",
+    "href": "workshops/summer-2025-cohort-1.html#instructors",
+    "title": "Summer 2025, cohort 1",
+    "section": "Instructors",
+    "text": "Instructors\n   Ella Kaye, Pao Corrales, and Elio Campitelli.\n   ella.m.kaye@warwick.ac.uk"
   },
   {
-    "objectID": "modules/01-package-foundations/index.html",
-    "href": "modules/01-package-foundations/index.html",
-    "title": "Package foundations",
-    "section": "",
-    "text": "Here’s a link to the slides in a new window.\nHere are the slides embedded:"
+    "objectID": "workshops/summer-2025-cohort-1.html#schedule",
+    "href": "workshops/summer-2025-cohort-1.html#schedule",
+    "title": "Summer 2025, cohort 1",
+    "section": "Schedule",
+    "text": "Schedule\n   Every other Monday, starting June 2nd\n   09:00–10:30 UTC. See in your time zone.\n\n\n\nModule\nDate\nLead\nFacilitator\n\n\n\n\nPackage foundations\nJune 2nd\nPao\nElla\n\n\nFunction documentation and dependencies\nJune 16th\nElla\nPao\n\n\nTesting\nJune 30th\nPao\nElio\n\n\nPackage check and documentation\nJuly 14th\nElla\nPao\n\n\nPackaging data; Publication and maintenance\nJuly 28th\nPao\nElio"
   },
   {
-    "objectID": "modules/01-package-foundations/index.html#slides",
-    "href": "modules/01-package-foundations/index.html#slides",
-    "title": "Package foundations",
-    "section": "",
-    "text": "Here’s a link to the slides in a new window.\nHere are the slides embedded:"
-  },
-  {
-    "objectID": "modules/01-package-foundations/index.html#resources",
-    "href": "modules/01-package-foundations/index.html#resources",
-    "title": "Package foundations",
-    "section": "Resources",
-    "text": "Resources\n\nReading\n\nWickham, H and Bryan, J, R Packages (2nd edition)\nhttps://r-pkgs.org\nR Core Team, Writing R Extensions\nhttps://cran.r-project.org/doc/manuals/r-release/R-exts.html\n\n\n\nPackages\n\ndevtools\nhttps://devtools.r-lib.org\nusethis\nhttps://usethis.r-lib.org"
-  },
-  {
-    "objectID": "modules/02-documentation/index.html",
-    "href": "modules/02-documentation/index.html",
-    "title": "Function documentation and dependencies",
-    "section": "",
-    "text": "Here’s a link to the slides in a new window.\nHere are the slides embedded:"
-  },
-  {
-    "objectID": "modules/02-documentation/index.html#slides",
-    "href": "modules/02-documentation/index.html#slides",
-    "title": "Function documentation and dependencies",
-    "section": "",
-    "text": "Here’s a link to the slides in a new window.\nHere are the slides embedded:"
-  },
-  {
-    "objectID": "modules/02-documentation/index.html#resources",
-    "href": "modules/02-documentation/index.html#resources",
-    "title": "Function documentation and dependencies",
-    "section": "Resources",
-    "text": "Resources\n\nReading\n\nWickham, H and Bryan, J, R Packages (2nd edition)\nhttps://r-pkgs.org\nR Core Team, Writing R Extensions\nhttps://cran.r-project.org/doc/manuals/r-release/R-exts.html\n\n\n\nPackages\n\ndevtools\nhttps://devtools.r-lib.org\nusethis\nhttps://usethis.r-lib.org\nroxygen2\nhttps://roxygen2.r-lib.org\nrlang\nhttps://rlang.r-lib.org\ncli\nhttps://cli.r-lib.org"
+    "objectID": "workshops/summer-2025-cohort-1.html#welcome-and-introduction",
+    "href": "workshops/summer-2025-cohort-1.html#welcome-and-introduction",
+    "title": "Summer 2025, cohort 1",
+    "section": "Welcome and introduction",
+    "text": "Welcome and introduction\nHere’s a link to the slides in a new window.\nHere are the slides embedded:"
   }
 ]
