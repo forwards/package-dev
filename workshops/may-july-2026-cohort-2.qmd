@@ -35,7 +35,7 @@ and make sure you register for all five **cohort 2** sessions (noting that there
 
 ## Welcome and introduction
 
-Here's a link to the [slides](may-july-2026-cohort-1-intro.qmd){target="_blank"} in a new window. 
+Here's a link to the [slides](may-july-2026-cohort-2-intro.qmd){target="_blank"} in a new window. 
 
 Here are the slides embedded:
 
