@@ -9,6 +9,7 @@ format: forwardspres-revealjs
 
 - Documenting functions with roxygen2
 - NAMESPACE: exporting functions
+- Dependencies
 - NAMESPACE: importing functions
 
 # Function documentation with roxygen2 {.inverse}
