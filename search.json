@@ -620,7 +620,7 @@
     "href": "slides/02-documentation/index.html#overview",
     "title": "Function documentation and dependencies",
     "section": "Overview",
-    "text": "Overview\n\nDocumenting functions with roxygen2\nNAMESPACE: exporting functions\nNAMESPACE: importing functions"
+    "text": "Overview\n\nDocumenting functions with roxygen2\nNAMESPACE: exporting functions\nDependencies\nNAMESPACE: importing functions"
   },
   {
     "objectID": "slides/02-documentation/index.html#roxygen2",
