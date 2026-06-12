@@ -1,5 +1,5 @@
 ---
-title: Testing
+title: Packaging data</br>Testing
 subtitle: R package development workshop<br>Module 3
 author: Forwards teaching team
 format: forwardspres-revealjs
@@ -12,6 +12,15 @@ format: forwardspres-revealjs
 - Test driven development
 
 # Packaging data {.inverse}
+
+## Why package data
+
+- The purpose of the package is to make data available
+  - e.g. [nycflights13](https://github.com/tidyverse/nycflights13), [palmerpenguins](https://github.com/allisonhorst/palmerpenguins)
+- To share (toy) data to use with the package functions
+  - e.g. [readr](https://github.com/tidyverse/readr)
+  - Useful for examples and vignettes
+- To use internally, e.g. look-up tables
 
 ## Including data
 
@@ -140,23 +149,32 @@ system.file("extdata", "mtcars.csv", package = "readr")
 5. Run `devtools::document()` to create the documentation for the `farm_animals` data. Preview the documentation to check it.
 6. Commit all the changes to your repo.
 
-
-
 # Unit testing with testthat {.inverse}
 
-## Why test?
+## You (almost certainly) already test your code
 
-We build new functions one bit at a time.
+You write code, run it, check outputs (maybe for a few different inputs). 
 
-What if a new thing we add changes the existing functionality?
+Maybe you also use print statements for debugging.
 
-How can we check and be sure all the old functionality still works with New Fancy Feature?
+. . . 
 
-Unit Tests!
+**Unit tests make your informal testing systematic so it scales with your package**
 
-::: {.notes}
-Gives confidence to package users as well  
-:::
+## Testing beyond your own workflow
+
+You are building something that others will use, in possibly unpredictable ways. 
+
+- Future you (or contributors) will modify code and need to verify nothing broke
+- Users will pass inputs you didn't anticipate
+- Documentation alone won't prevent misuse
+
+## Practical benefits
+
+- Refactoring confidence: change internals or add new functionality without fear of breaking user-facing behavior
+- Regression prevention: every bug fix becomes a test that ensures it stays fixed
+- Living documentation: tests show how functions are actually meant to be used
+- Faster debugging: when something breaks, tests help isolate exactly where
 
 ## Set up test infrastructure
 
@@ -193,6 +211,13 @@ An expectation is the atom of testing. It describes the expected result of a com
 Test every individual task the function completes separately.
 
 Check both for successful situations and for expected failure situations.
+
+::: {.callout-tip}
+Look at the `"tests/testthat"` directory and some test files in the GitHub repos for some well-respected packages to see how their tests are organised, e.g.
+
+- <https://github.com/tidyverse/dplyr/tree/main/tests/testthat>
+- <https://github.com/tidyverse/dplyr/blob/main/tests/testthat/test-bind-rows.R>
+:::
 
 ## Expectations
 
