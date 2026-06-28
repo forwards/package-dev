@@ -511,18 +511,18 @@
     "text": "Run devtools::check()\nYou will get lots of output. It will end with:\n-- R CMD check results ---------- animalsounds 0.0.0.9000 ----\nDuration: 9.3s\n\n&gt; checking DESCRIPTION meta-information ... WARNING\n  Non-standard license specification:\n    `use_mit_license()`, `use_gpl3_license()` or friends to pick a\n    license\n  Standardizable: FALSE\n\n0 errors √ | 1 warnings x | 0 notes √\nWe haven’t yet specified a license for our package.\n\nOn running check() you may get an error if you are using a networked drive. There’s a fix coming in a few slides."
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#aside-in-case-of-error",
-    "href": "slides/04-check-package-documentation/index.html#aside-in-case-of-error",
+    "objectID": "slides/04-check-package-documentation/index.html#a-function-that-fails-many-checks",
+    "href": "slides/04-check-package-documentation/index.html#a-function-that-fails-many-checks",
     "title": "Package check and documentation",
-    "section": "Aside: in case of error",
-    "text": "Aside: in case of error\nOn running devtools::check() you may get an error of the form\nUpdating animalsounds documentation  \nError: The specified file is not readable: path-to\\animalsounds\\NAMESPACE  \nThis can happen if your repo is on a networked drive.\nThis is covered in this Stackoverflow question and can be fixed."
+    "section": "A function that fails many checks",
+    "text": "A function that fails many checks\n\n#' Make an excited animal sound\n#'\n#' Repeat an animal sound in uppercase.\n#'\n#' @param sound A character string containing an animal sound.\n#' @param times Number of times to repeat the sound.\n#'\n#' @return A character vector.\n#'\n#' @examples\n#' excited_sound(\"moo\", 3)\n#'\n#' @export\nexcited_sound &lt;- function(animal, sound, times = 3) {\n\n  if (T) {\n    sound &lt;- str_to_upper(sound)\n  }\n\n  paste(\"The\", animal, \"says\", paste(rep(sound, times), collapse = \" \"))\n}"
   },
   {
-    "objectID": "slides/04-check-package-documentation/index.html#aside-a-fix-for-networked-drives",
-    "href": "slides/04-check-package-documentation/index.html#aside-a-fix-for-networked-drives",
+    "objectID": "slides/04-check-package-documentation/index.html#a-function-that-fails-many-checks-cont.",
+    "href": "slides/04-check-package-documentation/index.html#a-function-that-fails-many-checks-cont.",
     "title": "Package check and documentation",
-    "section": "Aside: a fix for networked drives",
-    "text": "Aside: a fix for networked drives\n\nSave a copy of this file: fix_for_networked_drives.R\nSave it somewhere other than the animalsounds directory\nOpen the file from the animalsounds project session\nRun the whole file\n\nYou should now find that devtools::check() proceeds normally."
+    "section": "A function that fails many checks (cont.)",
+    "text": "A function that fails many checks (cont.)\n❯ checking examples ... ERROR\n  Running examples in 'animalsounds-Ex.R' failed\n  The error most likely occurred in:\n  \n  &gt; base::assign(\".ptime\", proc.time(), pos = \"CheckExEnv\")\n  &gt; ### Name: excited_sound\n  &gt; ### Title: Make an excited animal sound\n  &gt; ### Aliases: excited_sound\n  &gt; \n  &gt; ### ** Examples\n  &gt; \n  &gt; excited_sound(\"moo\", 3)\n  Error in str_to_upper(sound) : could not find function \"str_to_upper\"\n  Calls: excited_sound\n  Execution halted\n\n❯ checking Rd \\usage sections ... WARNING\n  Undocumented arguments in Rd file 'excited_sound.Rd'\n    'animal'\n  \n  Functions with \\usage entries need to have the appropriate \\alias\n  entries, and all their arguments documented.\n  The \\usage entries must correspond to syntactically valid R code.\n  See chapter 'Writing R documentation files' in the 'Writing R\n  Extensions' manual.\n\n❯ checking R code for possible problems ... NOTE\n  excited_sound: no visible global function definition for 'str_to_upper'\n  Undefined global functions or variables:\n    str_to_upper\n\n1 error ✖ | 1 warning ✖ | 1 note ✖\nError: R CMD check found ERRORs\nExecution halted\n\nExited with status 1."
   },
   {
     "objectID": "slides/04-check-package-documentation/index.html#types-of-problem",
@@ -579,13 +579,6 @@
     "title": "Package check and documentation",
     "section": "Proprietary packages",
     "text": "Proprietary packages\nYou can use usethis::use_proprietary() to make it clear that your package isn’t open source.\n\nusethis::use_proprietary(copyright_holder = \"ACME Ltd\")\n\nIn DESCRIPTION:\nLicense: file LICENSE\nIn LICENSE:\nCopyright 2023 ACME Ltd. All rights reserved."
-  },
-  {
-    "objectID": "slides/04-check-package-documentation/index.html#licensing-considerations-at-universities",
-    "href": "slides/04-check-package-documentation/index.html#licensing-considerations-at-universities",
-    "title": "Package check and documentation",
-    "section": "Licensing considerations at universities",
-    "text": "Licensing considerations at universities\n\n\n\n\n\n\nThis slide is specific for The University of Warwick, but similar considerations are likely to be true at other Universities.\n\n\n\n\n\nSoftware is defined as a creative output (unlike scholarly works, e.g. thesis, conference paper)\nThe university owns the IP of any software created by Warwick PhD students and staff in the course of their work\nBefore making code public or publishing software under any license, contact Brendan at B.Spillane@warwick.ac.uk\n\nPermission to publish under an open source license likely to be granted for research code\nNot necessary to obtain permission if open source software was part of grant proposal (as proposal will have already been checked by Research & Impact Services, who will have identified any IP issues).\n\n\n\n\nExtra note from Brendan: “they don’t need to come to me with every single bit of code they open source. I’m more interested in the entirety of the project rather than approving 2000 bits of individual code!”"
   },
   {
     "objectID": "slides/04-check-package-documentation/index.html#your-turn",
@@ -648,7 +641,7 @@
     "href": "slides/04-check-package-documentation/index.html#vignette-rmarkdown-special-metadata",
     "title": "Package check and documentation",
     "section": "Vignette = Rmarkdown + special metadata",
-    "text": "Vignette = Rmarkdown + special metadata\n---\ntitle: \"Vignette Title\"\nauthor: \"Vignette author\"\ndate: \"2026-05-14\"\noutput: rmarkdown::html_vignette\nvignette: &gt;\n%\\VignetteIndexEntry{Vignette Title}\n%\\VignetteEngine{knitr::rmarkdown}\n%\\VignetteEncoding{UTF-8}\n---\n\n\nhtml_vignette output uses a custom style sheet to keep the file size of the HTML as small as possible.\nThe vignette: field contains special metadata needed when the package is built. Don’t forget to change the title here too!"
+    "text": "Vignette = Rmarkdown + special metadata\n---\ntitle: \"Vignette Title\"\nauthor: \"Vignette author\"\ndate: \"2026-06-28\"\noutput: rmarkdown::html_vignette\nvignette: &gt;\n%\\VignetteIndexEntry{Vignette Title}\n%\\VignetteEngine{knitr::rmarkdown}\n%\\VignetteEncoding{UTF-8}\n---\n\n\nhtml_vignette output uses a custom style sheet to keep the file size of the HTML as small as possible.\nThe vignette: field contains special metadata needed when the package is built. Don’t forget to change the title here too!"
   },
   {
     "objectID": "slides/04-check-package-documentation/index.html#vignette-workflow",
@@ -740,6 +733,20 @@
     "title": "Package check and documentation",
     "section": "License",
     "text": "License\nLicensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#aside-in-case-of-error",
+    "href": "slides/04-check-package-documentation/index.html#aside-in-case-of-error",
+    "title": "Package check and documentation",
+    "section": "Aside: in case of error",
+    "text": "Aside: in case of error\nOn running devtools::check() you may get an error of the form\nUpdating animalsounds documentation  \nError: The specified file is not readable: path-to\\animalsounds\\NAMESPACE  \nThis can happen if your repo is on a networked drive.\nThis is covered in this Stackoverflow question and can be fixed."
+  },
+  {
+    "objectID": "slides/04-check-package-documentation/index.html#aside-a-fix-for-networked-drives",
+    "href": "slides/04-check-package-documentation/index.html#aside-a-fix-for-networked-drives",
+    "title": "Package check and documentation",
+    "section": "Aside: a fix for networked drives",
+    "text": "Aside: a fix for networked drives\n\nSave a copy of this file: fix_for_networked_drives.R\nSave it somewhere other than the animalsounds directory\nOpen the file from the animalsounds project session\nRun the whole file\n\nYou should now find that devtools::check() proceeds normally."
   },
   {
     "objectID": "modules/03-data-testing/index.html",

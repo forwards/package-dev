@@ -1136,23 +1136,70 @@ overflow: hidden!important;
 display:block!important;
 }</style></aside>
 </section>
-<section id="aside-in-case-of-error" class="slide level2">
-<h2>Aside: in case of error</h2>
-<p>On running <code>devtools::check()</code> you may get an error of the form</p>
-<pre><code>Updating animalsounds documentation  
-Error: The specified file is not readable: path-to\animalsounds\NAMESPACE  </code></pre>
-<p>This can happen if your repo is on a networked drive.</p>
-<p>This is covered in this <a href="https://stackoverflow.com/questions/40530968/overwriting-namespace-and-rd-with-roxygen2">Stackoverflow question</a> and can be fixed.</p>
+<section id="a-function-that-fails-many-checks" class="slide level2">
+<h2>A function that fails many checks</h2>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="co">#&#39; Make an excited animal sound</span></span>
+<span id="cb2-2"><a></a><span class="co">#&#39;</span></span>
+<span id="cb2-3"><a></a><span class="co">#&#39; Repeat an animal sound in uppercase.</span></span>
+<span id="cb2-4"><a></a><span class="co">#&#39;</span></span>
+<span id="cb2-5"><a></a><span class="co">#&#39; @param sound A character string containing an animal sound.</span></span>
+<span id="cb2-6"><a></a><span class="co">#&#39; @param times Number of times to repeat the sound.</span></span>
+<span id="cb2-7"><a></a><span class="co">#&#39;</span></span>
+<span id="cb2-8"><a></a><span class="co">#&#39; @return A character vector.</span></span>
+<span id="cb2-9"><a></a><span class="co">#&#39;</span></span>
+<span id="cb2-10"><a></a><span class="co">#&#39; @examples</span></span>
+<span id="cb2-11"><a></a><span class="co">#&#39; excited_sound(&quot;moo&quot;, 3)</span></span>
+<span id="cb2-12"><a></a><span class="co">#&#39;</span></span>
+<span id="cb2-13"><a></a><span class="co">#&#39; @export</span></span>
+<span id="cb2-14"><a></a>excited_sound <span class="ot">&lt;-</span> <span class="cf">function</span>(animal, sound, <span class="at">times =</span> <span class="dv">3</span>) {</span>
+<span id="cb2-15"><a></a></span>
+<span id="cb2-16"><a></a>  <span class="cf">if</span> (T) {</span>
+<span id="cb2-17"><a></a>    sound <span class="ot">&lt;-</span> <span class="fu">str_to_upper</span>(sound)</span>
+<span id="cb2-18"><a></a>  }</span>
+<span id="cb2-19"><a></a></span>
+<span id="cb2-20"><a></a>  <span class="fu">paste</span>(<span class="st">&quot;The&quot;</span>, animal, <span class="st">&quot;says&quot;</span>, <span class="fu">paste</span>(<span class="fu">rep</span>(sound, times), <span class="at">collapse =</span> <span class="st">&quot; &quot;</span>))</span>
+<span id="cb2-21"><a></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 </section>
-<section id="aside-a-fix-for-networked-drives" class="slide level2">
-<h2>Aside: a fix for networked drives</h2>
-<ol type="1">
-<li><p>Save a copy of this file: <a href="../../R/fix_for_networked_drives.R">fix_for_networked_drives.R</a></p>
-<p>Save it somewhere other than the <code>animalsounds</code> directory</p></li>
-<li><p>Open the file from the <code>animalsounds</code> project session</p></li>
-<li><p>Run the whole file</p></li>
-</ol>
-<p>You should now find that <code>devtools::check()</code> proceeds normally.</p>
+<section id="a-function-that-fails-many-checks-cont." class="slide level2">
+<h2>A function that fails many checks (cont.)</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>❯ checking examples ... ERROR</span>
+<span id="cb3-2"><a></a>  Running examples <span class="cf">in</span> <span class="st">&#39;animalsounds-Ex.R&#39;</span> failed</span>
+<span id="cb3-3"><a></a>  The error most likely occurred <span class="cf">in</span><span class="sc">:</span></span>
+<span id="cb3-4"><a></a>  </span>
+<span id="cb3-5"><a></a>  <span class="er">&gt;</span> base<span class="sc">::</span><span class="fu">assign</span>(<span class="st">&quot;.ptime&quot;</span>, <span class="fu">proc.time</span>(), <span class="at">pos =</span> <span class="st">&quot;CheckExEnv&quot;</span>)</span>
+<span id="cb3-6"><a></a>  <span class="sc">&gt;</span> <span class="do">### Name: excited_sound</span></span>
+<span id="cb3-7"><a></a>  <span class="er">&gt;</span> <span class="do">### Title: Make an excited animal sound</span></span>
+<span id="cb3-8"><a></a>  <span class="er">&gt;</span> <span class="do">### Aliases: excited_sound</span></span>
+<span id="cb3-9"><a></a>  <span class="er">&gt;</span> </span>
+<span id="cb3-10"><a></a>  <span class="er">&gt;</span> <span class="do">### ** Examples</span></span>
+<span id="cb3-11"><a></a>  <span class="er">&gt;</span> </span>
+<span id="cb3-12"><a></a>  <span class="er">&gt;</span> <span class="fu">excited_sound</span>(<span class="st">&quot;moo&quot;</span>, <span class="dv">3</span>)</span>
+<span id="cb3-13"><a></a>  Error <span class="cf">in</span> <span class="fu">str_to_upper</span>(sound) <span class="sc">:</span> could not find <span class="cf">function</span> <span class="st">&quot;str_to_upper&quot;</span></span>
+<span id="cb3-14"><a></a>  Calls<span class="sc">:</span> excited_sound</span>
+<span id="cb3-15"><a></a>  Execution halted</span>
+<span id="cb3-16"><a></a></span>
+<span id="cb3-17"><a></a>❯ checking Rd \usage sections ... WARNING</span>
+<span id="cb3-18"><a></a>  Undocumented arguments <span class="cf">in</span> Rd file <span class="st">&#39;excited_sound.Rd&#39;</span></span>
+<span id="cb3-19"><a></a>    <span class="st">&#39;animal&#39;</span></span>
+<span id="cb3-20"><a></a>  </span>
+<span id="cb3-21"><a></a>  Functions with \usage entries need to have the appropriate \alias</span>
+<span id="cb3-22"><a></a>  entries, and all their arguments documented.</span>
+<span id="cb3-23"><a></a>  The \usage entries must correspond to syntactically valid R code.</span>
+<span id="cb3-24"><a></a>  See chapter <span class="st">&#39;Writing R documentation files&#39;</span> <span class="cf">in</span> the <span class="st">&#39;Writing R</span></span>
+<span id="cb3-25"><a></a><span class="st">  Extensions&#39;</span> manual.</span>
+<span id="cb3-26"><a></a></span>
+<span id="cb3-27"><a></a>❯ checking R code <span class="cf">for</span> possible problems ... NOTE</span>
+<span id="cb3-28"><a></a>  excited_sound<span class="sc">:</span> no visible global <span class="cf">function</span> definition <span class="cf">for</span> <span class="st">&#39;str_to_upper&#39;</span></span>
+<span id="cb3-29"><a></a>  Undefined global functions or variables<span class="sc">:</span></span>
+<span id="cb3-30"><a></a>    str_to_upper</span>
+<span id="cb3-31"><a></a></span>
+<span id="cb3-32"><a></a><span class="dv">1</span> error ✖ <span class="sc">|</span> <span class="dv">1</span> warning ✖ <span class="sc">|</span> <span class="dv">1</span> note ✖</span>
+<span id="cb3-33"><a></a>Error<span class="sc">:</span> R CMD check found ERRORs</span>
+<span id="cb3-34"><a></a>Execution halted</span>
+<span id="cb3-35"><a></a></span>
+<span id="cb3-36"><a></a>Exited with status <span class="fl">1.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="types-of-problem" class="slide level2">
 <h2>Types of problem</h2>
@@ -1253,15 +1300,15 @@ display:block!important;
 <li><p><strong>Authors@R</strong>: A call to <code>person()</code> that is run to create the Author field when the package tarball is built. “aut” means author, “cre” means creator (maintainer), “ctb” means contributor.</p>
 <p>A placeholder call to <code>person()</code> is inserted in <code>DESCRIPTION</code> when a package is created with <code>usethis::create_package()</code> which can be edited directly:</p>
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">person</span>(<span class="st">&quot;A&quot;</span>, <span class="st">&quot;Person&quot;</span>, <span class="at">email =</span> <span class="st">&quot;a.person@email.com&quot;</span>, </span>
-<span id="cb3-2"><a></a>       <span class="at">role =</span> <span class="fu">c</span>(<span class="st">&quot;aut&quot;</span>, <span class="st">&quot;cre&quot;</span>),</span>
-<span id="cb3-3"><a></a>       <span class="at">comment =</span> <span class="fu">c</span>(<span class="at">ORCID =</span> <span class="st">&quot;0000-0001-2345-6789&quot;</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">person</span>(<span class="st">&quot;A&quot;</span>, <span class="st">&quot;Person&quot;</span>, <span class="at">email =</span> <span class="st">&quot;a.person@email.com&quot;</span>, </span>
+<span id="cb4-2"><a></a>       <span class="at">role =</span> <span class="fu">c</span>(<span class="st">&quot;aut&quot;</span>, <span class="st">&quot;cre&quot;</span>),</span>
+<span id="cb4-3"><a></a>       <span class="at">comment =</span> <span class="fu">c</span>(<span class="at">ORCID =</span> <span class="st">&quot;0000-0001-2345-6789&quot;</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Alternatively, this can be overwritten with a call to <code>usethis::use_author()</code>:</p>
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">use_author</span>(<span class="st">&quot;A&quot;</span>, <span class="st">&quot;Person&quot;</span>, <span class="at">email =</span> <span class="st">&quot;a.person@email.com&quot;</span>, </span>
-<span id="cb4-2"><a></a>     <span class="at">role =</span> <span class="fu">c</span>(<span class="st">&quot;aut&quot;</span>, <span class="st">&quot;cre&quot;</span>),</span>
-<span id="cb4-3"><a></a>     <span class="at">comment =</span> <span class="fu">c</span>(<span class="at">ORCID =</span> <span class="st">&quot;0000-0001-2345-6789&quot;</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">use_author</span>(<span class="st">&quot;A&quot;</span>, <span class="st">&quot;Person&quot;</span>, <span class="at">email =</span> <span class="st">&quot;a.person@email.com&quot;</span>, </span>
+<span id="cb5-2"><a></a>     <span class="at">role =</span> <span class="fu">c</span>(<span class="st">&quot;aut&quot;</span>, <span class="st">&quot;cre&quot;</span>),</span>
+<span id="cb5-3"><a></a>     <span class="at">comment =</span> <span class="fu">c</span>(<span class="at">ORCID =</span> <span class="st">&quot;0000-0001-2345-6789&quot;</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div></li>
 </ul>
 </div>
@@ -1308,15 +1355,15 @@ display:block!important;
 <ul>
 <li><p>CC0: “public domain”, best for data packages.</p>
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_cc0_license</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_cc0_license</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div></li>
 <li><p>MIT: Free for anyone to do anything with (including bundling in closed source product).</p>
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_mit_license</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_mit_license</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div></li>
 <li><p>GPL: Changes and bundles must also be GPL</p>
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_gpl_license</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_gpl_license</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p><span class="smaller80">If you are including someone else’s GPL code directly, you must use GPL yourself.</span></p></li>
 </ul>
@@ -1340,49 +1387,12 @@ display:block!important;
 <h2>Proprietary packages</h2>
 <p>You can use <code>usethis::use_proprietary()</code> to make it clear that your package isn’t open source.</p>
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_proprietary</span>(<span class="at">copyright_holder =</span> <span class="st">&quot;ACME Ltd&quot;</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_proprietary</span>(<span class="at">copyright_holder =</span> <span class="st">&quot;ACME Ltd&quot;</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>In DESCRIPTION:</p>
 <pre><code>License: file LICENSE</code></pre>
 <p>In LICENSE:</p>
 <pre><code>Copyright 2023 ACME Ltd. All rights reserved.</code></pre>
-</section>
-<section id="licensing-considerations-at-universities" class="slide level2">
-<h2>Licensing considerations at universities</h2>
-<div class="callout callout-note callout-style-simple">
-<div class="callout-body">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-content">
-<p><span class="smaller80">This slide is specific for The University of Warwick, but similar considerations are likely to be true at other Universities.</span></p>
-</div>
-</div>
-</div>
-<div class="smaller75">
-<ul>
-<li><p>Software is defined as a creative output (unlike scholarly works, e.g. thesis, conference paper)</p></li>
-<li><p>The university owns the IP of any software created by Warwick PhD students and staff in the course of their work</p></li>
-<li><p>Before making code public or publishing software under any license, contact Brendan at <a href="mailto:B.Spillane@warwick.ac.uk">B.Spillane@warwick.ac.uk</a></p>
-<ul>
-<li>Permission to publish under an open source license likely to be granted for research code</li>
-<li>Not necessary to obtain permission if open source software was part of grant proposal (as proposal will have already been checked by Research &amp; Impact Services, who will have identified any IP issues).</li>
-</ul></li>
-</ul>
-</div>
-<aside class="notes">
-<p>Extra note from Brendan: “they don’t need to come to me with every single bit of code they open source. I’m more interested in the entirety of the project rather than approving 2000 bits of individual code!”</p>
-<style type="text/css">
-span.MJX_Assistive_MathML {
-position:absolute!important;
-clip: rect(1px, 1px, 1px, 1px);
-padding: 1px 0 0 0!important;
-border: 0!important;
-height: 1px!important;
-width: 1px!important;
-overflow: hidden!important;
-display:block!important;
-}</style></aside>
 </section>
 <section id="your-turn" class="slide level2">
 <h2>Your turn</h2>
@@ -1427,8 +1437,8 @@ display:block!important;
 <section id="creating-a-readme" class="slide level2">
 <h2>Creating a README</h2>
 <p><strong>usethis</strong> has functions to set up a README with/without R code</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_readme_rmd</span>()</span>
-<span id="cb11-2"><a></a>usethis<span class="sc">::</span><span class="fu">use_readme_md</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_readme_rmd</span>()</span>
+<span id="cb12-2"><a></a>usethis<span class="sc">::</span><span class="fu">use_readme_md</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><code>README.Rmd</code> must be rendered to make <code>README.md</code> each time it is changed.</p>
 <p><code>usethis::use_readme_rmd()</code> creates a <em>pre-commit hook</em> to check if <code>README.Rmd</code> and <code>README.md</code> are out of sync before committing.</p>
 <p>Use <code>build_readme()</code> to render with the latest version of the code.</p>
@@ -1467,7 +1477,7 @@ display:block!important;
 <h2>Running automatic checks</h2>
 <p>GitHub Actions (GHAs) allow you to run code every time you push to GitHub.</p>
 <p>The most useful ones for packages can be selected from a call to <code>usethis::use_github_action()</code>:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="fu">use_github_action</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="fu">use_github_action</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>Which action do you want to add? (0 to exit)
 (See &lt;https://github.com/r-lib/actions/tree/v2/examples&gt; for other options) 
 
@@ -1494,7 +1504,7 @@ display:block!important;
 <h2><span class="smaller90"><code>use_github_action(&quot;check-release&quot;)</code></span></h2>
 <p>The <code>check-standard</code> GHA is best-practice for ‘serious’ projects, e.g. those aiming for CRAN, but is overkill for our purposes.</p>
 <p>We can set up a simpler GHA by specifying an alternative:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a><span class="fu">use_github_action</span>(<span class="st">&quot;check-release&quot;</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="fu">use_github_action</span>(<span class="st">&quot;check-release&quot;</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>This sets up a bare-minimum workflow that runs <code>R CMD check</code> with the latest release of R on Linux.</p>
 <p>It’s good for simple package with no OS-sepcific code, and if you want a quick start with R CI.</p>
 <aside class="notes">
@@ -1554,7 +1564,7 @@ display:block!important;
 <section id="use_vignette" class="slide level2">
 <h2><code>use_vignette()</code></h2>
 <p>Easiest way to get started is with <code>usethis::use_vignette()</code></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_vignette</span>(<span class="st">&quot;name&quot;</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_vignette</span>(<span class="st">&quot;name&quot;</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Adds to DESCRIPTION</p>
 <pre>Suggests: knitr
 VignetteBuilder: knitr
@@ -1581,7 +1591,7 @@ display:block!important;
 <pre><code>---
 title: &quot;Vignette Title&quot;
 author: &quot;Vignette author&quot;
-date: &quot;2026-05-14&quot;
+date: &quot;2026-06-28&quot;
 output: rmarkdown::html_vignette
 vignette: &gt;
 %\VignetteIndexEntry{Vignette Title}
@@ -1615,7 +1625,7 @@ display:block!important;
 <h2>Articles</h2>
 <p>Vignette code needs to be able to run on CRAN. There are some cases where <a href="https://r-pkgs.org/vignettes.html#sec-vignettes-eval-option">this is not possible</a>.</p>
 <p>As an alternative, you can use articles instead of vignettes:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_article</span>(<span class="st">&quot;my-article&quot;</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_article</span>(<span class="st">&quot;my-article&quot;</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>✔ Adding &#39;rmarkdown&#39; to Config/Needs/website
 ✔ Creating &#39;vignettes/&#39;
 ✔ Creating &#39;vignettes/articles/&#39;
@@ -1643,11 +1653,11 @@ display:block!important;
 <section id="track-changes-in-a-news-file" class="slide level2">
 <h2>Track changes in a NEWS file</h2>
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_news_md</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_news_md</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Add news for the latest version at the top.</p>
 <p>Use a top-level heading for each release version</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a><span class="co"># animalsounds 1.0.0</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a><span class="co"># animalsounds 1.0.0</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="what-news-to-include" class="slide level2">
 <h2>What news to include</h2>
@@ -1671,7 +1681,7 @@ display:block!important;
 <h2>A package website pkgdown</h2>
 <p>The <strong>pkgdown</strong> package is designed to make it quick and easy to build a website for your package:</p>
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_pkgdown</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_pkgdown</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Why have a website for your package?</p>
 <ul>
@@ -1721,7 +1731,7 @@ display:block!important;
 <li><p>You can host your website directly from its GitHub repo (repo has to be public)</p></li>
 <li><p>The recommended approach is to let GitHub build your page (instead of calling <code>pkgdown::build_site()</code> and committing and pushing the artifacts of the built website (i.e., html files) to GitHub</p></li>
 <li><p>Add an action to your GitHub repo to be run automatically every time you push to it to rebuild the site:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_pkgdown_github_pages</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a>usethis<span class="sc">::</span><span class="fu">use_pkgdown_github_pages</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 <li><p>The URL will be https://USERNAME.github.io/animalsounds</p></li>
 </ul>
 <aside class="notes">
@@ -1786,6 +1796,29 @@ display:block!important;
 <section id="license" class="slide level2">
 <h2>License</h2>
 <p>Licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>).</p>
+</section></section>
+<section>
+<section id="aside-notes" class="title-slide slide level1 inverse center">
+<h1>Aside notes</h1>
+
+</section>
+<section id="aside-in-case-of-error" class="slide level2">
+<h2>Aside: in case of error</h2>
+<p>On running <code>devtools::check()</code> you may get an error of the form</p>
+<pre><code>Updating animalsounds documentation  
+Error: The specified file is not readable: path-to\animalsounds\NAMESPACE  </code></pre>
+<p>This can happen if your repo is on a networked drive.</p>
+<p>This is covered in this <a href="https://stackoverflow.com/questions/40530968/overwriting-namespace-and-rd-with-roxygen2">Stackoverflow question</a> and can be fixed.</p>
+</section>
+<section id="aside-a-fix-for-networked-drives" class="slide level2">
+<h2>Aside: a fix for networked drives</h2>
+<ol type="1">
+<li><p>Save a copy of this file: <a href="../../R/fix_for_networked_drives.R">fix_for_networked_drives.R</a></p>
+<p>Save it somewhere other than the <code>animalsounds</code> directory</p></li>
+<li><p>Open the file from the <code>animalsounds</code> project session</p></li>
+<li><p>Run the whole file</p></li>
+</ol>
+<p>You should now find that <code>devtools::check()</code> proceeds normally.</p>
 
 
 </section></section>
