@@ -58,30 +58,73 @@ We haven't yet specified a license for our package.
 On running `check()` you may get an error if you are using a networked drive. There's a fix coming in a few slides.
 :::
 
-## Aside: in case of error
+## A function that fails many checks
 
-On running `devtools::check()` you may get an error of the form
+```{r}
+#| eval: false
+#' Make an excited animal sound
+#'
+#' Repeat an animal sound in uppercase.
+#'
+#' @param sound A character string containing an animal sound.
+#' @param times Number of times to repeat the sound.
+#'
+#' @return A character vector.
+#'
+#' @examples
+#' excited_sound("moo", 3)
+#'
+#' @export
+excited_sound <- function(animal, sound, times = 3) {
 
-```         
-Updating animalsounds documentation  
-Error: The specified file is not readable: path-to\animalsounds\NAMESPACE  
+  if (T) {
+    sound <- str_to_upper(sound)
+  }
+
+  paste("The", animal, "says", paste(rep(sound, times), collapse = " "))
+}
 ```
 
-This can happen if your repo is on a networked drive.
+## A function that fails many checks (cont.)
 
-This is covered in this [Stackoverflow question](https://stackoverflow.com/questions/40530968/overwriting-namespace-and-rd-with-roxygen2) and can be fixed.
+```r
+❯ checking examples ... ERROR
+  Running examples in 'animalsounds-Ex.R' failed
+  The error most likely occurred in:
+  
+  > base::assign(".ptime", proc.time(), pos = "CheckExEnv")
+  > ### Name: excited_sound
+  > ### Title: Make an excited animal sound
+  > ### Aliases: excited_sound
+  > 
+  > ### ** Examples
+  > 
+  > excited_sound("moo", 3)
+  Error in str_to_upper(sound) : could not find function "str_to_upper"
+  Calls: excited_sound
+  Execution halted
 
-## Aside: a fix for networked drives
+❯ checking Rd \usage sections ... WARNING
+  Undocumented arguments in Rd file 'excited_sound.Rd'
+    'animal'
+  
+  Functions with \usage entries need to have the appropriate \alias
+  entries, and all their arguments documented.
+  The \usage entries must correspond to syntactically valid R code.
+  See chapter 'Writing R documentation files' in the 'Writing R
+  Extensions' manual.
 
-1.  Save a copy of this file: [fix_for_networked_drives.R](../../R/fix_for_networked_drives.R)
+❯ checking R code for possible problems ... NOTE
+  excited_sound: no visible global function definition for 'str_to_upper'
+  Undefined global functions or variables:
+    str_to_upper
 
-    Save it somewhere other than the `animalsounds` directory
+1 error ✖ | 1 warning ✖ | 1 note ✖
+Error: R CMD check found ERRORs
+Execution halted
 
-2.  Open the file from the `animalsounds` project session
-
-3.  Run the whole file
-
-You should now find that `devtools::check()` proceeds normally.
+Exited with status 1.
+```
 
 ## Types of problem
 
@@ -220,25 +263,6 @@ In LICENSE:
 ```
 Copyright 2023 ACME Ltd. All rights reserved.
 ```
-
-## Licensing considerations at universities
-
-:::{.callout-note appearance="simple"}
-[This slide is specific for The University of Warwick, but similar considerations are likely to be true at other Universities.]{.smaller80}
-:::
-
-:::{.smaller75}
-- Software is defined as a creative output (unlike scholarly works, e.g. thesis, conference paper)
-- The university owns the IP of any software created by Warwick PhD students and staff in the course of their work
-- Before making code public or publishing software under any license, contact Brendan at [B.Spillane@warwick.ac.uk](mailto:B.Spillane@warwick.ac.uk)
-
-  - Permission to publish under an open source license likely to be granted for research code
-  - Not necessary to obtain permission if open source software was part of grant proposal (as proposal will have already been checked by Research & Impact Services, who will have identified any IP issues).
-:::
-
-::: {.notes}
-Extra note from Brendan: "they don’t need to come to me with every single bit of code they open source. I’m more interested in the entirety of the project rather than approving 2000 bits of individual code!"  
-:::
 
 ## Your turn
 
@@ -585,3 +609,29 @@ R Core Team, *Writing R Extensions*, <https://cran.r-project.org/doc/manuals/r-r
 
 Licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License ([CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/){target="_blank"}).
 
+# Aside notes {.inverse}
+
+## Aside: in case of error
+
+On running `devtools::check()` you may get an error of the form
+
+```         
+Updating animalsounds documentation  
+Error: The specified file is not readable: path-to\animalsounds\NAMESPACE  
+```
+
+This can happen if your repo is on a networked drive.
+
+This is covered in this [Stackoverflow question](https://stackoverflow.com/questions/40530968/overwriting-namespace-and-rd-with-roxygen2) and can be fixed.
+
+## Aside: a fix for networked drives
+
+1.  Save a copy of this file: [fix_for_networked_drives.R](../../R/fix_for_networked_drives.R)
+
+    Save it somewhere other than the `animalsounds` directory
+
+2.  Open the file from the `animalsounds` project session
+
+3.  Run the whole file
+
+You should now find that `devtools::check()` proceeds normally.
