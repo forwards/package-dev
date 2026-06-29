@@ -77,9 +77,7 @@ On running `check()` you may get an error if you are using a networked drive. Th
 #' @export
 excited_sound <- function(animal, sound, times = 3) {
 
-  if (T) {
-    sound <- str_to_upper(sound)
-  }
+  sound <- str_to_upper(sound)
 
   paste("The", animal, "says", paste(rep(sound, times), collapse = " "))
 }
