@@ -515,7 +515,7 @@
     "href": "slides/04-check-package-documentation/index.html#a-function-that-fails-many-checks",
     "title": "Package check and documentation",
     "section": "A function that fails many checks",
-    "text": "A function that fails many checks\n\n#' Make an excited animal sound\n#'\n#' Repeat an animal sound in uppercase.\n#'\n#' @param sound A character string containing an animal sound.\n#' @param times Number of times to repeat the sound.\n#'\n#' @return A character vector.\n#'\n#' @examples\n#' excited_sound(\"moo\", 3)\n#'\n#' @export\nexcited_sound &lt;- function(animal, sound, times = 3) {\n\n  if (T) {\n    sound &lt;- str_to_upper(sound)\n  }\n\n  paste(\"The\", animal, \"says\", paste(rep(sound, times), collapse = \" \"))\n}"
+    "text": "A function that fails many checks\n\n#' Make an excited animal sound\n#'\n#' Repeat an animal sound in uppercase.\n#'\n#' @param sound A character string containing an animal sound.\n#' @param times Number of times to repeat the sound.\n#'\n#' @return A character vector.\n#'\n#' @examples\n#' excited_sound(\"moo\", 3)\n#'\n#' @export\nexcited_sound &lt;- function(animal, sound, times = 3) {\n\n  sound &lt;- str_to_upper(sound)\n\n  paste(\"The\", animal, \"says\", paste(rep(sound, times), collapse = \" \"))\n}"
   },
   {
     "objectID": "slides/04-check-package-documentation/index.html#a-function-that-fails-many-checks-cont.",
@@ -641,7 +641,7 @@
     "href": "slides/04-check-package-documentation/index.html#vignette-rmarkdown-special-metadata",
     "title": "Package check and documentation",
     "section": "Vignette = Rmarkdown + special metadata",
-    "text": "Vignette = Rmarkdown + special metadata\n---\ntitle: \"Vignette Title\"\nauthor: \"Vignette author\"\ndate: \"2026-06-28\"\noutput: rmarkdown::html_vignette\nvignette: &gt;\n%\\VignetteIndexEntry{Vignette Title}\n%\\VignetteEngine{knitr::rmarkdown}\n%\\VignetteEncoding{UTF-8}\n---\n\n\nhtml_vignette output uses a custom style sheet to keep the file size of the HTML as small as possible.\nThe vignette: field contains special metadata needed when the package is built. Don’t forget to change the title here too!"
+    "text": "Vignette = Rmarkdown + special metadata\n---\ntitle: \"Vignette Title\"\nauthor: \"Vignette author\"\ndate: \"2026-06-29\"\noutput: rmarkdown::html_vignette\nvignette: &gt;\n%\\VignetteIndexEntry{Vignette Title}\n%\\VignetteEngine{knitr::rmarkdown}\n%\\VignetteEncoding{UTF-8}\n---\n\n\nhtml_vignette output uses a custom style sheet to keep the file size of the HTML as small as possible.\nThe vignette: field contains special metadata needed when the package is built. Don’t forget to change the title here too!"
   },
   {
     "objectID": "slides/04-check-package-documentation/index.html#vignette-workflow",

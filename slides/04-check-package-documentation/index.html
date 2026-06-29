@@ -1154,12 +1154,10 @@ display:block!important;
 <span id="cb2-13"><a></a><span class="co">#&#39; @export</span></span>
 <span id="cb2-14"><a></a>excited_sound <span class="ot">&lt;-</span> <span class="cf">function</span>(animal, sound, <span class="at">times =</span> <span class="dv">3</span>) {</span>
 <span id="cb2-15"><a></a></span>
-<span id="cb2-16"><a></a>  <span class="cf">if</span> (T) {</span>
-<span id="cb2-17"><a></a>    sound <span class="ot">&lt;-</span> <span class="fu">str_to_upper</span>(sound)</span>
-<span id="cb2-18"><a></a>  }</span>
-<span id="cb2-19"><a></a></span>
-<span id="cb2-20"><a></a>  <span class="fu">paste</span>(<span class="st">&quot;The&quot;</span>, animal, <span class="st">&quot;says&quot;</span>, <span class="fu">paste</span>(<span class="fu">rep</span>(sound, times), <span class="at">collapse =</span> <span class="st">&quot; &quot;</span>))</span>
-<span id="cb2-21"><a></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb2-16"><a></a>  sound <span class="ot">&lt;-</span> <span class="fu">str_to_upper</span>(sound)</span>
+<span id="cb2-17"><a></a></span>
+<span id="cb2-18"><a></a>  <span class="fu">paste</span>(<span class="st">&quot;The&quot;</span>, animal, <span class="st">&quot;says&quot;</span>, <span class="fu">paste</span>(<span class="fu">rep</span>(sound, times), <span class="at">collapse =</span> <span class="st">&quot; &quot;</span>))</span>
+<span id="cb2-19"><a></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="a-function-that-fails-many-checks-cont." class="slide level2">
@@ -1591,7 +1589,7 @@ display:block!important;
 <pre><code>---
 title: &quot;Vignette Title&quot;
 author: &quot;Vignette author&quot;
-date: &quot;2026-06-28&quot;
+date: &quot;2026-06-29&quot;
 output: rmarkdown::html_vignette
 vignette: &gt;
 %\VignetteIndexEntry{Vignette Title}
