@@ -109,7 +109,7 @@ CRAN repo is listed because r-universe package may have dependencies on packages
 
 ## Create your R-universe
 
-Follow this rOpenSci guide: [How to create your personal CRAN-like repository on R-universe](https://ropensci.org/blog/2021/06/22/setup-runiverse/). 
+Follow the official R-Universe: [Set up your own universe](https://docs.r-universe.dev/publish/set-up.html/). 
 
 :::{.smaller80}
 In a nutshell:
@@ -146,6 +146,8 @@ Might be worth pointing out that with actual username, don't need `< >`
 - The universe automatically syncs and builds your package git repos once per hour.
 
 - If you encounter any issues, the actions tab in your source universe may show what is going on, for example: <https://github.com/r-universe/maelle/actions>
+
+- Or check the [R-Universe documentation](https://docs.r-universe.dev/).
 
 # CRAN {.inverse}
 
